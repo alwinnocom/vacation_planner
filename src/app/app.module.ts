@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DatepickerComponent } from './datepicker/datepicker.component';
+import { DestinationComponent } from './destination/destination.component';
+import { CostsComponent } from './costs/costs.component';
+import { ChecklistComponent } from './checklist/checklist.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DatepickerComponent,
+    DestinationComponent,
+    CostsComponent,
+    ChecklistComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
