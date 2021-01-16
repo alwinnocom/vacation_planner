@@ -1,1 +1,16 @@
 <p>checklist works!</p>
+
+<form>
+
+  <mat-checkbox *ngFor="let item of items">{{ item }}</mat-checkbox>
+
+  <h1>Add more checklist items.</h1>
+
+  <mat-form-field *ngFor="let item of items">
+
+    <mat-label>{{ item }}</mat-label>
+    <input matInput placeholder="item">
+
+  </mat-form-field>
+
+</form>

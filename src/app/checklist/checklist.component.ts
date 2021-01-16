@@ -12,4 +12,6 @@ export class ChecklistComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  items: String[] = [ 'Toiletries', 'Clothes', 'Wallet', 'Phone' ];
+
 }

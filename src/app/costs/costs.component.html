@@ -1,1 +1,6 @@
 <p>costs works!</p>
+
+<!-- https://stackoverflow.com/questions/41396435/how-to-iterate-object-keys-using-ngfor/41396558 -->
+<div *ngFor="let cost of costs | keyvalue">
+  {{ cost.key }}: {{cost.value}}
+</div>

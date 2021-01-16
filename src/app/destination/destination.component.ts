@@ -12,4 +12,9 @@ export class DestinationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  departure_point: String = "";
+  destination: String = "";
+
+
+
 }

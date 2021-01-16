@@ -7,7 +7,9 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
 import { DestinationComponent } from './destination/destination.component';
 import { CostsComponent } from './costs/costs.component';
 import { ChecklistComponent } from './checklist/checklist.component';
+
 import { AppRoutingModule } from './app-routing.module';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
