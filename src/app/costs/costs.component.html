@@ -1,6 +1,28 @@
-<p>costs works!</p>
+<app-costs>
+  <p>costs works!</p>
 
-<!-- https://stackoverflow.com/questions/41396435/how-to-iterate-object-keys-using-ngfor/41396558 -->
-<div *ngFor="let cost of costs | keyvalue">
-  {{ cost.key }}: {{cost.value}}
-</div>
+  <!-- https://stackoverflow.com/questions/41396435/how-to-iterate-object-keys-using-ngfor/41396558 -->
+
+  <!-- <form>
+    <mat-form-field appearance="standard">
+      <div *ngFor="let cost of costs | keyvalue">
+        <mat-label>{{ cost.key }}: <b>{{cost.value | currency: 'USD'}}</b></mat-label>
+        <input matInput type="submit" [(ngModel)]="cost.value">
+      </div>
+    </mat-form-field>
+  </form> -->
+
+  <form (ngSubmit)="onSubmit()" #f="ngForm">
+    <div *ngFor="let cost of costs | keyvalue">
+      <label>{{ cost.key }}: <b>{{cost.value | currency: 'USD'}}</b></label>
+      <input type="number" [(ngModel)]="cost.value">
+      <button type="submit">Submit new cost.</button>
+    </div>
+  </form>
+
+  <span ngIf="onSubmit()">Costs have been updated.</span>
+
+  <div ngClass="formChanged">
+    Total Cost = {{ totalCost }}.
+  </div>
+</app-costs>
