@@ -12,8 +12,8 @@ export class DestinationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  departure_point: String = "";
-  destination: String = "";
+  departure_point: String = "LAX";
+  destination: String = "NY";
 
 
 
