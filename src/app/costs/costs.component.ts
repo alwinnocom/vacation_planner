@@ -19,14 +19,13 @@ export class CostsComponent implements OnInit {
 
   totalCost: number = 0;
 
-  onSubmit() {
+  calculateTotalCost() {
 
-  }
 
-  ngOnChanges() {
     for (const [key, value] of Object.entries(this.costs)) {
       this.totalCost += value;
     }
   }
+
 
 }

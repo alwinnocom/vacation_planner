@@ -12,13 +12,14 @@
     </mat-form-field>
   </form> -->
 
-  <form>
-      <mat-form-field *ngFor="let cost of costs | keyvalue" appearance="standard">
-        <mat-label>{{ cost.key }}: <b>{{cost.value | currency: 'USD'}}</b></mat-label>
-        <input type="number" matInput placeholder="{{ cost.value | currency: 'USD'}}">
-      </mat-form-field>
-      <button type="submit">Submit new cost.</button>
-  </form>
+<form (ngSubmit)="calculateTotalCost()" #costsForm="ngForm">
+  <mat-form-field *ngFor="let cost of costs | keyvalue" appearance="standard">
+    <mat-label for="cost.value">{{ cost.key }}: <b>{{cost.value | currency: 'USD'}}</b></mat-label>
+      <input type="number" matInput [(ngModel)]="cost.value" name="cost.value" placeholder="$0.00">
+  </mat-form-field>
+  <button type="submit">Submit new cost.</button>
+</form>
+
 
     <!-- <div *ngFor="let cost of costs | keyvalue">
       <label>{{ cost.key }}: <b>{{cost.value | currency: 'USD'}}</b></label>
