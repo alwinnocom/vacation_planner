@@ -19,12 +19,22 @@ export class CostsComponent implements OnInit {
 
   totalCost: number = 0;
 
-  calculateTotalCost() {
+  updated = false;
 
-
+  setTotalCost() {
     for (const [key, value] of Object.entries(this.costs)) {
-      this.totalCost += value;
+      if (this.costs[value] !== 0) {
+        this.totalCost += value;
+      }
     }
+  }
+
+  onSubmit() {
+
+    this.updated = true;
+
+    this.setTotalCost();
+
   }
 
 
