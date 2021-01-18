@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { Subject }  from 'rxjs';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { Subject, Subscription }  from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
+
+import { CostsModel } from '../costs/costs.model';
 
 @Component({
   selector: 'app-costs',
@@ -8,32 +10,66 @@ import { debounceTime } from 'rxjs/operators';
   styleUrls: ['./costs.component.css']
 })
 
-export class CostsComponent implements OnInit {
+export class CostsComponent implements OnInit, OnDestroy {
+
+  public costIndex: number = -1;
+
+  public food: CostsModel = { name: "Food", value: 0 };
+  public hotel: CostsModel = { name: "Hotel/Lodging", value: 0 };
+  public airfare: CostsModel = { name: "Airfare", value: 0 };
+  public transportation: CostsModel = { name: "Taxi", value: 0 };
+  public shopping: CostsModel = { name: "Shopping", value: 0 };
+  public personalExpenses: CostsModel = { name: "Personal Expenses", value: 0 };
+  public other: CostsModel = { name: "Other", value: 0 };
+
+  public costs: CostsModel[] = [ this.food, this.hotel, this.airfare, this.transportation, this.shopping, this.personalExpenses, this.other ];
+  public timeoutCounter: number = 0;
+
+  public totalCost: number = 0;
+  public updated = false;
+
+  // RxJS Debounce code - https://stackoverflow.com/questions/32051273/angular-and-debounce/36849347#36849347
+  // Without debouncing, ngModel updates immediately when the user types a number, which prevents the user from typing more than 1 number in the input field.
+  public costsModelChanged: Subject<number> = new Subject<number>();
+  public costsModelChangeSubscription: Subscription
 
   constructor() {  }
 
-  // Back to my code.
   ngOnInit(): void {
+    this.costsModelChangeSubscription = this.costsModelChanged
+      .pipe(
+        debounceTime(1000),
+      )
+      .subscribe(updatedCost => {
 
+        while (this.costIndex === -1 && this.timeoutCounter < 3) {
+          setTimeout(() => {console.log("Wait for update.")}, 500);
+
+          this.timeoutCounter++;
+        }
+
+        this.costs[this.costIndex].value = updatedCost;
+        console.log(updatedCost);
+
+        this.costIndex = -1;
+      });
   }
 
-  costs: { [key: string]: number; } = { 'Food': 0, 'Hotel/Lodging': 0, 'Airfare': 0, 'Taxi': 0, 'Shopping': 0, 'Personal Expenses': 0, 'Other': 0 };
+  ngOnDestroy() {
+    this.costsModelChangeSubscription.unsubscribe();
+  }
 
-  totalCost: number = 0;
-  updated = false;
+  // Save index position of array in Typescript = https://stackoverflow.com/questions/49123807/angular-get-current-index-in-ngfor
+  setCostIndex(newIndex: number) {
+    this.costIndex = newIndex;
+  }
 
-  // https://stackoverflow.com/questions/16449295/how-to-sum-the-values-of-a-javascript-object
-
-  // setTotalCost() doesn't work because you need the following code: [(ngModel)] = "costs[cost.key]". This updates the costs object's value based on the key.
-  // The ngModel code above does not work because the code immediately updates the costs object. Debounce operator from RxJS is required, but it was not implemented successfully.
-  // If asked why this does not work, simply explain the reality of Angular RxJS debouncing and the fact that ng-model-options is only an AngularJS feature.
-  // https://stackoverflow.com/questions/32051273/angular-and-debounce/36849347#36849347
-
+  // Back to my code.
   setTotalCost() {
     this.totalCost = 0;
 
-    for (const cost in this.costs) {
-      this.totalCost += this.costs[cost];
+    for (let i = 0; i < this.costs.length; i++) {
+      this.totalCost += this.costs[i].value;
     }
   }
 
