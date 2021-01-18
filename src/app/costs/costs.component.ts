@@ -13,29 +13,22 @@ export class CostsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // @ViewChild('f') addCostsForm: NgForm;
-
-  costs: { [key: string]: number } = { 'Food': 0, 'Hotel/Lodging': 0, 'Airfare': 0, 'Taxi': 0, 'Shopping': 0, 'Personal Expenses': 0, 'Other': 0 };
-
+  costs: { [key: string]: number; } = { 'Food': 0, 'Hotel/Lodging': 0, 'Airfare': 0, 'Taxi': 0, 'Shopping': 0, 'Personal Expenses': 0, 'Other': 0 };
   totalCost: number = 0;
-
   updated = false;
 
+  // https://stackoverflow.com/questions/16449295/how-to-sum-the-values-of-a-javascript-object
   setTotalCost() {
-    for (const [key, value] of Object.entries(this.costs)) {
-      if (this.costs[value] !== 0) {
-        this.totalCost += value;
-      }
+    this.totalCost = 0;
+
+    for (const cost in this.costs) {
+      this.totalCost += this.costs[cost];
     }
   }
 
   onSubmit() {
-
     this.updated = true;
-
     this.setTotalCost();
-
   }
-
 
 }
