@@ -1,13 +1,11 @@
 <!-- ngFor keyvalue pipe = https://stackoverflow.com/questions/41396435/how-to-iterate-object-keys-using-ngfor/41396558 -->
 
-<!-- RxJS observable to prevent updating ngModel too early. https://stackoverflow.com/questions/44777392/angular-4-how-to-update-ngmodel-with-a-delay-of-1-seconds -->
-<!-- Early ngModel updates prevent typing 2-digit numbers or greater. -->
 <form (ngSubmit)="onSubmit()" #costsForm="ngForm">
-  <mat-form-field *ngFor="let cost of costs | keyvalue" appearance="standard">
-    <mat-label for="costs[cost.key]">{{ cost.key }}: <b>{{cost.value | currency: 'USD'}}</b></mat-label>
-      <input type="number" required matInput [(ngModel)]="costs[cost.key]" name="costs[cost.key]" id="cost.key">
+  <mat-form-field *ngFor="let cost of costs | keyvalue;" appearance="standard">
+    <mat-label for="cost.key">{{ cost.key }}: <b>{{cost.value | currency: 'USD'}}</b></mat-label>
+      <input type="number" required matInput [(ngModel)]="cost.value" name="cost.key" id="cost.key">
   </mat-form-field>
-  <button type="submit" [disabled]="!costsForm.form.valid">Submit new cost.</button>
+  <button type="submit">Submit new cost.</button>
 </form>
 
 <span *ngIf="updated">Costs have been updated.</span>

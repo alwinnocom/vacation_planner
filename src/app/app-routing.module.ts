@@ -12,8 +12,6 @@ const appRoutes: Routes = [
   { path: 'costs', component: CostsComponent },
   { path: 'datepicker', component: DatepickerComponent },
   { path: 'destination', component: DestinationComponent },
-  // { path: '/', redirectTo: '/', pathMatch: 'full'}
-  // { path: '**', component: }
 ]
 
 @NgModule({
