@@ -1,3 +1,5 @@
+<!-- ngFor keyvalue pipe = https://stackoverflow.com/questions/41396435/how-to-iterate-object-keys-using-ngfor/41396558 -->
+
 <form (ngSubmit)="onSubmit()" #costsForm="ngForm">
   <mat-form-field *ngFor="let cost of costs; let i = index" appearance="standard" >
     <mat-label for="cost">{{ cost.name }}: <b>{{cost.value | currency: 'USD'}}</b></mat-label>

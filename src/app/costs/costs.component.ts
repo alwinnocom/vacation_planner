@@ -1,8 +1,8 @@
-import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subject, Subscription }  from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 
-import { CostsModel } from '../costs/costs.model';
+import { CostsModel } from '../models/costs.model';
 
 @Component({
   selector: 'app-costs',

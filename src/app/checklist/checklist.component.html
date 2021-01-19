@@ -1,10 +1,35 @@
-<p>checklist works!</p>
+<!-- <form (ngSubmit)="onSubmit()" #checkboxForm="ngForm">
+  <mat-form-field *ngFor="let checkbox of checklist; let i = index" appearance="standard" >
+    <mat-label for="cost">{{ cost.name }}: <b>{{cost.value | currency: 'USD'}}</b></mat-label>
+      <input type="number" required matInput (click)="setCostIndex(i);" [ngModel]="cost.value" (ngModelChange)="costsModelChanged.next($event)" name="cost" id="cost">
+  </mat-form-field>
+  <button type="submit">Submit new cost.</button>
+</form> -->
 
-<form>
 
+
+
+<form (ngSubmit)="onSubmit()" #checkboxForm="ngForm">
+
+  <!-- 1. You have ___ tasks remaining. -->
+
+  <!-- 2. Display Checkboxes -->
   <mat-checkbox *ngFor="let item of items">{{ item }}</mat-checkbox>
 
-  <h1>Add more checklist items.</h1>
+
+  <!-- 3. Add new Category for new Checklist Items -->
+  <button>Add New Task Category</button>
+
+  <mat-form-field>
+
+    <mat-label>?</mat-label>
+    <input matInput placeholder="item">
+
+  </mat-form-field>
+
+
+  <!-- 4. Add Checklist Items using the same debounce. -->
+  <h3>Add more checklist items.</h3>
 
   <mat-form-field *ngFor="let item of items">
 
@@ -13,4 +38,16 @@
 
   </mat-form-field>
 
+
+  <!-- 5. Delete items from checklist. -->
+  <mat-form-field *ngFor="let item of items">
+
+    <mat-label>Delete {{ item }}?</mat-label>
+    <input matInput placeholder="item">
+
+  </mat-form-field>
+
 </form>
+
+<span *ngIf="updated">Checklist has been updated.</span>
+<span *ngIf="failed">Checklist has not been updated. Please wait 1 second and try again.</span>
