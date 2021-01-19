@@ -7,7 +7,8 @@
 </form>
 
 <span *ngIf="updated">Costs have been updated.</span>
+<span *ngIf="failed">Costs have not been updated. Please wait 1 second and try again.</span>
 
 <div>
-  Total Cost = {{ totalCost | currency: 'USD'}}
+  Total Cost = {{ totalCost | currency: 'USD' }}
 </div>

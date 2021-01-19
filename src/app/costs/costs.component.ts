@@ -12,8 +12,6 @@ import { CostsModel } from '../costs/costs.model';
 
 export class CostsComponent implements OnInit, OnDestroy {
 
-  public costIndex: number = -1;
-
   public food: CostsModel = { name: "Food", value: 0 };
   public hotel: CostsModel = { name: "Hotel/Lodging", value: 0 };
   public airfare: CostsModel = { name: "Airfare", value: 0 };
@@ -24,9 +22,11 @@ export class CostsComponent implements OnInit, OnDestroy {
 
   public costs: CostsModel[] = [ this.food, this.hotel, this.airfare, this.transportation, this.shopping, this.personalExpenses, this.other ];
   public timeoutCounter: number = 0;
+  public costIndex: number = -1;
 
   public totalCost: number = 0;
   public updated = false;
+  public failed = false;
 
   // RxJS Debounce code - https://stackoverflow.com/questions/32051273/angular-and-debounce/36849347#36849347
   // Without debouncing, ngModel updates immediately when the user types a number, which prevents the user from typing more than 1 number in the input field.
@@ -42,16 +42,31 @@ export class CostsComponent implements OnInit, OnDestroy {
       )
       .subscribe(updatedCost => {
 
-        while (this.costIndex === -1 && this.timeoutCounter < 3) {
+        // If costIndex is not updated, then wait 0.5-1.5 seconds.
+        while (this.costIndex === -1 && this.timeoutCounter < 4) {
           setTimeout(() => {console.log("Wait for update.")}, 500);
 
           this.timeoutCounter++;
         }
 
-        this.costs[this.costIndex].value = updatedCost;
-        console.log(updatedCost);
+
+
+        // Update the correct variable in the "costs" array by using the index position retrieved from the (click) event binding.
+
+        if (this.costIndex !== -1) {
+          this.costs[this.costIndex].value = updatedCost;
+          console.log(updatedCost);
+
+          this.failed = false;
+        }
+
+        else {
+          this.updated = false;
+          this.failed = true;
+        }
 
         this.costIndex = -1;
+        this.timeoutCounter = 0;
       });
   }
 
