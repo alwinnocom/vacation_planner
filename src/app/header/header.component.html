@@ -2,14 +2,14 @@
   Vacation Planner
 </mat-toolbar>
 
-<mat-tab-group class="w-16 md:w-32 lg:w-48" animationDuration="0ms">
-    <mat-tab label="Travel Destinations">
+<mat-tab-group animationDuration="0ms">
+    <mat-tab label="Travel Destinations" class="centered-mat-tab" >
       <app-datepicker></app-datepicker>
     </mat-tab>
-    <mat-tab label="Travel Expenses">
+    <mat-tab label="Travel Expenses" class="centered-mat-tab">
       <app-costs></app-costs>
     </mat-tab>
-    <mat-tab label="Travel Supplies">
+    <mat-tab label="Travel Supplies" class="centered-mat-tab" >
       <app-checklist></app-checklist>
     </mat-tab>
 </mat-tab-group>

@@ -1,0 +1,6 @@
+.centered-mat-tab {
+  position: relative;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+}
