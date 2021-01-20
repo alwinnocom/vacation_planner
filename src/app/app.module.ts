@@ -8,6 +8,7 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
 import { DestinationComponent } from './destination/destination.component';
 import { CostsComponent } from './costs/costs.component';
 import { ChecklistComponent } from './checklist/checklist.component';
+import { HeaderComponent } from './header/header.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material.module';
@@ -18,7 +19,8 @@ import { MaterialModule } from './material.module';
     DatepickerComponent,
     DestinationComponent,
     CostsComponent,
-    ChecklistComponent
+    ChecklistComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -17,4 +17,7 @@ export class ChecklistComponent implements OnInit {
 
   items: String[] = [ 'Toiletries', 'Clothes', 'Wallet', 'Phone' ];
 
+  onSubmit() {
+    console.log("Do nothing.");
+  }
 }
