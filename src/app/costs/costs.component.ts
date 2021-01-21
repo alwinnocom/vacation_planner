@@ -12,6 +12,9 @@ import { CostsModel } from '../models/costs.model';
 
 export class CostsComponent implements OnInit, OnDestroy {
 
+  // Vacation Expenses pt 1 - https://www.listplanit.com/list-of-expenses-to-include-in-a-travel-budget/
+  // Vacation Expenses pt 2 - https://www.lifehack.org/895450/how-to-pay-off-credit-card
+
   public food: CostsModel = { name: "Food", value: 0 };
   public hotel: CostsModel = { name: "Hotel/Lodging", value: 0 };
   public airfare: CostsModel = { name: "Airfare", value: 0 };

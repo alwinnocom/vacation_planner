@@ -2,16 +2,21 @@
   Vacation Planner
 </mat-toolbar>
 
-<mat-tab-group animationDuration="0ms">
-    <mat-tab label="Travel Destinations" class="centered-mat-tab" >
+<mat-tab-group animationDuration="0ms" class="centered-mat-tab">
+    <mat-tab>
+      <!-- NgTemplate for complex mat-tab label https://stackoverflow.com/questions/52325669/angular-material-tab-add-image-to-button -->
+      <ng-template mat-tab-label>
+        <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+      </ng-template>
+      <app-home></app-home>
+    </mat-tab>
+    <mat-tab label="Travel Destinations">
       <app-datepicker></app-datepicker>
     </mat-tab>
-    <mat-tab label="Travel Expenses" class="centered-mat-tab">
+    <mat-tab label="Travel Expenses">
       <app-costs></app-costs>
     </mat-tab>
-    <mat-tab label="Travel Supplies" class="centered-mat-tab" >
+    <mat-tab label="Travel Supplies" >
       <app-checklist></app-checklist>
     </mat-tab>
 </mat-tab-group>
-
-<!-- <a routerLink="/datepicker"></a> -->

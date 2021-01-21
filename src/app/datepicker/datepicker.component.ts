@@ -12,4 +12,7 @@ export class DatepickerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // departure_point: String = "LAX";
+  // destination: String = "NY";
+
 }

@@ -1,11 +1,15 @@
 <!-- ngFor keyvalue pipe = https://stackoverflow.com/questions/41396435/how-to-iterate-object-keys-using-ngfor/41396558 -->
 
 <form (ngSubmit)="onSubmit()" #costsForm="ngForm">
-  <mat-form-field *ngFor="let cost of costs; let i = index" appearance="standard" >
-    <mat-label for="cost">{{ cost.name }}: <b>{{cost.value | currency: 'USD'}}</b></mat-label>
-      <input type="number" required matInput (click)="setCostIndex(i);" [ngModel]="cost.value" (ngModelChange)="costsModelChanged.next($event)" name="cost" id="cost">
-  </mat-form-field>
-  <button type="submit">Submit new cost.</button>
+  <mat-grid-list cols="2" rowHeight="100px">
+    <mat-grid-tile *ngFor="let cost of costs; let i = index" >
+      <mat-form-field appearance="standard" >
+        <mat-label for="cost">{{ cost.name }}: <b>{{cost.value | currency: 'USD'}}</b></mat-label>
+          <input type="number" required matInput (click)="setCostIndex(i);" [ngModel]="cost.value" (ngModelChange)="costsModelChanged.next($event)" name="cost" id="cost">
+      </mat-form-field>
+    </mat-grid-tile>
+  </mat-grid-list>
+    <button type="submit">Submit new cost.</button>
 </form>
 
 <span *ngIf="updated">Costs have been updated.</span>
