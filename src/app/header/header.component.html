@@ -1,4 +1,4 @@
-<mat-toolbar>
+<mat-toolbar class="original-surfer material-light-blue">
   Vacation Planner
 </mat-toolbar>
 
@@ -10,13 +10,32 @@
       </ng-template>
       <app-home></app-home>
     </mat-tab>
-    <mat-tab label="Travel Destinations">
+    <mat-tab label="Travel Destinations" *ngIf="!mobileSize" class="desktop-size-only">
       <app-datepicker></app-datepicker>
     </mat-tab>
-    <mat-tab label="Travel Expenses">
+    <mat-tab label="Travel Expenses" *ngIf="!mobileSize" class="desktop-size-only">
       <app-costs></app-costs>
     </mat-tab>
-    <mat-tab label="Travel Supplies" >
+    <mat-tab label="Travel Supplies" *ngIf="!mobileSize" class="desktop-size-only">
       <app-checklist></app-checklist>
+    </mat-tab>
+
+
+    <mat-tab label="Travel Destinations" *ngIf="mobileSize" class="desktop-size-only">
+      <ng-template mat-tab-label>
+        <mat-icon aria-hidden="false" aria-label="Example aspect_ratio icon">aspect_ratio</mat-icon>
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Travel Expenses" *ngIf="mobileSize" class="desktop-size-only">
+      <ng-template mat-tab-label>
+        <mat-icon aria-hidden="false" aria-label="Example aspect_ratio icon">aspect_ratio</mat-icon>
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Travel Supplies" *ngIf="mobileSize" class="desktop-size-only">
+      <ng-template mat-tab-label>
+        <mat-icon aria-hidden="false" aria-label="Example aspect_ratio icon">aspect_ratio</mat-icon>
+      </ng-template>
     </mat-tab>
 </mat-tab-group>

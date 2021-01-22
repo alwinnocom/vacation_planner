@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+.original-surfer {
+  font-family: 'Original Surfer', cursive;
+  color: white;
+}
+
+.material-light-blue {
+  background-color: #2196F3;
+}
+
+.centered-mat-tab {
+  position: relative;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+}

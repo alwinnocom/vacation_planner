@@ -10,23 +10,27 @@ import { ChecklistComponent } from './checklist/checklist.component';
 import { HeaderComponent } from './header/header.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { LayoutModule } from '@angular/cdk/layout';
 import { MaterialModule } from './material.module';
 import { HomeComponent } from './home/home.component';
+import { HomeStepperComponent } from './home-stepper/home-stepper.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DatepickerComponent,
-    CostsComponent,
     ChecklistComponent,
+    CostsComponent,
+    DatepickerComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    HomeStepperComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
     FormsModule,
+    LayoutModule,
     MaterialModule
   ],
   providers: [],
