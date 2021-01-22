@@ -15,15 +15,11 @@ export class CostsComponent implements OnInit, OnDestroy {
   // Vacation Expenses pt 1 - https://www.listplanit.com/list-of-expenses-to-include-in-a-travel-budget/
   // Vacation Expenses pt 2 - https://www.lifehack.org/895450/how-to-pay-off-credit-card
 
-  public food: CostsModel = { name: "Food", value: 0 };
-  public hotel: CostsModel = { name: "Hotel/Lodging", value: 0 };
-  public airfare: CostsModel = { name: "Airfare", value: 0 };
-  public transportation: CostsModel = { name: "Taxi", value: 0 };
-  public shopping: CostsModel = { name: "Shopping", value: 0 };
-  public personalExpenses: CostsModel = { name: "Personal Expenses", value: 0 };
-  public other: CostsModel = { name: "Other", value: 0 };
+  public costs: CostsModel[] = [ {name: "Food", value: 0 },
+    {name: "Hotel/Lodging", value: 0}, {name: "Airfare", value: 0 }, { name: "Transportation", value: 0 },
+    {name: "Shopping", value: 0}, {name: "Personal Expenses", value: 0}, {name: "Other", value: 0}
+  ];
 
-  public costs: CostsModel[] = [ this.food, this.hotel, this.airfare, this.transportation, this.shopping, this.personalExpenses, this.other ];
   public timeoutCounter: number = 0;
   public costIndex: number = -1;
 
