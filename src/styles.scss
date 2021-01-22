@@ -1,7 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+// Custom Angular Theme = https://medium.com/@tomastrajan/the-complete-guide-to-angular-material-themes-4d165a9d24d1
+@import '~@angular/material/theming';
 
+// Always include only once per project
+@include mat-core();
+
+// Import Medium article's custom theme
+@import 'theme.scss';
+
+// Specify theme class eg: <body class="my-theme"> ... </body>
+.my-theme {
+
+  // Use our theme with angular-material-theme mixin
+  @include angular-material-theme($my-theme);
+}
