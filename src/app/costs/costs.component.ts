@@ -7,7 +7,7 @@ import { CostsModel } from '../models/costs.model';
 @Component({
   selector: 'app-costs',
   templateUrl: './costs.component.html',
-  styleUrls: ['./costs.component.css']
+  styleUrls: ['./costs.component.scss']
 })
 
 export class CostsComponent implements OnInit, OnDestroy {
