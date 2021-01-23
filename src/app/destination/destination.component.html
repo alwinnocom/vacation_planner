@@ -5,7 +5,7 @@
   <!-- https://material.angular.io/components/datepicker/overview -->
   <mat-form-field appearance="fill">
     <mat-label *ngIf="!start_date">Example: 1/20-1/25</mat-label>
-    <mat-label *ngIf="start_date"></mat-label>
+    <mat-label *ngIf="start_date">Schedule your days off!</mat-label>
     <mat-date-range-input [rangePicker]="picker">
       <input matStartDate placeholder="Start date" [ngModel]="start_date" (ngModelChange)="startDateChanged.next($event)" name="start_date">
       <input matEndDate placeholder="End date" [ngModel]="end_date" (ngModelChange)="endDateChanged.next($event)" name="end_date">

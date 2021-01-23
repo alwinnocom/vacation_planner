@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Checklist } from '../models/checklist.model';
 
 @Component({
   selector: 'app-checklist',
@@ -15,9 +16,9 @@ export class ChecklistComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  items: String[] = [ 'Toiletries', 'Clothes', 'Wallet', 'Phone' ];
+  public items: Checklist[] = [ {
+     name: "Essentials", subcategories: ['Toiletries', 'Clothes', 'Wallet', 'Phone']
+    }, { name: "Airport", subcategories: ['Passport', 'Luggage', 'Ticket'] }
+  ];
 
-  onSubmit() {
-    console.log("Do nothing.");
-  }
 }
