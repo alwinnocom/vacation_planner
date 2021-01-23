@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DatepickerComponent } from './datepicker/datepicker.component';
+import { DestinationComponent } from './destination/destination.component';
 import { CostsComponent } from './costs/costs.component';
 import { ChecklistComponent } from './checklist/checklist.component';
 import { HeaderComponent } from './header/header.component';
@@ -20,7 +20,7 @@ import { HomeStepperComponent } from './home-stepper/home-stepper.component';
     AppComponent,
     ChecklistComponent,
     CostsComponent,
-    DatepickerComponent,
+    DestinationComponent,
     HeaderComponent,
     HomeComponent,
     HomeStepperComponent

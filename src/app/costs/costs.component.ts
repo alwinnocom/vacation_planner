@@ -19,6 +19,7 @@ export class CostsComponent implements OnInit, OnDestroy {
     {name: "Hotel/Lodging", value: 0}, {name: "Airfare", value: 0 }, { name: "Transportation", value: 0 },
     {name: "Shopping", value: 0}, {name: "Personal Expenses", value: 0}, {name: "Other", value: 0}
   ];
+
   public costsUpdated: string = "";
   public newValue: string = "";
 
