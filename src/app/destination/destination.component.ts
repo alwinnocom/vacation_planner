@@ -29,24 +29,75 @@ export class DestinationComponent implements OnInit {
   public returnPointChanged: Subject<string> = new Subject<string>();
   public returnPointChangeSubscription: Subscription
 
+  start_date = null;
+  end_date = null;
+
+  departure_point: string = "";
+  destination: string = "";
+
+  return_via: string = "";
+  return_point: string = "";
+
 
   ngOnInit(): void {
 
+    this.startDateChangeSubscription = this.startDateChanged
+      .pipe(
+        debounceTime(1000),
+      )
+      .subscribe(startDate => {
+        this.start_date = startDate;
+      });
 
+    this.endDateChangeSubscription = this.endDateChanged
+      .pipe(
+        debounceTime(1000),
+      )
+      .subscribe(endDate => {
+        this.end_date = endDate;
+      });
 
+    this.departurePointChangeSubscription = this.departurePointChanged
+      .pipe(
+        debounceTime(1000),
+      )
+      .subscribe(departurePoint => {
+        this.departure_point = departurePoint;
+      });
+
+    this.destinationChangeSubscription = this.destinationChanged
+      .pipe(
+        debounceTime(1000),
+      )
+      .subscribe(destination => {
+        this.destination = destination;
+      });
+
+    this.returnViaChangeSubscription = this.returnViaChanged
+      .pipe(
+        debounceTime(1000),
+      )
+      .subscribe(returnVia => {
+        this.return_via = returnVia;
+      });
+
+    this.returnPointChangeSubscription = this.returnPointChanged
+      .pipe(
+        debounceTime(1000),
+      )
+      .subscribe(returnPoint => {
+        this.return_point = returnPoint;
+      });
   }
 
-  start_date = "";
-  end_date = "";
-
-  departure_point: string = "where?";
-  destination: string = "where?";
-
-  return_via: string = "where?";
-  return_point: string = "where?";
-
-  userInput: string = "";
-
+  ngOnDestroy() {
+    this.startDateChangeSubscription.unsubscribe();
+    this.endDateChangeSubscription.unsubscribe();
+    this.departurePointChangeSubscription.unsubscribe();
+    this.destinationChangeSubscription.unsubscribe();
+    this.returnViaChangeSubscription.unsubscribe();
+    this.returnPointChangeSubscription.unsubscribe();
+  }
 
 
   onDepart() {
