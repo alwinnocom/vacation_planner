@@ -36,3 +36,15 @@
 .costs-form__submit-btn {
   color: pink;
 }
+
+.if-costs-updated {
+  color: blue;
+}
+
+.if-costs-failed {
+  color: red;
+}
+
+.total-cost {
+  color: lightsalmon;
+}

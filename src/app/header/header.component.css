@@ -15,3 +15,16 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+mat-tab-group {
+  color: blue;
+}
+
+mat-tab {
+  color: red;
+}
+
+mat-icon {
+  color: purple;
+}
+

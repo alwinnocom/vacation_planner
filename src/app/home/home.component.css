@@ -23,3 +23,15 @@
   }
 
 } */
+
+mat-horizontal-stepper, mat-vertical-stepper {
+  color: green;
+}
+
+mat-step {
+  color: blue;
+}
+
+.matStepLabel, .matStepperPrevious, .matStepperNext {
+  color: purple;
+}
