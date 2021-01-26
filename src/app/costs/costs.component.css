@@ -8,3 +8,31 @@
 .ng-invalid:not(form)  {
   border-left: 5px solid #a94442;
 } */
+
+.costs-form {
+  color: purple;
+}
+
+.costs-form__grid-list {
+  color: green;
+}
+
+.costs-form__grid-list__grid-tile {
+  color: red;
+}
+
+.costs-form___form-field {
+  color: lightblue;
+}
+
+.costs-form__form-field mat-label {
+  color: orange;
+}
+
+.costs-form__form-field input {
+  color: yellow;
+}
+
+.costs-form__submit-btn {
+  color: pink;
+}
