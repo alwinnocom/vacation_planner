@@ -1,0 +1,26 @@
+.vacation-heading {
+  color: violet;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.destination-form-field {
+  color: blue;
+}
+
+.destination-form-field__label {
+  color: blue;
+}
+
+/* .datepicker input {
+  color: greenyellow;
+} */
+
+.destination-form-field__datepicker-toggle {
+  color: purple;
+}
+
+/* .destination-form-field__date-range-picker {
+  color: green;
+} */
