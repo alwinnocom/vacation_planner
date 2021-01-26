@@ -5,22 +5,22 @@
 
 
 
-.destination-form-field {
+mat-form-field {
   color: blue;
 }
 
-.destination-form-field__label {
+mat-form-field mat-label {
   color: blue;
 }
 
-/* .datepicker input {
+/* mat-date-rante-input input {
   color: greenyellow;
 } */
 
-.destination-form-field__datepicker-toggle {
+mat-datepicker-toggle {
   color: purple;
 }
 
-/* .destination-form-field__date-range-picker {
+/* mat-date-range-picker {
   color: green;
 } */

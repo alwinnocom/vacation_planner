@@ -4,10 +4,10 @@
 
   <!-- 2. Display Checkboxes -->
   <section *ngFor="let item of items">
-    <mat-checkbox>{{ item.name }}</mat-checkbox>
+    <mat-checkbox class="category-checkbox">{{ item.name }}</mat-checkbox>
       <ul>
         <li *ngFor="let subcategory of item.subcategories">
-          <mat-checkbox>{{ subcategory }}</mat-checkbox>
+          <mat-checkbox class="subcategory-checkbox">{{ subcategory }}</mat-checkbox>
         </li>
       </ul>
   </section>

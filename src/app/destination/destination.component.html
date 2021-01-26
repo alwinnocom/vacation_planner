@@ -3,15 +3,15 @@
   <h3 class="vacation-heading">Enter a Date Range for your Vacation</h3>
 
   <!-- https://material.angular.io/components/datepicker/overview -->
-  <mat-form-field class="destination-form-field" appearance="fill">
-    <mat-label class="destination-form-field__label" *ngIf="!start_date">Example: 1/20-1/25</mat-label>
-    <mat-label class="destination-form-field__label" *ngIf="start_date">Schedule your days off!</mat-label>
-    <mat-date-range-input class="datepicker" [rangePicker]="picker">
+  <mat-form-field appearance="fill">
+    <mat-label *ngIf="!start_date">Example: 1/20-1/25</mat-label>
+    <mat-label *ngIf="start_date">Schedule your days off!</mat-label>
+    <mat-date-range-input [rangePicker]="picker">
       <input matStartDate placeholder="Start date" [ngModel]="start_date" (ngModelChange)="startDateChanged.next($event)" name="start_date">
       <input matEndDate placeholder="End date" [ngModel]="end_date" (ngModelChange)="endDateChanged.next($event)" name="end_date">
     </mat-date-range-input>
-    <mat-datepicker-toggle class="destination-form-field__datepicker-toggle" matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-date-range-picker class="destination-form-field__date-range-picker" #picker></mat-date-range-picker>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
   </mat-form-field>
 
 </form>
@@ -22,15 +22,15 @@
   <h3 class="vacation-heading" *ngIf="(!departure_point && !destination) || (departure_point && !destination || !departure_point && destination)">Start your Vacation!</h3>
   <h3 class="vacation-heading" *ngIf="departure_point && destination">Start your Vacation from {{ departure_point }} to {{ destination }}!</h3>
 
-  <mat-form-field class="destination-form-field" appearance="standard" >
-     <mat-label class="destination-form-field__label" *ngIf="!departure_point">Depart from where?</mat-label>
-     <mat-label class="destination-form-field__label" *ngIf="departure_point" for="departure">Depart from {{ departure_point }} </mat-label>
+  <mat-form-field appearance="standard" >
+     <mat-label *ngIf="!departure_point">Depart from where?</mat-label>
+     <mat-label *ngIf="departure_point" for="departure">Depart from {{ departure_point }} </mat-label>
      <input type="text" required matInput [ngModel]="departure_point" (ngModelChange)="departurePointChanged.next($event)" name="departure_point">
   </mat-form-field>
 
-  <mat-form-field class="destination-form-field">
-     <mat-label class="destination-form-field__label" *ngIf="!destination">Arrive at where?</mat-label>
-     <mat-label class="destination-form-field__label" *ngIf="destination" for="arrival">Arrive at {{ destination }} </mat-label>
+  <mat-form-field>
+     <mat-label *ngIf="!destination">Arrive at where?</mat-label>
+     <mat-label *ngIf="destination" for="arrival">Arrive at {{ destination }} </mat-label>
      <input type="text" required matInput [ngModel]="destination" (ngModelChange)="destinationChanged.next($event)" name="destination">
   </mat-form-field>
 
@@ -42,16 +42,16 @@
   <h3 class="vacation-heading" *ngIf="(!return_via && !return_point || return_via && !return_point || !return_via && return_point)">Plan the Return Trip Home.</h3>
   <h3 class="vacation-heading" *ngIf="return_via && return_point">Return from {{ return_via }} to {{ return_point }}</h3>
 
-  <mat-form-field class="destination-form-field" appearance="standard">
-    <mat-label class="destination-form-field__label" *ngIf="!return_via">Return</mat-label>
-    <mat-label class="destination-form-field__label" *ngIf="return_via" for="return_via">Return via {{ return_via }} </mat-label>
+  <mat-form-field appearance="standard">
+    <mat-label *ngIf="!return_via">Return</mat-label>
+    <mat-label *ngIf="return_via" for="return_via">Return via {{ return_via }} </mat-label>
     <input type="text" required matInput [ngModel]="return_via" (ngModelChange)="returnViaChanged.next($event)" name="return_via">
 
   </mat-form-field>
 
-  <mat-form-field class="destination-form-field">
-    <mat-label class="destination-form-field__label" *ngIf="!return_point">Home</mat-label>
-    <mat-label class="destination-form-field__label" *ngIf="return_point" for="return_point">Arrive at {{ return_point }} </mat-label>
+  <mat-form-field>
+    <mat-label *ngIf="!return_point">Home</mat-label>
+    <mat-label *ngIf="return_point" for="return_point">Arrive at {{ return_point }} </mat-label>
     <input type="text" required matInput [ngModel]="return_point" (ngModelChange)="returnPointChanged.next($event)" name="return_point">
 
   </mat-form-field>
