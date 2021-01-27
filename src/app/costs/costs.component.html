@@ -1,23 +1,24 @@
 <!-- ngFor keyvalue pipe = https://stackoverflow.com/questions/41396435/how-to-iterate-object-keys-using-ngfor/41396558 -->
 
 <form class="costs-form" (ngSubmit)="onSubmit()" #costsForm="ngForm">
-  <mat-grid-list class="costs-form__grid-list" cols="2" rowHeight="100px">
-    <mat-grid-tile class="costs-form__grid-list__grid-tile" *ngFor="let cost of costs; let i = index">
+  <div class="costs-form__grid-list">
+    <div class="costs-form__grid-list__grid-tile" *ngFor="let cost of costs; let i = index">
       <mat-form-field class="costs-form__form-field" appearance="standard" >
         <mat-label for="cost">{{ cost.name }}: <b>{{cost.value | currency: 'USD'}}</b></mat-label>
           <input type="number" required matInput (click)="setCostIndex(i);" [ngModel]="cost.value" (ngModelChange)="costsModelChanged.next($event)" name="cost">
       </mat-form-field>
-    </mat-grid-tile>
-  </mat-grid-list>
+    </div>
+  </div>
 
   <button class="costs-form__submit-btn" type="submit">Calculate Total Cost.</button>
 
 </form>
 
+<section class="info-about-costs-form">
+  <span class="if-costs-updated" *ngIf="updated">Costs have been updated.</span>
+  <span class="if-costs-failed" *ngIf="failed">Costs have not been updated. Please remove your response and try again.</span>
 
-<span class="if-costs-updated" *ngIf="updated">Costs have been updated.</span>
-<span class="if-costs-failed" *ngIf="failed">Costs have not been updated. Please remove your response and try again.</span>
-
-<div class="total-cost">
-  Total Cost = {{ totalCost | currency: 'USD' }}
-</div>
+  <div class="total-cost">
+    Total Cost = {{ totalCost | currency: 'USD' }}
+  </div>
+</section>
