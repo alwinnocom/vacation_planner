@@ -2,14 +2,18 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subject, Subscription }  from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+
 @Component({
   selector: 'app-destination',
   templateUrl: './destination.component.html',
   styleUrls: ['./destination.component.css']
 })
-export class DestinationComponent implements OnInit {
 
-  constructor() { }
+export class DestinationComponent implements OnInit, OnDestroy {
+
+  public mobileSize: boolean;
+  constructor(public breakpointObserver: BreakpointObserver) {}
 
   public startDateChanged = new Subject();
   public startDateChangeSubscription: Subscription
@@ -40,6 +44,16 @@ export class DestinationComponent implements OnInit {
 
 
   ngOnInit(): void {
+
+    this.breakpointObserver
+      .observe(['(max-width: 686px)'])
+      .subscribe((state: BreakpointState) => {
+        if (state.matches) {
+          this.mobileSize = true;
+        } else {
+          this.mobileSize = false;
+        }
+      });
 
     this.startDateChangeSubscription = this.startDateChanged
       .pipe(
@@ -97,14 +111,5 @@ export class DestinationComponent implements OnInit {
     this.destinationChangeSubscription.unsubscribe();
     this.returnViaChangeSubscription.unsubscribe();
     this.returnPointChangeSubscription.unsubscribe();
-  }
-
-
-  onDepart() {
-
-  }
-
-  onReturn() {
-
   }
 }

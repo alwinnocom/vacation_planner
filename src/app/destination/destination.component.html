@@ -37,7 +37,7 @@
 </form>
 
 
-<form (ngSubmit)="onReturn()" #returnForm="ngForm">
+<form>
 
   <h3 class="vacation-heading" *ngIf="(!return_via && !return_point || return_via && !return_point || !return_via && return_point)">Plan the Return Trip Home.</h3>
   <h3 class="vacation-heading" *ngIf="return_via && return_point">Return from {{ return_via }} to {{ return_point }}</h3>

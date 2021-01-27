@@ -3,6 +3,7 @@ import { Subject, Subscription }  from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 
 import { CostsModel } from '../models/costs.model';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-costs',
@@ -29,16 +30,26 @@ export class CostsComponent implements OnInit, OnDestroy {
   public totalCost: number = 0;
   public updated = false;
   public failed = false;
-  public desktopSize: boolean = true;
+  public mobileSize: boolean;
 
   // RxJS Debounce code - https://stackoverflow.com/questions/32051273/angular-and-debounce/36849347#36849347
   // Without debouncing, ngModel updates immediately when the user types a number, which prevents the user from typing more than 1 number in the input field.
   public costsModelChanged: Subject<number> = new Subject<number>();
   public costsModelChangeSubscription: Subscription
 
-  constructor() {  }
+  constructor(public breakpointObserver: BreakpointObserver) {  }
 
   ngOnInit(): void {
+
+    this.breakpointObserver
+      .observe(['(max-width: 686px)'])
+      .subscribe((state: BreakpointState) => {
+        if (state.matches) {
+          this.mobileSize = true;
+        } else {
+          this.mobileSize = false;
+        }
+      });
 
     this.costsModelChangeSubscription = this.costsModelChanged
       .pipe(
