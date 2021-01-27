@@ -3,10 +3,14 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
+form {
+  padding-left: 20px;
+  padding-top: 20px;
+}
 
 mat-form-field {
   color: blue;
+  margin-right: 40px;
 }
 
 mat-form-field mat-label {
