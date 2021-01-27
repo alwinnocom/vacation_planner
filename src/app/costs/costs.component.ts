@@ -29,42 +29,16 @@ export class CostsComponent implements OnInit, OnDestroy {
   public totalCost: number = 0;
   public updated = false;
   public failed = false;
+  public desktopSize: boolean = true;
 
   // RxJS Debounce code - https://stackoverflow.com/questions/32051273/angular-and-debounce/36849347#36849347
   // Without debouncing, ngModel updates immediately when the user types a number, which prevents the user from typing more than 1 number in the input field.
   public costsModelChanged: Subject<number> = new Subject<number>();
   public costsModelChangeSubscription: Subscription
 
-  // public costsArrayChanged: Subject<string> = new Subject<string>();
-  // public costsArrayChangeSubscription: Subscription
-
   constructor() {  }
 
   ngOnInit(): void {
-
-    // this.costsArrayChangeSubscription = this.costsArrayChanged
-    //   .pipe(
-    //     debounceTime(1000),
-    //   )
-    //   .subscribe(updatedValue => {
-
-    //     this.newValue = updatedValue.trim();
-
-    //     if (this.newValue) {
-    //       this.costs.push( { name: this.newValue, value: 0 });
-    //       console.log(this.newValue);
-
-    //       this.failed = false;
-    //     }
-
-    //     else {
-    //       this.updated = false;
-    //       this.failed = true;
-    //     }
-
-    //     this.costIndex = -1;
-    //     this.timeoutCounter = 0;
-    //   });
 
     this.costsModelChangeSubscription = this.costsModelChanged
       .pipe(
@@ -78,8 +52,6 @@ export class CostsComponent implements OnInit, OnDestroy {
 
           this.timeoutCounter++;
         }
-
-
 
         // Update the correct variable in the "costs" array by using the index position retrieved from the (click) event binding.
 

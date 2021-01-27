@@ -74,8 +74,7 @@
   margin-top: 20px;
 
   /* This makes sure the grid does not expand to the full length of the page. */
-  max-width: 50%;
-
+  /* max-width: 50%; */
 }
 
 .costs-form__grid-list__grid-tile {

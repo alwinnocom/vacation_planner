@@ -36,9 +36,37 @@
 //   public costsModelChanged: Subject<number> = new Subject<number>();
 //   public costsModelChangeSubscription: Subscription
 
+  // public costsArrayChanged: Subject<string> = new Subject<string>();
+  // public costsArrayChangeSubscription: Subscription
+
 //   constructor() {  }
 
 //   ngOnInit(): void {
+
+    // this.costsArrayChangeSubscription = this.costsArrayChanged
+    //   .pipe(
+    //     debounceTime(1000),
+    //   )
+    //   .subscribe(updatedValue => {
+
+    //     this.newValue = updatedValue.trim();
+
+    //     if (this.newValue) {
+    //       this.costs.push( { name: this.newValue, value: 0 });
+    //       console.log(this.newValue);
+
+    //       this.failed = false;
+    //     }
+
+    //     else {
+    //       this.updated = false;
+    //       this.failed = true;
+    //     }
+
+    //     this.costIndex = -1;
+    //     this.timeoutCounter = 0;
+    //   });
+
 //     this.costsModelChangeSubscription = this.costsModelChanged
 //       .pipe(
 //         debounceTime(1000),
