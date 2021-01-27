@@ -1,7 +1,7 @@
 <!-- ngFor keyvalue pipe = https://stackoverflow.com/questions/41396435/how-to-iterate-object-keys-using-ngfor/41396558 -->
 
 <form class="costs-form" (ngSubmit)="onSubmit()" #costsForm="ngForm">
-  <div class="costs-form__grid-list" ngStyle="{'max-width': mobileSize ? 100% : 50% }">
+  <div class="costs-form__grid-list" [ngStyle]="{'max-width': mobileSize ? '100%' : '50%'}">
     <div class="costs-form__grid-list__grid-tile" *ngFor="let cost of costs; let i = index">
       <mat-form-field class="costs-form__form-field" appearance="standard" >
         <mat-label for="cost">{{ cost.name }}: <b>{{cost.value | currency: 'USD'}}</b></mat-label>
@@ -9,8 +9,6 @@
       </mat-form-field>
     </div>
   </div>
-
-<!-- ngStyle="{'max-width': mobileSize ? 100% : 50% }" -->
 
   <button class="costs-form__submit-btn" type="submit">Calculate Total Cost.</button>
 
