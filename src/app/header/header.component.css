@@ -20,11 +20,18 @@ mat-tab-group {
   color: blue;
 }
 
-mat-tab {
+mat-tab label {
   color: red;
+  font-family: 'Cookie', cursive;
 }
 
 mat-icon {
   color: purple;
+}
+
+.mat-tab-label {
+  color: blue;
+  font-weight: 600;
+  /* font-family: 'Roboto Condensed', sans-serif; */
 }
 

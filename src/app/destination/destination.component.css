@@ -1,12 +1,15 @@
 .vacation-heading {
-  color: violet;
-  font-family: 'Cookie', cursive;
+  color: purple;
+  font-family: 'Merienda', cursive;
+  border-bottom: 2px;
+  border-color: purple;
+  border: solid;
   /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
 form {
   padding-left: 20px;
-  padding-top: 20px;
+  margin-top: 40px;
 }
 
 mat-form-field {
@@ -16,6 +19,7 @@ mat-form-field {
 
 mat-form-field mat-label {
   color: blue;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* mat-date-range-input input {

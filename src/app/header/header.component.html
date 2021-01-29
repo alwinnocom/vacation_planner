@@ -10,7 +10,25 @@
       </ng-template>
       <app-home></app-home>
     </mat-tab>
-    <mat-tab label="Travel Destinations" *ngIf="!mobileSize" class="desktop-size-only">
+    <mat-tab *ngIf="!mobileSize" class="desktop-size-only">
+      <ng-template mat-tab-label>
+        <span class="mat-tab-label">Travel Destinations</span>
+      </ng-template>
+      <app-destination></app-destination>
+    </mat-tab>
+    <mat-tab *ngIf="!mobileSize" class="desktop-size-only">
+      <ng-template mat-tab-label>
+        <span class="mat-tab-label">Travel Expenses</span>
+      </ng-template>
+      <app-costs></app-costs>
+    </mat-tab>
+    <mat-tab *ngIf="!mobileSize" class="desktop-size-only">
+      <ng-template mat-tab-label>
+        <span class="mat-tab-label">Travel Supplies</span>
+      </ng-template>
+      <app-checklist></app-checklist>
+    </mat-tab>
+    <!-- <mat-tab label="Travel Destinations" *ngIf="!mobileSize" class="desktop-size-only">
       <app-destination></app-destination>
     </mat-tab>
     <mat-tab label="Travel Expenses" *ngIf="!mobileSize" class="desktop-size-only">
@@ -18,7 +36,7 @@
     </mat-tab>
     <mat-tab label="Travel Supplies" *ngIf="!mobileSize" class="desktop-size-only">
       <app-checklist></app-checklist>
-    </mat-tab>
+    </mat-tab> -->
 
 
     <mat-tab label="Travel Destinations" *ngIf="mobileSize" class="desktop-size-only">
