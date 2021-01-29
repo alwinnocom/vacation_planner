@@ -31,8 +31,8 @@ export class ChecklistComponent implements OnInit {
   }
 
   public items: Checklist[] = [ {
-     name: "Essentials", subcategories: ['Toiletries', 'Clothes', 'Wallet', 'Phone']
-    }, { name: "Airport", subcategories: ['Passport', 'Luggage', 'Ticket'] }
+     name: "Essentials", iconName: "announcement", subcategories: ['Toiletries', 'Clothes', 'Wallet', 'Phone']
+    }, { name: "Airport", iconName: "flight_takeoff", subcategories: ['Passport', 'Luggage', 'Ticket'] }
   ];
 
 }

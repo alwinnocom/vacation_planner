@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 
+/* :root {
+  --border-black: rgba(0,0,0,0.3);
+  --disclaimer-wood: rgb(193, 154, 107);
+  --menu-card: rgba(193, 154, 107, 0.7);
+  --nature-dark-green:  rgb(112, 139, 54);
+  --nature-green: rgb(145, 178, 71);
+  --nature-transparent-green: rgba(145, 178, 71, 0.9);
+  --nature-light-green: rgba(145, 178, 71, 0.65);
+  --waterfall-blue: #169deb;
+  --waterfall-light-blue: rgb(0, 140, 255);
+  --waterfall-lighter-blue: rgba(0, 140, 255, 0.5);
+} */
+
+
 .original-surfer {
   font-family: 'Original Surfer', cursive;
   color: white;
@@ -18,11 +32,6 @@
 
 mat-tab-group {
   color: blue;
-}
-
-mat-tab label {
-  color: red;
-  font-family: 'Cookie', cursive;
 }
 
 mat-icon {

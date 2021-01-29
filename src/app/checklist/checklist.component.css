@@ -12,6 +12,10 @@ section {
   color: red;
 }
 
+.checkbox-category-name {
+  padding-left: 5px;
+  font-size: 120%;
+}
 
 ul {
   list-style-type: none;
