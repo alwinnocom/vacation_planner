@@ -1,29 +1,5 @@
 /* CSS Media Queries do NOT work in Angular */
 
-/* .desktop-size {
-
-  @media (max-width: 640px) {
-    display: none;
-  }
-
-  @media (min-width: 641px) {
-    display: flex;
-  }
-
-}
-
-.mobile-screen {
-
-  @media (max-width: 640px) {
-    display: flex;
-  }
-
-  @media (min-width: 641px) {
-    display: none;
-  }
-
-} */
-
 mat-horizontal-stepper, mat-vertical-stepper {
   color: green;
 }
