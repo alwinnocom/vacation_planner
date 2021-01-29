@@ -6,10 +6,12 @@ form {
 
 section {
   color: blue;
+  padding: 0 10px;
 }
 
 .category-checkbox {
-  color: red;
+  color: blue;
+  padding-left: 10px;
 }
 
 .checkbox-category-name {
@@ -26,7 +28,7 @@ li {
 }
 
 .subcategory-checkbox {
-  color: violet;
+  color: purple;
 }
 
 /* deep-purple.amber.css has the following default font style for mat-checkbox:

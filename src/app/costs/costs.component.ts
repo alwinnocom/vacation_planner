@@ -18,7 +18,7 @@ export class CostsComponent implements OnInit, OnDestroy {
 
   public costs: CostsModel[] = [ {name: "Food", value: 0 },
     {name: "Hotel/Lodging", value: 0}, {name: "Airfare", value: 0 }, { name: "Transportation", value: 0 },
-    {name: "Shopping", value: 0}, {name: "Personal Expenses", value: 0}, {name: "Other", value: 0}
+    {name: "Shopping", value: 0}, {name: "Entertainment", value: 0}, {name: "Emergency", value: 0}, {name: "Other", value: 0}
   ];
 
   public costsUpdated: string = "";
