@@ -18,7 +18,7 @@
   <span class="if-costs-updated" *ngIf="updated">Costs have been updated.</span>
   <span class="if-costs-failed" *ngIf="failed">Costs have not been updated. Please remove your response and try again.</span>
 
-  <div class="total-cost">
+  <div class="total-cost" *ngIf="updated">
     Total Cost = {{ totalCost | currency: 'USD' }}
   </div>
 </section>

@@ -32,15 +32,23 @@
 }
 
 .costs-form__form-field mat-label {
-  color: orange;
+  color: blue;
+  font-size: 130%;
 }
 
 .costs-form__form-field input {
-  color: yellow;
+  color: purple;
+  font-size: 110%;
+  padding-top: 5px;
 }
 
 .costs-form__submit-btn {
-  color: pink;
+  color: green;
+  padding: 5px;
+  background-color: white;
+  border-color: green;
+  border-radius: 2px;
+  border-style: round;
 }
 
 .if-costs-updated {
@@ -52,7 +60,7 @@
 }
 
 .total-cost {
-  color: lightsalmon;
+  color: rgb(189, 130, 238);
 }
 
 /* .costs-form, .info-about-costs-form {

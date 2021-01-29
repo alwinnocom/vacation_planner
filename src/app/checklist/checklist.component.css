@@ -8,7 +8,6 @@ section {
   color: blue;
 }
 
-
 .category-checkbox {
   color: red;
 }
@@ -25,3 +24,9 @@ li {
 .subcategory-checkbox {
   color: violet;
 }
+
+/* deep-purple.amber.css has the following default font style for mat-checkbox:
+  .mat-checkbox {
+      font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+*/
