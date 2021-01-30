@@ -13,6 +13,9 @@
   --waterfall-lighter-blue: rgba(0, 140, 255, 0.5);
 } */
 
+* {
+  background-color: rgb(157, 189, 189);
+}
 
 .original-surfer {
   font-family: 'Original Surfer', cursive;

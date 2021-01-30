@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  background-color:rgb(157, 189, 189);
 }
 
 /* https://angular.io/guide/forms */
@@ -14,6 +16,12 @@
 .ng-invalid:not(form)  {
   border-left: 5px solid #a94442;
 } */
+
+.desktop-centered-costs-form {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .costs-form {
   color: purple;
