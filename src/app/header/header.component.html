@@ -41,19 +41,19 @@
 
     <mat-tab label="Travel Destinations" *ngIf="mobileSize" class="desktop-size-only">
       <ng-template mat-tab-label>
-        <mat-icon aria-hidden="false" aria-label="Example aspect_ratio icon">aspect_ratio</mat-icon>
+        <mat-icon [ngStyle]="{'font-size': mobileSize ? '200%' : '100%'}" aria-hidden="false" aria-label="Example emoji_transportation icon">emoji_transportation</mat-icon>
       </ng-template>
     </mat-tab>
 
     <mat-tab label="Travel Expenses" *ngIf="mobileSize" class="desktop-size-only">
       <ng-template mat-tab-label>
-        <mat-icon aria-hidden="false" aria-label="Example aspect_ratio icon">aspect_ratio</mat-icon>
+        <mat-icon [ngStyle]="{'font-size': mobileSize ? '200%' : '100%'}" aria-hidden="false" aria-label="Example calculate icon">calculate</mat-icon>
       </ng-template>
     </mat-tab>
 
     <mat-tab label="Travel Supplies" *ngIf="mobileSize" class="desktop-size-only">
       <ng-template mat-tab-label>
-        <mat-icon aria-hidden="false" aria-label="Example aspect_ratio icon">aspect_ratio</mat-icon>
+        <mat-icon [ngStyle]="{'font-size': mobileSize ? '200%' : '100%'}" aria-hidden="false" aria-label="Example luggage icon">luggage</mat-icon>
       </ng-template>
     </mat-tab>
 </mat-tab-group>

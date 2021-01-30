@@ -4,7 +4,10 @@
   <div class="costs-form__grid-list" [ngStyle]="{'max-width': mobileSize ? '100%' : '50%'}">
     <div class="costs-form__grid-list__grid-tile" *ngFor="let cost of costs; let i = index">
       <mat-form-field class="costs-form__form-field" appearance="standard" >
-        <mat-label for="cost">{{ cost.name }}: <b>{{cost.value | currency: 'USD'}}</b></mat-label>
+        <mat-label for="cost">
+          {{ cost.name }}: <b>{{cost.value | currency: 'USD'}}</b>
+          <span class="material-icons"> {{ cost.iconName }} </span>
+        </mat-label>
           <input type="number" required matInput (click)="setCostIndex(i);" [ngModel]="cost.value" (ngModelChange)="costsModelChanged.next($event)" name="cost">
       </mat-form-field>
     </div>

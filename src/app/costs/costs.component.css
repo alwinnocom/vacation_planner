@@ -33,13 +33,18 @@
 
 .costs-form__form-field mat-label {
   color: blue;
-  font-size: 130%;
+  font-size: 140%;
+}
+
+.material-icons {
+  padding-left: 7px;
+  font-size: 160%;
 }
 
 .costs-form__form-field input {
   color: purple;
   font-size: 110%;
-  padding-top: 5px;
+  margin-top: 10px;
 }
 
 .costs-form__submit-btn {
@@ -60,7 +65,7 @@
 }
 
 .total-cost {
-  color: rgb(189, 130, 238);
+  color: purple;
 }
 
 /* .costs-form, .info-about-costs-form {

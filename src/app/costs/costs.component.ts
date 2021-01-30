@@ -16,9 +16,15 @@ export class CostsComponent implements OnInit, OnDestroy {
   // Vacation Expenses pt 1 - https://www.listplanit.com/list-of-expenses-to-include-in-a-travel-budget/
   // Vacation Expenses pt 2 - https://www.lifehack.org/895450/how-to-pay-off-credit-card
 
-  public costs: CostsModel[] = [ {name: "Food", value: 0 },
-    {name: "Hotel/Lodging", value: 0}, {name: "Airfare", value: 0 }, { name: "Transportation", value: 0 },
-    {name: "Shopping", value: 0}, {name: "Entertainment", value: 0}, {name: "Emergency", value: 0}, {name: "Other", value: 0}
+  public costs: CostsModel[] = [
+    {name: "Food", iconName: 'fastfood', value: 0 },
+    {name: "Hotel/Lodging", iconName: 'hotel', value: 0},
+    {name: "Airfare", iconName: 'flight', value: 0 },
+    { name: "Transportation", iconName: 'commute', value: 0 },
+    {name: "Shopping", iconName: 'shopping_cart', value: 0},
+    {name: "Entertainment", iconName: 'surfing', value: 0},
+    {name: "Emergency", iconName: 'warning', value: 0},
+    {name: "Other", iconName: 'add_task', value: 0}
   ];
 
   public costsUpdated: string = "";
