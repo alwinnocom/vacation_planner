@@ -12,6 +12,10 @@ form {
   margin-top: 40px;
 }
 
+.start-your-vacation-and-return-trip {
+  display: flex;
+}
+
 mat-form-field {
   color: blue;
   margin-right: 40px;
