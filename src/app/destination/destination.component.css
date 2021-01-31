@@ -1,15 +1,30 @@
-* {
+/* * {
   background-color: rgb(157, 189, 189);
-}
+} */
 
 .vacation-heading {
   color: purple;
   font-family: 'Merienda', cursive;
-  border-bottom: 2px;
-  border-color: purple;
-  border: solid;
+
+  position: relative;
   /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
+
+/* Give Icon some padding-right. */
+.vacation-heading span:first-of-type {
+  padding-right: 7px;
+}
+
+/* Border only under text = https://stackoverflow.com/questions/16399232/restrict-border-width-to-text-width-in-a-block-element */
+/* .vacation-heading span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  text-decoration: underline;
+} */
 
 form {
   padding-left: 20px;

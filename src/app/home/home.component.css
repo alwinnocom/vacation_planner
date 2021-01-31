@@ -1,8 +1,8 @@
 /* CSS Media Queries do NOT work in Angular */
 
-* {
+/* * {
   background-color: rgb(157, 189, 189);
-}
+} */
 
 mat-horizontal-stepper, mat-vertical-stepper {
   color: green;
