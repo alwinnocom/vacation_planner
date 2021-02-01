@@ -37,7 +37,8 @@
 
 form {
   padding-left: 20px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
+  margin: 40px 35px 0 35px;
 }
 
 .start-your-vacation-and-return-trip {
@@ -46,7 +47,6 @@ form {
 
 mat-form-field {
   color: blue;
-  margin-right: 40px;
 }
 
 mat-form-field mat-label {
