@@ -24,16 +24,22 @@
 
 
 
-    <!-- Select with Multiple Selection component from Angular Material = https://material.angular.io/components/select/overview -->
+    <!-- Select with Multiple Selection component + Option Groupsfrom Angular Material = https://material.angular.io/components/select/overview -->
     <form>
       <h3 class="vacation-heading"><span class="material-icons">menu_book</span><span>Customize your Retreat</span></h3>
 
       <mat-form-field class="vacation-selector" appearance="fill">
-        <mat-label>Toppings</mat-label>
-        <mat-select [formControl]="toppings" multiple>
-          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+        <mat-label>Preferences:</mat-label>
+        <mat-select [formControl]="vacationControl" multiple>
+          <mat-optgroup *ngFor="let group of vacationGroups" [label]="group.name"
+                        [disabled]="group.disabled">
+            <mat-option *ngFor="let vacation of group.vacation" [value]="vacation.value">
+              {{vacation.viewValue}}
+            </mat-option>
+          </mat-optgroup>
         </mat-select>
       </mat-form-field>
+
     </form>
   </section>
 

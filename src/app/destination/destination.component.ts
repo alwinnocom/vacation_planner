@@ -13,8 +13,67 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 export class DestinationComponent implements OnInit, OnDestroy {
 
-  toppings = new FormControl();
-  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
+  vacationControl = new FormControl();
+  vacationGroups = [
+
+    {
+      name: 'Covid-19 Personal Status',
+      disabled: false,
+      vacation: [
+        {value: 'vaccinated', viewValue: 'Vaccinated'},
+        {value: 'at-risk', viewValue: 'At-Risk (be careful)'}
+      ]
+    },
+
+    {
+      name: 'Purpose',
+      vacation: [
+        {value: 'travel_blog', viewValue: 'Travel Blog'},
+        {value: 'business', viewValue: 'Business'},
+        {value: 'tourist', viewValue: 'Tourist'},
+      ]
+    },
+
+    {
+      name: 'Previously Visited...',
+      vacation: [
+        {value: 'very-often', viewValue: '5-10+ times'},
+        {value: 'often', viewValue: '3-4 times'},
+        {value: 'rarely', viewValue: '1-2 times'},
+        {value: 'newcomer', viewValue: 'Never visited before.'}
+      ]
+    },
+    {
+      name: 'Interests',
+      vacation: [
+        {value: 'exploration', viewValue: 'Exploration'},
+        {value: 'culture', viewValue: 'Culture'},
+        {value: 'dining', viewValue: 'Dining'},
+        {value: 'shopping', viewValue: 'Shopping'},
+        {value: 'late-night', viewValue: 'Late-Night'},
+        {value: 'indoors', viewValue: 'Indoors'},
+        {value: 'outdoors', viewValue: 'Outdoors'},
+      ]
+    },
+    {
+      name: 'Adventure',
+      vacation: [
+        {value: "Hero's Journey", viewValue: "Hero's Journey"},
+        {value: 'adventurous', viewValue: 'Adventurous'},
+        {value: 'cautious', viewValue: 'Curious'},
+        {value: 'relaxed', viewValue: 'Relaxed'}
+      ]
+    },
+    {
+      name: 'Seasons',
+      vacation: [
+        {value: 'winter', viewValue: 'Winter'},
+        {value: 'spring', viewValue: 'Spring'},
+        {value: 'summer', viewValue: 'Summer'},
+        {value: 'autumn', viewValue: 'Autumn'}
+      ]
+    }
+  ];
 
 
   public mobileSize: boolean;
