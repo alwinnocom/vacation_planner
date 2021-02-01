@@ -2,6 +2,15 @@
   background-color: rgb(157, 189, 189);
 } */
 
+.datepicker-and-select-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.vacation-selector {
+  width: 256px;
+}
+
 .vacation-heading {
   color: purple;
   font-family: 'Merienda', cursive;

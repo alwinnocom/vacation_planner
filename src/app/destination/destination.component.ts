@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { Subject, Subscription }  from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 
@@ -11,6 +12,10 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 })
 
 export class DestinationComponent implements OnInit, OnDestroy {
+
+  toppings = new FormControl();
+  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
+
 
   public mobileSize: boolean;
   constructor(public breakpointObserver: BreakpointObserver) {}
