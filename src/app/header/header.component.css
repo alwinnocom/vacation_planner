@@ -17,6 +17,24 @@
   background-color: rgb(157, 189, 189);
 } */
 
+mat-toolbar {
+  position: sticky;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links ul li {
+  padding: 0 10px;
+}
+
+
+
 .original-surfer {
   font-family: 'Original Surfer', cursive;
   color: white;

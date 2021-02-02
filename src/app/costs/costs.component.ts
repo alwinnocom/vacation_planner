@@ -5,6 +5,8 @@ import { debounceTime } from 'rxjs/operators';
 import { CostsModel } from '../models/costs.model';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
+import { MatSnackBar } from '@angular/material/snack-bar';
+
 @Component({
   selector: 'app-costs',
   templateUrl: './costs.component.html',
@@ -43,7 +45,16 @@ export class CostsComponent implements OnInit, OnDestroy {
   public costsModelChanged: Subject<number> = new Subject<number>();
   public costsModelChangeSubscription: Subscription
 
-  constructor(public breakpointObserver: BreakpointObserver) {  }
+  constructor(
+    public breakpointObserver: BreakpointObserver,
+    private _snackBar: MatSnackBar
+  ) {  }
+
+  openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action, {
+      duration: 20000,
+    });
+  }
 
   ngOnInit(): void {
 
@@ -110,6 +121,15 @@ export class CostsComponent implements OnInit, OnDestroy {
   onSubmit() {
     this.updated = true;
     this.setTotalCost();
+
+    if (this.updated) {
+      this.openSnackBar(`Your vacation costs $${ this.totalCost }`, "Okay");
+      this.failed = false;
+    }
+
+    else {
+      this.openSnackBar("We're sorry. Please remove your response and try again.", "Okay");
+    }
   }
 
 }

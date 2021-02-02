@@ -2,6 +2,16 @@
   background-color: rgb(157, 189, 189);
 } */
 
+.desktop-centered-checklist-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: center; */
+  min-height: 100vh;
+}
+
+
 form {
   color: purple;
   padding-top: 20px;
