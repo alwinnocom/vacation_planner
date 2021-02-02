@@ -88,15 +88,6 @@ export class DestinationComponent implements OnInit, OnDestroy {
   public departurePointChanged: Subject<string> = new Subject<string>();
   public departurePointChangeSubscription: Subscription
 
-  // public destinationChanged: Subject<string> = new Subject<string>();
-  // public destinationChangeSubscription: Subscription
-
-  // public returnViaChanged: Subject<string> = new Subject<string>();
-  // public returnViaChangeSubscription: Subscription
-
-  // public returnPointChanged: Subject<string> = new Subject<string>();
-  // public returnPointChangeSubscription: Subscription
-
   start_date = null;
   end_date = null;
 
@@ -142,38 +133,11 @@ export class DestinationComponent implements OnInit, OnDestroy {
       .subscribe(departurePoint => {
         this.departure_point = departurePoint;
       });
-
-    // this.destinationChangeSubscription = this.destinationChanged
-    //   .pipe(
-    //     debounceTime(1000),
-    //   )
-    //   .subscribe(destination => {
-    //     this.destination = destination;
-    //   });
-
-    // this.returnViaChangeSubscription = this.returnViaChanged
-    //   .pipe(
-    //     debounceTime(1000),
-    //   )
-    //   .subscribe(returnVia => {
-    //     this.return_via = returnVia;
-    //   });
-
-    // this.returnPointChangeSubscription = this.returnPointChanged
-    //   .pipe(
-    //     debounceTime(1000),
-    //   )
-    //   .subscribe(returnPoint => {
-    //     this.return_point = returnPoint;
-    //   });
   }
 
   ngOnDestroy() {
     this.startDateChangeSubscription.unsubscribe();
     this.endDateChangeSubscription.unsubscribe();
     this.departurePointChangeSubscription.unsubscribe();
-    // this.destinationChangeSubscription.unsubscribe();
-    // this.returnViaChangeSubscription.unsubscribe();
-    // this.returnPointChangeSubscription.unsubscribe();
   }
 }
