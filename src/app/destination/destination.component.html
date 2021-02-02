@@ -3,7 +3,7 @@
   <section class="datepicker-and-select-form">
     <form>
 
-      <h3 class="vacation-heading"><span class="material-icons">schedule</span><span>Schedule your Retreat</span></h3>
+      <h3 class="vacation-heading"><span class="material-icons">departure_board</span><span>Schedule your Retreat</span></h3>
 
       <!-- https://material.angular.io/components/datepicker/overview -->
       <mat-form-field appearance="fill">
@@ -56,16 +56,16 @@
         <input type="text" required matInput [ngModel]="departure_point" (ngModelChange)="departurePointChanged.next($event)" name="departure_point">
       </mat-form-field>
 
-      <mat-form-field>
+      <!-- <mat-form-field>
         <mat-label *ngIf="!destination">Arrive at...</mat-label>
         <mat-label *ngIf="destination" for="arrival">Arrive at {{ destination }} </mat-label>
         <input type="text" required matInput [ngModel]="destination" (ngModelChange)="destinationChanged.next($event)" name="destination">
-      </mat-form-field>
+      </mat-form-field> -->
 
     </form>
 
 
-    <form>
+    <!-- <form>
 
       <h3 class="vacation-heading" *ngIf="(!return_via && !return_point || return_via && !return_point || !return_via && return_point)"><span class="material-icons">departure_board</span><span>Return from Vacation!</span></h3>
       <h3 class="vacation-heading" *ngIf="return_via && return_point"><span class="material-icons">departure_board</span><span>Return from {{ return_via }} to {{ return_point }}</span></h3>
@@ -86,6 +86,6 @@
       </mat-form-field>
 
 
-    </form>
+    </form> -->
   </section>
 </main>

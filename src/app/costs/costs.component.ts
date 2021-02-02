@@ -50,6 +50,7 @@ export class CostsComponent implements OnInit, OnDestroy {
     private _snackBar: MatSnackBar
   ) {  }
 
+  // Snackbar = https://material.angular.io/components/snack-bar/overview
   openSnackBar(message: string, action: string) {
     this._snackBar.open(message, action, {
       duration: 20000,
