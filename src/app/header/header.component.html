@@ -1,12 +1,10 @@
 <mat-toolbar class="original-surfer material-light-blue">
-  <div>Vacation Planner</div>
-  <div class="nav-links">
     <ul>
-      <li>Destinations</li>
-      <li>Costs</li>
-      <li>Checklist</li>
+      <li>Vacation Planner</li>
+      <li *ngIf="!mobileSize">Destinations</li>
+      <li *ngIf="!mobileSize">Costs</li>
+      <li *ngIf="!mobileSize">Checklist</li>
     </ul>
-  </div>
 </mat-toolbar>
 
 <mat-tab-group animationDuration="0ms" class="centered-mat-tab">

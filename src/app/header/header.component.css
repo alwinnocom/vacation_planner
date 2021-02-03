@@ -17,11 +17,17 @@
   background-color: rgb(157, 189, 189);
 } */
 
+/* Flex Navbar code from my 1st Project - Deluge Delights Restaurant */
 mat-toolbar {
   position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
 }
 
-.nav-links ul {
+mat-toolbar ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -29,7 +35,12 @@ mat-toolbar {
   align-items: center;
 }
 
-.nav-links ul li {
+mat-toolbar ul li:first-of-type {
+  position: absolute;
+  left: 10px;
+}
+
+mat-toolbar ul li {
   padding: 0 10px;
 }
 
