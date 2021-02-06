@@ -8,7 +8,7 @@
 </mat-toolbar>
 
 <mat-tab-group animationDuration="0ms" class="centered-mat-tab">
-    <mat-tab>
+    <mat-tab *ngIf="mobileSize">
       <!-- NgTemplate for complex mat-tab label https://stackoverflow.com/questions/52325669/angular-material-tab-add-image-to-button -->
       <ng-template mat-tab-label>
 
@@ -18,9 +18,9 @@
         </div>
 
       </ng-template>
-      <app-home></app-home>
+      <!-- <app-home></app-home> -->
     </mat-tab>
-    <mat-tab *ngIf="!mobileSize" class="desktop-size-only">
+    <mat-tab *ngIf="mobileSize" class="desktop-size-only">
       <ng-template mat-tab-label>
         <div>
           <mat-icon aria-hidden="false" aria-label="Example emoji_transportation icon">emoji_transportation</mat-icon>
@@ -29,7 +29,7 @@
       </ng-template>
       <app-destination></app-destination>
     </mat-tab>
-    <mat-tab *ngIf="!mobileSize" class="desktop-size-only">
+    <mat-tab *ngIf="mobileSize" class="desktop-size-only">
       <ng-template mat-tab-label>
         <div>
           <mat-icon aria-hidden="false" aria-label="Example emoji_transportation icon">calculate</mat-icon>
@@ -39,7 +39,7 @@
       </ng-template>
       <app-costs></app-costs>
     </mat-tab>
-    <mat-tab *ngIf="!mobileSize" class="desktop-size-only">
+    <mat-tab *ngIf="mobileSize" class="desktop-size-only">
       <ng-template mat-tab-label>
 
         <div>
@@ -61,7 +61,7 @@
     </mat-tab> -->
 
 
-    <mat-tab label="Travel Destinations" *ngIf="mobileSize" class="desktop-size-only">
+    <!-- <mat-tab label="Travel Destinations" *ngIf="mobileSize" class="desktop-size-only">
       <ng-template mat-tab-label>
         <mat-icon [ngStyle]="{'font-size': mobileSize ? '200%' : '100%'}" aria-hidden="false" aria-label="Example emoji_transportation icon">emoji_transportation</mat-icon>
       </ng-template>
@@ -80,5 +80,5 @@
         <mat-icon [ngStyle]="{'font-size': mobileSize ? '200%' : '100%'}" aria-hidden="false" aria-label="Example luggage icon">luggage</mat-icon>
       </ng-template>
       <app-checklist></app-checklist>
-    </mat-tab>
+    </mat-tab> -->
 </mat-tab-group>

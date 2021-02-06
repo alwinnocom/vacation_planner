@@ -59,6 +59,13 @@
   border-style: round;
 }
 
+.costs-form__submit-btn, .total-cost {
+  position: relative;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .if-costs-updated {
   color: blue;
 }
@@ -69,12 +76,15 @@
 
 .total-cost {
   color: purple;
+  padding: 7px;
+  max-width: 150px;
 }
 
-/* .costs-form, .info-about-costs-form {
+.costs-form {
   margin-left: 20px;
 }
 
+/*
 .total-cost, .costs-form__submit-btn, .if-costs-failed, .if-costs-updated {
   margin: 20px;
 } */

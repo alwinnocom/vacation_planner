@@ -2,6 +2,10 @@
   background-color: rgb(157, 189, 189);
 } */
 
+main {
+  margin-bottom: 20px;
+}
+
 .datepicker-and-select-form {
   display: flex;
   flex-direction: column;
@@ -23,6 +27,12 @@
 .vacation-heading span:first-of-type {
   padding-right: 7px;
 }
+
+
+.choose-your-vacation-location {
+  padding: 0 10px;
+}
+
 
 /* Border only under text = https://stackoverflow.com/questions/16399232/restrict-border-width-to-text-width-in-a-block-element */
 /* .vacation-heading span::after {

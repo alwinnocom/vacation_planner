@@ -56,6 +56,10 @@ mat-toolbar ul li {
 
 }
 
+ng-template {
+  padding-top: 20px;
+}
+
 ng-template div {
   display: flex;
   flex-direction: column;
