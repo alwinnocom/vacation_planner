@@ -1,7 +1,9 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Subject, Subscription }  from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
+
+import { MatAccordion } from '@angular/material/expansion';
 
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
@@ -13,6 +15,8 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 export class DestinationComponent implements OnInit, OnDestroy {
 
+  @ViewChild(MatAccordion) accordion: MatAccordion;
+
   vacationControl = new FormControl();
   vacationGroups = [
 
@@ -20,8 +24,9 @@ export class DestinationComponent implements OnInit, OnDestroy {
       name: 'Covid-19 Personal Status',
       disabled: false,
       vacation: [
-        {value: 'vaccinated', viewValue: 'Vaccinated'},
-        {value: 'at-risk', viewValue: 'At-Risk (be careful)'}
+        {value: 'vaccinated', viewValue: 'Vaccinated', viewColor: 'green'},
+        {value: 'at-risk', viewValue: 'At-Risk'},
+        {value: 'sick', viewValue: 'Sick'}
       ]
     },
 

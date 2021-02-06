@@ -1,22 +1,35 @@
+<!-- Angular Material - Expansion Panel = https://material.angular.io/components/expansion/examples -->
+<div class="example-action-buttons">
+  <button mat-button (click)="accordion.openAll()">Expand All</button>
+  <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+</div>
+
 <form [ngClass]="{'desktop-centered-checklist-form': mobileSize === false}">
 
-<!-- <form [ngStyle]="{'display': mobileSize ? '' : 'flex'}"> -->
-  <!-- 1. You have ___ tasks remaining. -->
+  <!-- <form [ngStyle]="{'display': mobileSize ? '' : 'flex'}"> -->
+    <!-- 1. You have ___ tasks remaining. -->
 
-  <!-- 2. Display Checkboxes -->
-  <section *ngFor="let item of items">
-    <div class="category-checkbox">
-      <span class="material-icons">
-        {{ item.iconName }}
-      </span>
-      <span class="checkbox-category-name">{{ item.name }}</span>
-    </div>
-      <ul>
-        <li *ngFor="let subcategory of item.subcategories">
-          <mat-checkbox class="subcategory-checkbox">{{ subcategory }}</mat-checkbox>
-        </li>
-      </ul>
-  </section>
+    <!-- 2. Display Checkboxes -->
+  <mat-accordion class="example-headers-align" multi>
+      <mat-expansion-panel *ngFor="let item of items">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="material-icons"> {{ item.iconName }}</span>
+            <p>{{ item.name }}</p>
+          </mat-panel-title>
+          <mat-panel-description>
+
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <section>
+          <ul>
+            <li *ngFor="let subcategory of item.subcategories">
+              <mat-checkbox class="subcategory-checkbox">{{ subcategory }}</mat-checkbox>
+            </li>
+          </ul>
+        </section>
+      </mat-expansion-panel>
+  </mat-accordion>
 
 </form>
 

@@ -23,9 +23,14 @@ section {
   padding: 0 10px;
 }
 
-.category-checkbox {
-  color: blue;
-  padding-left: 10px;
+
+/* Mat-Panel Title */
+mat-panel-title span {
+  padding-right: 10px;
+}
+
+mat-panel-title {
+  color: purple;
 }
 
 .checkbox-category-name {

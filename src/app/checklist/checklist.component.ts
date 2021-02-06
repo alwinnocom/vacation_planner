@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Checklist } from '../models/checklist.model';
 
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import { MatAccordion } from '@angular/material/expansion';
+
 
 @Component({
   selector: 'app-checklist',
@@ -9,6 +11,8 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
   styleUrls: ['./checklist.component.css']
 })
 export class ChecklistComponent implements OnInit {
+
+  @ViewChild(MatAccordion) accordion: MatAccordion;
 
   updated = true;
   failed = false;
