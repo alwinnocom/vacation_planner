@@ -18,7 +18,7 @@
         </div>
 
       </ng-template>
-      <!-- <app-home></app-home> -->
+      <app-home></app-home>
     </mat-tab>
     <mat-tab *ngIf="mobileSize" class="desktop-size-only">
       <ng-template mat-tab-label>
@@ -50,7 +50,23 @@
       </ng-template>
       <app-checklist></app-checklist>
     </mat-tab>
-    <!-- <mat-tab label="Travel Destinations" *ngIf="!mobileSize" class="desktop-size-only">
+
+
+<!-- Desktop Only tabs -->
+ <!-- NgTemplate for complex mat-tab label https://stackoverflow.com/questions/52325669/angular-material-tab-add-image-to-button -->
+    <mat-tab *ngIf="!mobileSize">
+
+      <ng-template mat-tab-label>
+
+        <div>
+          <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+          <p>Home</p>
+        </div>
+
+      </ng-template>
+      <app-home></app-home>
+    </mat-tab>
+    <mat-tab label="Travel Destinations" *ngIf="!mobileSize" class="desktop-size-only">
       <app-destination></app-destination>
     </mat-tab>
     <mat-tab label="Travel Expenses" *ngIf="!mobileSize" class="desktop-size-only">
@@ -58,7 +74,7 @@
     </mat-tab>
     <mat-tab label="Travel Supplies" *ngIf="!mobileSize" class="desktop-size-only">
       <app-checklist></app-checklist>
-    </mat-tab> -->
+    </mat-tab>
 
 
     <!-- <mat-tab label="Travel Destinations" *ngIf="mobileSize" class="desktop-size-only">
@@ -80,5 +96,5 @@
         <mat-icon [ngStyle]="{'font-size': mobileSize ? '200%' : '100%'}" aria-hidden="false" aria-label="Example luggage icon">luggage</mat-icon>
       </ng-template>
       <app-checklist></app-checklist>
-    </mat-tab> -->
-</mat-tab-group>
+    </mat-tab>
+</mat-tab-group> -->
