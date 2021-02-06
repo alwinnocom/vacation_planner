@@ -24,7 +24,6 @@ mat-toolbar {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-
 }
 
 mat-toolbar ul {
@@ -42,6 +41,24 @@ mat-toolbar ul li:first-of-type {
 
 mat-toolbar ul li {
   padding: 0 10px;
+}
+
+
+/* Format Mat Tabs - https://github.com/angular/components/issues/10141 & https://stackoverflow.com/questions/50722183/angular-material-tab-height */
+
+:host ::ng-deep .mat-tab-body-wrapper {
+  min-height: 600px;
+
+}
+
+:host ::ng-deep .mat-tab-body.mat-tab-body-active {
+  min-height: 600px;
+
+}
+
+ng-template div {
+  display: flex;
+  flex-direction: column;
 }
 
 

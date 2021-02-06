@@ -11,25 +11,42 @@
     <mat-tab>
       <!-- NgTemplate for complex mat-tab label https://stackoverflow.com/questions/52325669/angular-material-tab-add-image-to-button -->
       <ng-template mat-tab-label>
-        <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+
+        <div>
+          <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+          <p>Home</p>
+        </div>
+
       </ng-template>
       <app-home></app-home>
     </mat-tab>
     <mat-tab *ngIf="!mobileSize" class="desktop-size-only">
       <ng-template mat-tab-label>
-        <span class="mat-tab-label">Travel Destinations</span>
+        <div>
+          <mat-icon aria-hidden="false" aria-label="Example emoji_transportation icon">emoji_transportation</mat-icon>
+          <p>Destinations</p>
+        </div>
       </ng-template>
       <app-destination></app-destination>
     </mat-tab>
     <mat-tab *ngIf="!mobileSize" class="desktop-size-only">
       <ng-template mat-tab-label>
-        <span class="mat-tab-label">Travel Expenses</span>
+        <div>
+          <mat-icon aria-hidden="false" aria-label="Example emoji_transportation icon">calculate</mat-icon>
+          <p>Expenses</p>
+        </div>
+
       </ng-template>
       <app-costs></app-costs>
     </mat-tab>
     <mat-tab *ngIf="!mobileSize" class="desktop-size-only">
       <ng-template mat-tab-label>
-        <span class="mat-tab-label">Travel Supplies</span>
+
+        <div>
+          <mat-icon aria-hidden="false" aria-label="Example emoji_transportation icon">luggage</mat-icon>
+          <p>Supplies</p>
+        </div>
+
       </ng-template>
       <app-checklist></app-checklist>
     </mat-tab>
