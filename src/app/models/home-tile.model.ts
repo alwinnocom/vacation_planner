@@ -4,5 +4,5 @@ export interface Tile {
   cols: number;
   rows: number;
   text: string;
-  imgSource: string;
+  imgSource?: string;
 }
