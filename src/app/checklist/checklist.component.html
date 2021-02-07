@@ -6,13 +6,39 @@
     <button mat-button (click)="accordion.closeAll()">Collapse All</button>
   </div>
 
-  <form [ngClass]="{'desktop-centered-checklist-form': mobileSize === false}">
 
-    <!-- <form [ngStyle]="{'display': mobileSize ? '' : 'flex'}"> -->
-      <!-- 1. You have ___ tasks remaining. -->
+  <!-- 5 Accordions if width > 1000px -->
 
-      <!-- 2. Display Checkboxes -->
-    <mat-accordion class="example-headers-align" multi>
+  <form *ngIf="desktopSize === 'desktop'" class='desktop-centered-checklist-form'>
+
+    <mat-accordion multi>
+        <mat-expansion-panel *ngFor="let item of items" class='checklist-form__grid-list'>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <span class="material-icons"> {{ item.iconName }}</span>
+              <p>{{ item.name }}</p>
+            </mat-panel-title>
+            <mat-panel-description>
+
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <section>
+            <ul>
+              <li *ngFor="let subcategory of item.subcategories">
+                <mat-checkbox class="subcategory-checkbox">{{ subcategory }}</mat-checkbox>
+              </li>
+            </ul>
+          </section>
+        </mat-expansion-panel>
+    </mat-accordion>
+
+  </form>
+
+
+  <!-- 1 Accordion if width <= 1000px; -->
+  <form *ngIf="desktopSize === 'tablet'" [ngClass]="{'desktop-centered-checklist-form': mobileSize === false}">
+
+    <mat-accordion multi>
         <mat-expansion-panel *ngFor="let item of items">
           <mat-expansion-panel-header>
             <mat-panel-title>
@@ -35,6 +61,4 @@
 
   </form>
 
-  <!-- <span *ngIf="updated">Checklist has been updated.</span>
-  <span *ngIf="failed">Checklist has not been updated. Please wait 1 second and try again.</span> -->
 </main>

@@ -1,7 +1,7 @@
 <!-- ngFor keyvalue pipe = https://stackoverflow.com/questions/41396435/how-to-iterate-object-keys-using-ngfor/41396558 -->
 
 <main [ngClass]="{'desktop-centered-costs-form': mobileSize === false}">
-  <mat-card>
+  <mat-card [ngClass]="{'mat-card__desktop-size-only' : desktopSize === 'desktop'}">
     <mat-card-header>
       <mat-icon mat-card-avatar class="material-icons">home</mat-icon>
       <mat-card-title>Financial Planner</mat-card-title>

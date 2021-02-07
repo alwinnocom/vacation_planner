@@ -18,6 +18,8 @@ export class ChecklistComponent implements OnInit {
   failed = false;
 
   public mobileSize: boolean;
+  public desktopSize: string;
+
   constructor(public breakpointObserver: BreakpointObserver) {}
 
   ngOnInit(): void {
@@ -29,6 +31,16 @@ export class ChecklistComponent implements OnInit {
           this.mobileSize = true;
         } else {
           this.mobileSize = false;
+        }
+      });
+
+    this.breakpointObserver
+      .observe(['(max-width: 1000px)'])
+      .subscribe((state: BreakpointState) => {
+        if (state.matches) {
+          this.desktopSize = 'tablet';
+        } else {
+          this.desktopSize = 'desktop';
         }
       });
 

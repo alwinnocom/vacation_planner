@@ -1,7 +1,3 @@
-/* * {
-  background-color: rgb(157, 189, 189);
-} */
-
 main {
   /* Use ../../assets/images/____ = https://github.com/angular/angular-cli/issues/12797 */
   background-image: url('../../assets/images/beach.jpg');
@@ -30,7 +26,9 @@ form {
   margin-bottom: 20px;
 }
 
-mat-accordion, mat-expansion-panel, mat-expansion-panel-header, mat-panel-title, mat-panel-title span, mat-panel-title p, mat-panel-description, section {
+
+/* Make sure mat-accordion has NO background. Everything else can be background-color: white; */
+mat-expansion-panel, mat-expansion-panel-header, mat-panel-title, mat-panel-title span, mat-panel-title p, mat-panel-description, section {
   background-color: white;
 }
 
@@ -38,6 +36,16 @@ section {
   color: blue;
   padding: 0 10px;
 }
+
+
+/* Mat-Accordion Grid if desktop's size > 1000px */
+/* .checklist-form__grid-list {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+} */
 
 
 /* Mat-Panel Title */
@@ -49,6 +57,8 @@ mat-panel-title {
   color: purple;
 }
 
+
+/* Category Name (Essentials, Airport, Clothes, Electronic, Health) */
 .checkbox-category-name {
   padding-left: 5px;
   font-size: 120%;
@@ -62,6 +72,8 @@ li {
   color: green;
 }
 
+
+/* Checkboxes to click within each Category */
 .subcategory-checkbox {
   color: purple;
 }
