@@ -1,5 +1,11 @@
 /* CSS Media Queries do NOT work in Angular */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* * {
   background-color: rgb(157, 189, 189);
 } */
@@ -14,4 +20,23 @@ mat-step {
 
 .matStepLabel, .matStepperPrevious, .matStepperNext {
   color: purple;
+}
+
+
+/* Hero Section Image */
+.cabana-hero-image img {
+  /* cover = Good for filling the whole horizontal distance. Use "contain" for card images. */
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid white;
+  background-color: white;
 }
