@@ -1,5 +1,8 @@
+/* Angular Material Colors */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+
+/* Global Styling */
 * {
   margin: 0;
   padding: 0;
@@ -8,15 +11,20 @@
   background-color: rgb(157, 189, 189);
 }
 
+
+/* Background-Image */
 main {
   /* Use ../../assets/images/____ = https://github.com/angular/angular-cli/issues/12797 */
   background-image: url('../../assets/images/beach.jpg');
 }
 
 
+/* Background-Color */
 .costs-form, mat-form-field, mat-card-header, mat-icon, mat-card-title, mat-card-subtitle, mat-card-content, mat-label, mat-card-actions, input {
   background-color: white;
 }
+
+
 
 /* Center a Div in the Center of the Screen = https://stackoverflow.com/questions/31217268/center-div-on-the-middle-of-screen */
 .desktop-centered-costs-form {
@@ -28,6 +36,8 @@ main {
   min-height: 100vh;
 }
 
+
+/* Mat-Card-Content colors */
 .costs-form {
   color: purple;
 }
@@ -38,28 +48,39 @@ main {
 
 .costs-form__grid-list__grid-tile {
   color: red;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; */
 }
 
 .costs-form___form-field {
   color: lightblue;
 }
 
+
+/* Form Label */
 .costs-form__form-field mat-label {
   color: blue;
   font-size: 140%;
 }
 
+
+/* Form Icons */
 .material-icons {
   padding-left: 7px;
   font-size: 160%;
 }
 
+
+/* Form Input */
 .costs-form__form-field input {
   color: purple;
   font-size: 110%;
   margin-top: 10px;
 }
 
+
+/* Submit Button */
 .costs-form__submit-btn {
   color: green;
   padding: 7px;
@@ -69,6 +90,8 @@ main {
   border-style: round;
 }
 
+
+/* Center Submit Button + Total Cost *ngIf */
 .costs-form__submit-btn, .total-cost {
   position: relative;
   display: flex;
@@ -101,12 +124,25 @@ main {
 
 .costs-form__grid-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   /* grid-template-rows: repeat(4, 1fr); */
   grid-auto-rows: auto;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   /* margin-left: 20px; */
+  margin-top: 20px;
+
+  /* This makes sure the grid does not expand to the full length of the page. */
+  /* max-width: 50%; */
+}
+
+
+.costs-form__mobile-grid-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   margin-top: 20px;
 
   /* This makes sure the grid does not expand to the full length of the page. */

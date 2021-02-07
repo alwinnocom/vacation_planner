@@ -12,7 +12,7 @@
     <form class="costs-form" (ngSubmit)="onSubmit()" #costsForm="ngForm">
 
       <mat-card-content>
-        <div class="costs-form__grid-list" [ngStyle]="{'max-width': mobileSize ? '100%' : '50%'}">
+        <div [ngClass]='desktopSize === "tablet" ? "costs-form__mobile-grid-list" : "costs-form__grid-list"' [ngStyle]="{'max-width': mobileSize ? '100%' : '50%'}">
           <div class="costs-form__grid-list__grid-tile" *ngFor="let cost of costs; let i = index">
             <mat-form-field class="costs-form__form-field" appearance="standard" >
               <mat-label for="cost">

@@ -39,6 +39,7 @@ export class CostsComponent implements OnInit, OnDestroy {
   public updated = false;
   public failed = false;
   public mobileSize: boolean;
+  public desktopSize: string;
 
   // RxJS Debounce code - https://stackoverflow.com/questions/32051273/angular-and-debounce/36849347#36849347
   // Without debouncing, ngModel updates immediately when the user types a number, which prevents the user from typing more than 1 number in the input field.
@@ -66,6 +67,16 @@ export class CostsComponent implements OnInit, OnDestroy {
           this.mobileSize = true;
         } else {
           this.mobileSize = false;
+        }
+      });
+
+    this.breakpointObserver
+      .observe(['(max-width: 1000px)'])
+      .subscribe((state: BreakpointState) => {
+        if (state.matches) {
+          this.desktopSize = 'tablet';
+        } else {
+          this.desktopSize = 'desktop';
         }
       });
 
