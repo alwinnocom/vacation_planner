@@ -7,11 +7,15 @@
   display: flex;
 } */
 
+
+/* Background Image */
 main {
   /* Use ../../assets/images/____ = https://github.com/angular/angular-cli/issues/12797 */
   background-image: url('../../assets/images/beach.jpg');
 }
 
+
+/* Grid for 3 Forms */
 .datepicker-and-select-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -45,6 +49,8 @@ main {
   width: 256px;
 } */
 
+
+/* Colors + Fonts + Position + Padding */
 .vacation-heading {
   color: purple;
   font-family: 'Merienda', cursive;
@@ -52,6 +58,8 @@ main {
   position: relative;
   /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
+
+
 
 /* Give Icon some padding-right. */
 .vacation-heading span:first-of-type {
@@ -81,10 +89,14 @@ form {
   margin: 40px 35px 0 35px;
 }
 
+
+/* Flex only if Desktop Size */
 .start-your-vacation-and-return-trip {
   display: flex;
 }
 
+
+/* Angular Material Colors + Fonts */
 mat-form-field {
   color: blue;
 }

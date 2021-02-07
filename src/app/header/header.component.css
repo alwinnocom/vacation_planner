@@ -1,23 +1,8 @@
+/* Google Fonts for Original Surfer */
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 
-/* :root {
-  --border-black: rgba(0,0,0,0.3);
-  --disclaimer-wood: rgb(193, 154, 107);
-  --menu-card: rgba(193, 154, 107, 0.7);
-  --nature-dark-green:  rgb(112, 139, 54);
-  --nature-green: rgb(145, 178, 71);
-  --nature-transparent-green: rgba(145, 178, 71, 0.9);
-  --nature-light-green: rgba(145, 178, 71, 0.65);
-  --waterfall-blue: #169deb;
-  --waterfall-light-blue: rgb(0, 140, 255);
-  --waterfall-lighter-blue: rgba(0, 140, 255, 0.5);
-} */
 
-/* * {
-  background-color: rgb(157, 189, 189);
-} */
-
-
+/* Sticky toolbar */
 mat-toolbar {
   position: sticky;
 
@@ -29,7 +14,7 @@ mat-toolbar {
 }
 
 
-/* Flex Navbar code from my 1st Project - Deluge Delights Restaurant */
+/* Flex Navbar Ul Li: code from my 1st Project - Deluge Delights Restaurant */
 mat-toolbar {
   /* Format li links. */
   display: flex;
@@ -66,6 +51,15 @@ mat-toolbar ul li:first-of-type, mat-toolbar ul li:last-of-type {
 }
 
 
+/* Centered Tabs */
+.centered-mat-tab {
+  position: relative;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 /* Format Mat Tabs - https://github.com/angular/components/issues/10141 & https://stackoverflow.com/questions/50722183/angular-material-tab-height */
 
 :host ::ng-deep .mat-tab-body-wrapper {
@@ -89,6 +83,7 @@ ng-template div {
 
 
 
+/* Colors + Fonts for toolbar */
 .original-surfer {
   font-family: 'Original Surfer', cursive;
   color: white;
@@ -96,13 +91,6 @@ ng-template div {
 
 .material-light-blue {
   background-color: #2196F3;
-}
-
-.centered-mat-tab {
-  position: relative;
-  display: flex;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 mat-tab-group {
@@ -119,4 +107,3 @@ mat-icon {
   font-weight: 600;
   /* font-family: 'Roboto Condensed', sans-serif; */
 }
-
