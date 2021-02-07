@@ -72,6 +72,9 @@
 <!-- Checkmark Animaticon -->
 <!-- <img src="{{imgPath}}/animat-essential/checkmark/animat-checkmark-color.gif" alt="Checkmark Animaticon"/> -->
 
+<!-- Diamond Animaticon -->
+<!-- <img src="{{imgPath}}/animat-essential/diamond/animat-diamond-color.gif" alt="Diamond Animaticon"/> -->
+
 <!-- Image Animaticon -->
 <!-- <img src="{{imgPath}}/animat-essential/image/animat-image-color.gif" alt="Image Animaticon"/> -->
 
