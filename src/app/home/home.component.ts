@@ -41,12 +41,12 @@ export class HomeComponent implements OnInit {
   ];
 
   footerTiles: Tile[] = [
-    {text: "If I were a real person, I would give a 5-star rating for 5-star planning!", imgSource: '', cols: 4, rows:1, color: 'lightgreen'},
-    {text: "I am also not a real person, but this app is really good.", imgSource: '', cols: 1, rows:1, color: 'lightpink'},
-    {text: "I am also not a real person, but this app is really good.", imgSource: '', cols: 1, rows:1, color: 'lightpink'},
-    {text: "I am also not a real person, but this app is really good.", imgSource: '', cols: 1, rows:1, color: 'lightpink'},
-    {text: "I am also not a real person, but this app is really good.", imgSource: '', cols: 1, rows:1, color: 'lightpink'},
-    {text: "If I were a real person, I would give a 5-star rating for 5-star planning!", imgSource: '', cols: 4, rows:1, color: 'lightgreen'}
+    {text: "If I were a real person, I would give a 5-star rating for 5-star planning!", imgSource: '', cols: 4, rows:1, color: 'lightblue'},
+    {text: "I am also not a real person, but this app is really good.", imgSource: '', cols: 1, rows:1, color: 'lightpurple'},
+    {text: "I am also not a real person, but this app is really good.", imgSource: '', cols: 1, rows:1, color: 'lightpurple'},
+    {text: "I am also not a real person, but this app is really good.", imgSource: '', cols: 1, rows:1, color: 'lightpurple'},
+    {text: "I am also not a real person, but this app is really good.", imgSource: '', cols: 1, rows:1, color: 'lightpurple'},
+    {text: "If I were a real person, I would give a 5-star rating for 5-star planning!", imgSource: '', cols: 4, rows:1, color: 'lightblue'}
   ];
 
 }

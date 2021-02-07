@@ -1,12 +1,10 @@
 <main [ngClass]="{'start-your-vacation-and-return-trip': mobileSize === false}">
 
-  <div class="example-action-buttons">
-    <button mat-button (click)="accordion.openAll()">Expand All</button>
-    <button mat-button (click)="accordion.closeAll()">Collapse All</button>
-  </div>
+  
 
   <section class="datepicker-and-select-form">
-    <form>
+    
+    <form class="schedule-your-retreat">
 
       <h3 class="vacation-heading"><span class="material-icons">departure_board</span><span>Schedule your Retreat</span></h3>
 
@@ -27,7 +25,7 @@
 
     </form>
 
-    <form>
+    <form class="start-your-vacation">
 
       <h3 class="vacation-heading" *ngIf="(!departure_point && !destination) || (departure_point && !destination || !departure_point && destination)"><span class="material-icons">local_see</span><span>Start your Vacation!</span></h3>
       <h3 class="vacation-heading" *ngIf="departure_point && destination"><span class="material-icons">local_see</span><span>Start your Vacation from {{ departure_point }} to {{ destination }}!</span></h3>
@@ -46,15 +44,16 @@
 
     </form>
 
-  </section>
-
-
-  <section>
 
     <!-- Mat Selection List = https://material.angular.io/components/list/examples -->
-    <form>
+    <form class="datepicker">
 
       <h3 class="vacation-heading"><span class="material-icons">menu_book</span><span>Customize your Retreat</span></h3>
+
+      <div class="example-action-buttons">
+        <button mat-button (click)="accordion.openAll()">Expand All</button>
+        <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+      </div>
 
       <mat-accordion class="example-headers-align" multi>
         <mat-expansion-panel *ngFor="let group of vacationGroups">

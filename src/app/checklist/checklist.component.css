@@ -2,6 +2,16 @@
   background-color: rgb(157, 189, 189);
 } */
 
+main {
+  /* Use ../../assets/images/____ = https://github.com/angular/angular-cli/issues/12797 */
+  background-image: url('../../assets/images/beach.jpg');
+}
+
+button {
+  color: white;
+  border: 2px solid white;
+}
+
 .desktop-centered-checklist-form {
   display: flex;
   flex-direction: row;
@@ -18,6 +28,10 @@ form {
   padding-left: 20px;
 
   margin-bottom: 20px;
+}
+
+mat-accordion, mat-expansion-panel, mat-expansion-panel-header, mat-panel-title, mat-panel-title span, mat-panel-title p, mat-panel-description, section {
+  background-color: white;
 }
 
 section {

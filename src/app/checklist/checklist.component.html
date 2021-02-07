@@ -1,37 +1,40 @@
-<!-- Angular Material - Expansion Panel = https://material.angular.io/components/expansion/examples -->
-<div class="example-action-buttons">
-  <button mat-button (click)="accordion.openAll()">Expand All</button>
-  <button mat-button (click)="accordion.closeAll()">Collapse All</button>
-</div>
+<main>
+  <!-- Angular Material - Expansion Panel = https://material.angular.io/components/expansion/examples -->
 
-<form [ngClass]="{'desktop-centered-checklist-form': mobileSize === false}">
+  <div class="example-action-buttons">
+    <button mat-button (click)="accordion.openAll()">Expand All</button>
+    <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+  </div>
 
-  <!-- <form [ngStyle]="{'display': mobileSize ? '' : 'flex'}"> -->
-    <!-- 1. You have ___ tasks remaining. -->
+  <form [ngClass]="{'desktop-centered-checklist-form': mobileSize === false}">
 
-    <!-- 2. Display Checkboxes -->
-  <mat-accordion class="example-headers-align" multi>
-      <mat-expansion-panel *ngFor="let item of items">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            <span class="material-icons"> {{ item.iconName }}</span>
-            <p>{{ item.name }}</p>
-          </mat-panel-title>
-          <mat-panel-description>
+    <!-- <form [ngStyle]="{'display': mobileSize ? '' : 'flex'}"> -->
+      <!-- 1. You have ___ tasks remaining. -->
 
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-        <section>
-          <ul>
-            <li *ngFor="let subcategory of item.subcategories">
-              <mat-checkbox class="subcategory-checkbox">{{ subcategory }}</mat-checkbox>
-            </li>
-          </ul>
-        </section>
-      </mat-expansion-panel>
-  </mat-accordion>
+      <!-- 2. Display Checkboxes -->
+    <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel *ngFor="let item of items">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <span class="material-icons"> {{ item.iconName }}</span>
+              <p>{{ item.name }}</p>
+            </mat-panel-title>
+            <mat-panel-description>
 
-</form>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <section>
+            <ul>
+              <li *ngFor="let subcategory of item.subcategories">
+                <mat-checkbox class="subcategory-checkbox">{{ subcategory }}</mat-checkbox>
+              </li>
+            </ul>
+          </section>
+        </mat-expansion-panel>
+    </mat-accordion>
 
-<!-- <span *ngIf="updated">Checklist has been updated.</span>
-<span *ngIf="failed">Checklist has not been updated. Please wait 1 second and try again.</span> -->
+  </form>
+
+  <!-- <span *ngIf="updated">Checklist has been updated.</span>
+  <span *ngIf="failed">Checklist has not been updated. Please wait 1 second and try again.</span> -->
+</main>

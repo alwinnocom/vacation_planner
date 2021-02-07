@@ -32,7 +32,7 @@ mat-step {
   display: block;
 }
 
-figcaption {
+.cabana-hero-image figcaption {
   position: absolute;
 
   /* Half the image's height. */
@@ -47,7 +47,7 @@ figcaption {
   background-color: rgb(105, 128, 0);
 }
 
-figcaption p, figcaption button {
+.cabana-hero-image figcaption p, figcaption button {
   margin: 7px 5px;
 }
 
@@ -60,6 +60,25 @@ figcaption button {
 section {
   max-width: 40%;
   max-width: 100%;
+}
+
+.testimonials figure {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials img, .testimonials figcaption {
+  max-width: 50%;
+  max-height: 50%;
+
+  position: relative;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.testimonials figcaption {
+  display: flex;
 }
 
 

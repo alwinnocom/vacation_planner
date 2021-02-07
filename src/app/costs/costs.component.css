@@ -4,9 +4,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  background-color: rgb(157, 189, 189);
+}
+
+main {
+  /* Use ../../assets/images/____ = https://github.com/angular/angular-cli/issues/12797 */
+  background-image: url('../../assets/images/beach.jpg');
 }
 
 
+.costs-form, mat-form-field, mat-card-header, mat-icon, mat-card-title, mat-card-subtitle, mat-card-content, mat-label, mat-card-actions, input {
+  background-color: white;
+}
 
 /* Center a Div in the Center of the Screen = https://stackoverflow.com/questions/31217268/center-div-on-the-middle-of-screen */
 .desktop-centered-costs-form {

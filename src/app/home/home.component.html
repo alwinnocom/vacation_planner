@@ -19,13 +19,14 @@
       <mat-card-title>Destinations</mat-card-title>
       <mat-card-subtitle>Schedule your journey.</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="{{imgPath}}/animat-essential/rocket/animat-rocket-color.gif" alt="Rocket Animaticon">
+    <img mat-card-image src="{{imgPath}}/animat-essential/image/animat-image-color.gif" alt="Image Animaticon">
     <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
+      <ul style="color: red;">
+        <li>Having trouble organizing your dream vacation?</li>
+        <li>Rest easy with your new Vacation Planner!</li>
+        <li>Schedule your journey to a distant land.</li>
+        <li>Choose your ideal location for your surreal vacation.</li>
+      </ul>
     </mat-card-content>
   </mat-card>
 
@@ -37,11 +38,12 @@
     </mat-card-header>
     <img mat-card-image src="{{imgPath}}/animat-essential/diamond/animat-diamond-color.gif" alt="Diamond Animaticon">
     <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
+      <ul style="color: red;">
+        <li>Bills can add up.</li>
+        <li>Divide and conquer.</li>
+        <li>Make sure your finances are in order.</li>
+        <li>Avoid financial stress on your vacation.</li>
+      </ul>
     </mat-card-content>
   </mat-card>
 
@@ -49,22 +51,23 @@
     <mat-card-header>
       <div mat-card-avatar class="material-icons">luggage</div>
       <mat-card-title>Supplies</mat-card-title>
-      <mat-card-subtitle>Check your lists.</mat-card-subtitle>
+      <mat-card-subtitle>Mind your belongings.</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="{{imgPath}}/animat-essential/image/animat-image-color.gif" alt="Image Animaticon">
+    <img mat-card-image src="{{imgPath}}/animat-essential/rocket/animat-rocket-color.gif" alt="Rocket Animaticon">
     <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
+      <ul style="color: red;">
+        <li>Keep track of your pack.</li>
+        <li>Organize your belongings.</li>
+        <li>Never forget what you need to bring.</li>
+        <li>Going somewhere? Make sure your belongings go with you.</li>
+      </ul>
     </mat-card-content>
-    
+
   </mat-card>
 </article>
 
 
-<section id="testimonials">
+<section class="testimonials">
 
   <mat-grid-list cols="3" rowHeight="1:1">
     <mat-grid-tile
@@ -73,31 +76,16 @@
       [rowspan]="tile.rows"
       [style.background]="tile.color"
     >
-      {{tile.text}}
+      <blockquote *ngIf="!tile.imgSource">{{tile.text}}</blockquote>
 
-      <img *ngIf="tile.imgSource" src="{{ tile.imgSource }}" alt="Satisfied Customer"/>
+      <figure *ngIf="tile.imgSource">
+        <img src="{{ tile.imgSource }}" alt="Satisfied Customer"/>
+        <figcaption>{{ tile.text }}</figcaption>
+      </figure>
+
     </mat-grid-tile>
   </mat-grid-list>
-  <!-- <mat-grid-list cols="2" rowHeight="1:1">
-    <mat-grid-tile>
-      Picture of generated person's face
-    </mat-grid-tile>
-    <mat-grid-tile>
-      If I were a real person, I would give a 5-star rating for 5-star planning!
-    </mat-grid-tile>
-    <mat-grid-tile>
-      I am also not a real person, but this app is really good.
-    </mat-grid-tile>
-    <mat-grid-tile>
-      Picture of generated person's face
-    </mat-grid-tile>
-    <mat-grid-tile>
-      Picture of generated person's face
-    </mat-grid-tile>
-    <mat-grid-tile>
-      I believe I'm real, and I know this app is fantastic!
-    </mat-grid-tile>
-  </mat-grid-list> -->
+
 </section>
 
 
