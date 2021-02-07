@@ -68,7 +68,7 @@
 
   <mat-grid-list cols="3" rowHeight="1:1">
     <mat-grid-tile
-      *ngFor="let tile of tiles"
+      *ngFor="let tile of testimonialTiles"
       [colspan]="tile.cols"
       [rowspan]="tile.rows"
       [style.background]="tile.color"
@@ -102,11 +102,16 @@
 
 
 <footer>
-  <mat-toolbar>
-    <mat-toolbar-row>Company logos here.</mat-toolbar-row>
-    <mat-toolbar-row>Disabled links here.</mat-toolbar-row>
-    <mat-toolbar-row>Social media icons here.</mat-toolbar-row>
-  </mat-toolbar>
+    <mat-grid-list cols="4" rowHeight="2:1">
+      <mat-grid-tile
+        *ngFor="let tile of footerTiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color"
+      >
+        {{tile.text}}
+      </mat-grid-tile>
+    </mat-grid-list>
 </footer>
 
 
