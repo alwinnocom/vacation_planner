@@ -65,7 +65,7 @@
 
 
 <section id="testimonials">
-  
+
   <mat-grid-list cols="3" rowHeight="1:1">
     <mat-grid-tile
       *ngFor="let tile of tiles"
@@ -74,6 +74,8 @@
       [style.background]="tile.color"
     >
       {{tile.text}}
+
+      <img *ngIf="tile.imgSource" src="{{ tile.imgSource }}" alt="Satisfied Customer"/>
     </mat-grid-tile>
   </mat-grid-list>
   <!-- <mat-grid-list cols="2" rowHeight="1:1">
