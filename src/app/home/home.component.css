@@ -37,6 +37,9 @@ figcaption {
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
-  border: 2px solid white;
+
+  padding: 4px;
+
+  border: 2px solid black;
   background-color: white;
 }

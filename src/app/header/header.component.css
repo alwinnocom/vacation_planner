@@ -17,9 +17,21 @@
   background-color: rgb(157, 189, 189);
 } */
 
-/* Flex Navbar code from my 1st Project - Deluge Delights Restaurant */
+
 mat-toolbar {
   position: sticky;
+
+  top: 0;
+  left: 0;
+
+  /* Make sure content cannot be seen behind toolbar. */
+  z-index: 96;
+}
+
+
+/* Flex Navbar code from my 1st Project - Deluge Delights Restaurant */
+mat-toolbar {
+  /* Format li links. */
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -34,13 +46,23 @@ mat-toolbar ul {
   align-items: center;
 }
 
+mat-toolbar ul li {
+  padding: 0 15px;
+
+  border-style: solid;
+  border-color: white;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
 mat-toolbar ul li:first-of-type {
   position: absolute;
   left: 10px;
 }
 
-mat-toolbar ul li {
-  padding: 0 10px;
+mat-toolbar ul li:first-of-type, mat-toolbar ul li:last-of-type {
+  border: 0px;
 }
 
 
@@ -85,6 +107,7 @@ ng-template div {
 
 mat-tab-group {
   color: blue;
+  display: flex;
 }
 
 mat-icon {

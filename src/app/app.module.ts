@@ -14,7 +14,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MaterialModule } from './material.module';
 import { HomeComponent } from './home/home.component';
-import { HomeStepperComponent } from './home-stepper/home-stepper.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { HomeStepperComponent } from './home-stepper/home-stepper.component';
     CostsComponent,
     DestinationComponent,
     HeaderComponent,
-    HomeComponent,
-    HomeStepperComponent
+    HomeComponent
   ],
   imports: [
     AppRoutingModule,
