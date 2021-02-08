@@ -15,16 +15,25 @@ main {
 }
 
 
+/* Center the Desktop-Only Horizontal Stepper */
+#desktop-only-destination-component {
+  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 /* Grid for 3 Forms */
 .datepicker-and-select-form {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 300px;
+  grid-template-rows: 200px 300px; */
 
   background-color: white;
 }
 
-.schedule-your-retreat {
+/* .schedule-your-retreat {
   grid-row-start: 1;
   grid-row-end: 1;
   grid-column-start: 1;
@@ -43,7 +52,7 @@ main {
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 2;
-}
+} */
 
 /* .vacation-selector {
   width: 256px;

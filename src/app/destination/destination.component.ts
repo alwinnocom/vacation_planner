@@ -6,6 +6,7 @@ import { debounceTime } from 'rxjs/operators';
 import { MatAccordion } from '@angular/material/expansion';
 
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 
 @Component({
   selector: 'app-destination',
