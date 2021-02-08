@@ -124,3 +124,42 @@ section, mat-grid-list {
 
 
 /* Footer CSS */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+
+  grid-template-areas:
+    "a a a a a"
+    "b c d e f"
+    "g g g g g"
+}
+
+.footer__first-row {
+  grid-area: a
+}
+
+.footer__second-row__first-section {
+  grid-area: b
+}
+
+.footer__second-row__second-section {
+  grid-area: c
+}
+
+.footer__second-row__third-section {
+  grid-area: d
+}
+
+.footer__second-row__fourth-section {
+  grid-area: e
+}
+
+.footer__second-row__fifth-section {
+  grid-area: f
+}
+
+.footer__last-row {
+  grid-area: g
+}
