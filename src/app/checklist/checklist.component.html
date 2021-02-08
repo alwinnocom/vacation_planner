@@ -1,36 +1,40 @@
 <main>
   <!-- Angular Material - Expansion Panel = https://material.angular.io/components/expansion/examples -->
 
-  <div class="example-action-buttons">
+  <div *ngIf="desktopSize === 'tablet'" class="example-action-buttons">
     <button mat-button (click)="accordion.openAll()">Expand All</button>
     <button mat-button (click)="accordion.closeAll()">Collapse All</button>
   </div>
 
 
-  <!-- 5 Accordions if width > 1000px -->
+  <!-- 5 Tabs if width > 1000px -->
 
-  <form *ngIf="desktopSize === 'desktop'" class='desktop-centered-checklist-form'>
+  <form id="desktop-tabs-only" *ngIf="desktopSize === 'desktop'" class='desktop-centered-checklist-form'>
 
-    <mat-accordion multi>
-        <mat-expansion-panel *ngFor="let item of items" class='checklist-form__grid-list'>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              <span class="material-icons"> {{ item.iconName }}</span>
-              <p>{{ item.name }}</p>
-            </mat-panel-title>
-            <mat-panel-description>
+    <mat-tab-group *ngFor="let item of items" mat-align-tabs="center">
 
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <section>
-            <ul>
-              <li *ngFor="let subcategory of item.subcategories">
-                <mat-checkbox class="subcategory-checkbox">{{ subcategory }}</mat-checkbox>
-              </li>
-            </ul>
-          </section>
-        </mat-expansion-panel>
-    </mat-accordion>
+      <mat-tab label="First">
+
+        <ng-template mat-tab-label>
+
+          <div>
+            <mat-icon aria-hidden="false" aria-label="Example home icon">{{ item.iconName }}</mat-icon>
+            <p> {{ item.name }} </p>
+          </div>
+
+        </ng-template>
+
+        <section>
+          <ul>
+            <li *ngFor="let subcategory of item.subcategories">
+              <mat-checkbox class="subcategory-checkbox">{{ subcategory }}</mat-checkbox>
+            </li>
+          </ul>
+        </section>
+
+      </mat-tab>
+
+    </mat-tab-group>
 
   </form>
 

@@ -28,8 +28,23 @@ form {
 
 
 /* Make sure mat-accordion has NO background. Everything else can be background-color: white; */
+
+/* Mat-Expansion-Panel white background - Mobile */
 mat-expansion-panel, mat-expansion-panel-header, mat-panel-title, mat-panel-title span, mat-panel-title p, mat-panel-description, section {
   background-color: white;
+}
+
+/* Mat-Tabs white background - Desktop */
+ng-template, mat-tab-group, mat-tab section, mat-tab-header {
+  background-color: white;
+}
+
+mat-tab-group {
+  position: relative;
+  top: 100px;
+  max-height: 200px;
+
+  padding: 0 10px;
 }
 
 section {
@@ -37,6 +52,9 @@ section {
   padding: 0 10px;
 }
 
+#desktop-tabs-only {
+  border-radius: 5px;
+}
 
 /* Mat-Accordion Grid if desktop's size > 1000px */
 /* .checklist-form__grid-list {
@@ -46,6 +64,8 @@ section {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 } */
+
+
 
 
 /* Mat-Panel Title */
