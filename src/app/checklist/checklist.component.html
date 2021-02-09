@@ -1,4 +1,4 @@
-<main>
+<main id="wrapper">
   <!-- Angular Material - Expansion Panel = https://material.angular.io/components/expansion/examples -->
 
   <div *ngIf="desktopSize === 'tablet'" class="example-action-buttons">
@@ -19,7 +19,7 @@
 
           <div>
             <mat-icon aria-hidden="false" aria-label="Example home icon">{{ item.iconName }}</mat-icon>
-            <p> {{ item.name }} </p>
+            <span class="mat-tab-category-name">{{ item.name }}</span>
           </div>
 
         </ng-template>

@@ -14,6 +14,25 @@ mat-toolbar {
 }
 
 
+/* READ THIS - DO NOT CHANGE */
+/* The mat-tab-category-name & Mat-Icon are NOT using default Angular Material positioning.*/
+/* Both the mat-tab-category-name and mat-icon are absolutely positioned because the Mat-Tabs will not allow their default heights to be changed. */
+.mat-tab-category-name {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  /* right: 0; */
+}
+
+mat-icon {
+  position: absolute;
+  bottom: 22px;
+  right: 67px;
+}
+
+
+
 /* Flex Navbar Ul Li: code from my 1st Project - Deluge Delights Restaurant */
 mat-toolbar {
   /* Format li links. */

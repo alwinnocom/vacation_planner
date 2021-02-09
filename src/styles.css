@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Angular Pre-Built Theme DOES Work on Tabs! */
+/* You need this or else the entire app styling breaks. */
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 html, body { height: 100%; }
@@ -8,3 +9,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Libre+Baskerville&family=Lobster+Two&family=Merienda&family=Montserrat&family=Raleway&family=Roboto+Condensed&display=swap'); */
 
+body, html{
+  height: 100%;
+  margin: 0;
+}
+
+.mat-tab-body-wrapper{
+  flex-grow: 1;
+}
