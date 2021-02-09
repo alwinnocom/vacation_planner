@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  background-color: rgb(157, 189, 189);
+  /* background-color: rgb(157, 189, 189); */
 }
 
 
@@ -48,6 +48,7 @@ mat-card {
 /* Mat-Card-Content colors */
 .costs-form {
   color: purple;
+  padding: 0 10px;
 }
 
 .costs-form__grid-list {
@@ -59,6 +60,7 @@ mat-card {
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr; */
+  padding: 0 10px;
 }
 
 .costs-form___form-field {
