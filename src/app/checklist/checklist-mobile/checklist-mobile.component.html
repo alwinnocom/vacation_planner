@@ -1,1 +1,31 @@
-<p>checklist-mobile works!</p>
+<!-- 1 Accordion if width <= 1000px; -->
+<form [ngClass]="{'desktop-centered-checklist-form': mobileSize === false}">
+
+  <div class="accordion-buttons">
+    <button mat-button (click)="accordion.openAll()">Expand All</button>
+    <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+  </div>
+
+  <mat-accordion multi>
+      <mat-expansion-panel *ngFor="let item of items">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="material-icons"> {{ item.iconName }}</span>
+            <p>{{ item.name }}</p>
+          </mat-panel-title>
+          <mat-panel-description>
+
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <section>
+          <ul>
+            <li *ngFor="let subcategory of item.subcategories">
+              <mat-checkbox class="subcategory-checkbox">{{ subcategory }}</mat-checkbox>
+            </li>
+          </ul>
+        </section>
+      </mat-expansion-panel>
+
+  </mat-accordion>
+
+</form>

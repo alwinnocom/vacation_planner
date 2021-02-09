@@ -16,8 +16,6 @@ import { MaterialModule } from './material.module';
 import { HomeComponent } from './home/home.component';
 import { ChecklistMobileComponent } from './checklist/checklist-mobile/checklist-mobile.component';
 import { ChecklistDesktopComponent } from './checklist/checklist-desktop/checklist-desktop.component';
-import { CostsMobileComponent } from './costs/costs-mobile/costs-mobile.component';
-import { CostsDesktopComponent } from './costs/costs-desktop/costs-desktop.component';
 import { DestinationDesktopComponent } from './destination/destination-desktop/destination-desktop.component';
 import { DestinationMobileComponent } from './destination/destination-mobile/destination-mobile.component';
 import { HeaderMobileComponent } from './header/header-mobile/header-mobile.component';
@@ -38,8 +36,6 @@ import { HomeFooterComponent } from './home/home-footer/home-footer.component';
     HomeComponent,
     ChecklistMobileComponent,
     ChecklistDesktopComponent,
-    CostsMobileComponent,
-    CostsDesktopComponent,
     DestinationDesktopComponent,
     DestinationMobileComponent,
     HeaderMobileComponent,

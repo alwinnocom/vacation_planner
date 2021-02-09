@@ -3,69 +3,9 @@
 
 
 
+  <app-checklist-desktop *ngIf="desktopSize === 'desktop'"></app-checklist-desktop>
 
-  <!-- 5 Tabs if width > 1000px -->
-
-  <form id="desktop-tabs-only" *ngIf="desktopSize === 'desktop'" class='desktop-centered-checklist-form'>
-
-    <mat-tab-group *ngFor="let item of items" mat-align-tabs="center">
-
-      <mat-tab label="First">
-
-        <ng-template mat-tab-label>
-
-          <div>
-            <mat-icon aria-hidden="false" aria-label="Example home icon">{{ item.iconName }}</mat-icon>
-            <span class="mat-tab-category-name">{{ item.name }}</span>
-          </div>
-
-        </ng-template>
-
-        <section>
-          <ul>
-            <li *ngFor="let subcategory of item.subcategories">
-              <mat-checkbox class="subcategory-checkbox">{{ subcategory }}</mat-checkbox>
-            </li>
-          </ul>
-        </section>
-
-      </mat-tab>
-
-    </mat-tab-group>
-
-  </form>
-
-
-  <!-- 1 Accordion if width <= 1000px; -->
-  <form *ngIf="desktopSize === 'tablet'" [ngClass]="{'desktop-centered-checklist-form': mobileSize === false}">
-
-    <div *ngIf="desktopSize === 'tablet'" class="accordion-buttons">
-      <button mat-button (click)="accordion.openAll()">Expand All</button>
-      <button mat-button (click)="accordion.closeAll()">Collapse All</button>
-    </div>
-
-    <mat-accordion multi>
-        <mat-expansion-panel *ngFor="let item of items">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              <span class="material-icons"> {{ item.iconName }}</span>
-              <p>{{ item.name }}</p>
-            </mat-panel-title>
-            <mat-panel-description>
-
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <section>
-            <ul>
-              <li *ngFor="let subcategory of item.subcategories">
-                <mat-checkbox class="subcategory-checkbox">{{ subcategory }}</mat-checkbox>
-              </li>
-            </ul>
-          </section>
-        </mat-expansion-panel>
-
-    </mat-accordion>
-
-  </form>
+  <app-checklist-mobile *ngIf="desktopSize === 'tablet'"></app-checklist-mobile>
+  
 
 </main>

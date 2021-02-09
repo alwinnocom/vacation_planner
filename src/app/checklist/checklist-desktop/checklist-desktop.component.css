@@ -1,0 +1,156 @@
+main {
+  /* Use ../../assets/images/____ = https://github.com/angular/angular-cli/issues/12797 */
+  background-image: url('../../../assets/images/beach.jpg');
+}
+
+button {
+  color: white;
+  border: 2px solid white;
+}
+
+/* .accordion-buttons {
+  position: absolute;
+  bottom: 5px;
+} */
+
+
+.desktop-centered-checklist-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: center; */
+  min-height: 100vh;
+}
+
+
+form {
+  color: purple;
+  padding-top: 20px;
+  padding-left: 20px;
+
+  /* margin-bottom: 20px; */
+  min-height: 100vh;
+}
+
+
+/* Make sure mat-accordion has NO background. Everything else can be background-color: white; */
+
+/* ng-template icons styling */
+ng-template div {
+  display: flex;
+}
+
+mat-tab-group {
+  height: 500px;
+  margin-top: 10px;
+}
+
+
+form {
+  padding-top: 40px;
+}
+
+/* READ THIS - DO NOT CHANGE */
+/* The mat-tab-category-name & Mat-Icon are NOT using Angular Material positioning.*/
+/* The Mat-Icon is positioned 19px absolutely above the name. It is moved from the right 67px to "center" it. */
+.mat-tab-category-name {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  /* right: 0; */
+}
+
+mat-icon {
+  position: absolute;
+  bottom: 22px;
+  right: 67px;
+}
+
+
+/* Every other mat-tab-group & its checklist sections will be the same color. */
+mat-tab-group:nth-child(odd), mat-tab-group:nth-child(odd) section {
+  background-color: blue;
+}
+
+mat-tab-group:nth-child(even), mat-tab-group:nth-child(even) section {
+  background-color: green;
+}
+
+
+
+/* Mat-Expansion-Panel white background - Mobile */
+mat-expansion-panel, mat-expansion-panel-header, mat-panel-title, mat-panel-title span, mat-panel-title p, mat-panel-description, section {
+  background-color: white;
+}
+
+/* Mat-Tabs white background - Desktop */
+ng-template, mat-tab-group, mat-tab section, mat-tab-header {
+  background-color: white;
+}
+
+mat-tab-group {
+  position: relative;
+  top: 100px;
+  max-height: 200px;
+
+  padding: 0 10px;
+}
+
+section {
+  color: blue;
+  padding: 0 10px;
+}
+
+#desktop-tabs-only {
+  border-radius: 5px;
+}
+
+/* Mat-Accordion Grid if desktop's size > 1000px */
+/* .checklist-form__grid-list {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+} */
+
+
+
+
+/* Mat-Panel Title */
+mat-panel-title span {
+  padding-right: 10px;
+}
+
+mat-panel-title {
+  color: purple;
+}
+
+
+/* Category Name (Essentials, Airport, Clothes, Electronic, Health) */
+.checkbox-category-name {
+  padding-left: 5px;
+  font-size: 120%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  color: green;
+}
+
+
+/* Checkboxes to click within each Category */
+.subcategory-checkbox {
+  color: purple;
+}
+
+/* deep-purple.amber.css has the following default font style for mat-checkbox:
+  .mat-checkbox {
+      font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+*/
