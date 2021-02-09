@@ -12,6 +12,7 @@
 main {
   /* Use ../../assets/images/____ = https://github.com/angular/angular-cli/issues/12797 */
   background-image: url('../../assets/images/beach.jpg');
+  min-height: 100vh;
 }
 
 
@@ -24,39 +25,14 @@ main {
 }
 
 
-/* Grid for 3 Forms */
+/* Desktop Component */
 .datepicker-and-select-form {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 300px; */
-
   background-color: white;
 }
 
-/* .schedule-your-retreat {
-  grid-row-start: 1;
-  grid-row-end: 1;
-  grid-column-start: 1;
-  grid-column-end: 1;
-}
-
-.start-your-vacation {
-  grid-row-start: 2;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 1;
-}
-
 .datepicker {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 2;
-} */
-
-/* .vacation-selector {
-  width: 256px;
-} */
+  padding-bottom: 20px;
+}
 
 
 /* Colors + Fonts + Position + Padding */

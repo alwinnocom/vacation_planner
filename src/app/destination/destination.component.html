@@ -27,6 +27,8 @@
 
           </form>
 
+          <mat-divider></mat-divider>
+
           <form class="start-your-vacation">
 
             <h3 class="vacation-heading" *ngIf="(!departure_point && !destination) || (departure_point && !destination || !departure_point && destination)"><span class="material-icons">local_see</span><span>Start your Vacation!</span></h3>
@@ -110,6 +112,8 @@
 
   </section>
 
+
+
   <section id="mobile-only-destination-component" *ngIf="mobileSize" class="datepicker-and-select-form">
 
     <form class="schedule-your-retreat">
@@ -133,6 +137,8 @@
 
     </form>
 
+    <mat-divider></mat-divider>
+
     <form class="start-your-vacation">
 
       <h3 class="vacation-heading" *ngIf="(!departure_point && !destination) || (departure_point && !destination || !departure_point && destination)"><span class="material-icons">local_see</span><span>Start your Vacation!</span></h3>
@@ -152,6 +158,7 @@
 
     </form>
 
+    <mat-divider></mat-divider>
 
     <!-- Mat Selection List = https://material.angular.io/components/list/examples -->
     <form class="datepicker">
