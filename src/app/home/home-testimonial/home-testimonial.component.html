@@ -1,0 +1,22 @@
+<section class="testimonials">
+
+  <mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile
+      *ngFor="let tile of testimonialTiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color"
+    >
+      <blockquote *ngIf="!tile.imgSource">
+        <span class="large-quotation-mark">"</span>{{tile.text}}<span class="large-quotation-mark">"</span>
+      </blockquote>
+
+      <figure *ngIf="tile.imgSource">
+        <img src="{{ tile.imgSource }}" alt="Testimonial of an Apocryphal Customer."/>
+        <figcaption>{{ tile.text }}</figcaption>
+      </figure>
+
+    </mat-grid-tile>
+  </mat-grid-list>
+
+</section>

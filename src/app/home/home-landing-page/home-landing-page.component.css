@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* The overflow-x: hidden; code messes up the depiction of the quotes! */
+  /* overflow-x: hidden; */
+}
+
+
+/* Hero Section Image */
+.cabana-hero-image img {
+  /* cover = Good for filling the whole horizontal distance. Use "contain" for card images. */
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+.cabana-hero-image figcaption {
+  position: absolute;
+
+  /* Half the image's height. */
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  padding: 15px;
+
+  border: 2px solid black;
+  background-color: rgb(105, 128, 0);
+}
+
+.cabana-hero-image figcaption p, figcaption button {
+  margin: 7px 5px;
+}
+
+figcaption button {
+  padding: 5px;
+}

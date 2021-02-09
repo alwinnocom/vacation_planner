@@ -1,105 +1,15 @@
-<!-- Photo by Thorsten technoman from Pexels -->
-<figure class="cabana-hero-image">
-  <figcaption>
-    <p>Enjoy your dream vacation.</p>
-    <div>
-      <button>Learn More</button>
-      <button>Get Started</button>
-    </div>
-  </figcaption>
-
-  <img src="{{imgPath}}/cabana.jpg" alt="Cabana picture."/>
-</figure>
+<app-home-landing-page></app-home-landing-page>
 
 
-<article id="home-cards">
-  <mat-card>
-    <mat-card-header>
-      <div mat-card-avatar class="material-icons">emoji_transportation</div>
-      <mat-card-title>Destinations</mat-card-title>
-      <mat-card-subtitle>Schedule your journey.</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="{{imgPath}}/animat-essential/image/animat-image-color.gif" alt="Image Animaticon">
-    <mat-card-content>
-      <ul style="color: red;">
-        <li>Having trouble organizing your dream vacation?</li>
-        <li>Rest easy with your new Vacation Planner!</li>
-        <li>Schedule your journey to a distant land.</li>
-        <li>Choose your ideal location for your surreal vacation.</li>
-      </ul>
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card>
-    <mat-card-header>
-      <div mat-card-avatar class="material-icons">calculate</div>
-      <mat-card-title>Expenses</mat-card-title>
-      <mat-card-subtitle>Record your finances.</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="{{imgPath}}/animat-essential/diamond/animat-diamond-color.gif" alt="Diamond Animaticon">
-    <mat-card-content>
-      <ul style="color: red;">
-        <li>Bills can add up.</li>
-        <li>Divide and conquer.</li>
-        <li>Make sure your finances are in order.</li>
-        <li>Avoid financial stress on your vacation.</li>
-      </ul>
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card>
-    <mat-card-header>
-      <div mat-card-avatar class="material-icons">luggage</div>
-      <mat-card-title>Supplies</mat-card-title>
-      <mat-card-subtitle>Mind your belongings.</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="{{imgPath}}/animat-essential/rocket/animat-rocket-color.gif" alt="Rocket Animaticon">
-    <mat-card-content>
-      <ul style="color: red;">
-        <li>Keep track of your pack.</li>
-        <li>Organize your belongings.</li>
-        <li>Never forget what you need to bring.</li>
-        <li>Going somewhere? Make sure your belongings go with you.</li>
-      </ul>
-    </mat-card-content>
-
-  </mat-card>
-</article>
+<app-home-cards></app-home-cards>
 
 
-<section class="testimonials">
-
-  <mat-grid-list cols="3" rowHeight="2:1">
-    <mat-grid-tile
-      *ngFor="let tile of testimonialTiles"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-      [style.background]="tile.color"
-    >
-      <blockquote *ngIf="!tile.imgSource">
-        <span class="large-quotation-mark">"</span>{{tile.text}}<span class="large-quotation-mark">"</span>
-      </blockquote>
-
-      <figure *ngIf="tile.imgSource">
-        <img src="{{ tile.imgSource }}" alt="Testimonial of an Apocryphal Customer."/>
-        <figcaption>{{ tile.text }}</figcaption>
-      </figure>
-
-    </mat-grid-tile>
-  </mat-grid-list>
-
-</section>
+<app-home-testimonial></app-home-testimonial>
 
 
-<footer>
-    <div class="footer__first-row">A</div>
-    <div class="footer__second-row__first-section">B</div>
-    <div class="footer__second-row__second-section">C</div>
-    <div class="footer__second-row__third-section">D</div>
-    <div class="footer__second-row__fourth-section">E</div>
-    <div class="footer__second-row__fifth-section">F</div>
-    <div class="footer__last-row">G</div>
-</footer>
+<app-home-footer></app-home-footer>
+
+
 
 
 <!-- Stepper component - https://material.angular.io/components/stepper/overview -->

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* The overflow-x: hidden; code messes up the depiction of the quotes! */
+  /* overflow-x: hidden; */
+}
+
+
+/* Testimonial section */
+section, mat-grid-list {
+  max-width: 100%;
+}
+
+.testimonials figure {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials img {
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+}
+
+.testimonials img, .testimonials figcaption {
+  max-width: 50%;
+  max-height: 50%;
+
+  position: relative;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  text-align: center;
+}
+
+.testimonials figcaption {
+  display: flex;
+}
+
+/* Testimonial Quote Styling */
+
+.testimonials blockquote {
+  font-size: 50px;
+  max-height: 100%;
+}
+
+.large-quotation-mark {
+  font-size: 50px;
+}

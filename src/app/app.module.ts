@@ -22,8 +22,11 @@ import { DestinationDesktopComponent } from './destination/destination-desktop/d
 import { DestinationMobileComponent } from './destination/destination-mobile/destination-mobile.component';
 import { HeaderMobileComponent } from './header/header-mobile/header-mobile.component';
 import { HeaderDesktopComponent } from './header/header-desktop/header-desktop.component';
-import { HomeDesktopComponent } from './home/home-desktop/home-desktop.component';
-import { HomeMobileComponent } from './home/home-mobile/home-mobile.component';
+import { HomeLandingPageComponent } from './home/home-landing-page/home-landing-page.component';
+import { HomeCardsComponent } from './home/home-cards/home-cards.component';
+import { HomeTestimonialComponent } from './home/home-testimonial/home-testimonial.component';
+import { HomeFooterComponent } from './home/home-footer/home-footer.component';
+
 
 @NgModule({
   declarations: [
@@ -41,8 +44,10 @@ import { HomeMobileComponent } from './home/home-mobile/home-mobile.component';
     DestinationMobileComponent,
     HeaderMobileComponent,
     HeaderDesktopComponent,
-    HomeDesktopComponent,
-    HomeMobileComponent
+    HomeLandingPageComponent,
+    HomeCardsComponent,
+    HomeTestimonialComponent,
+    HomeFooterComponent
   ],
   imports: [
     AppRoutingModule,

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* The overflow-x: hidden; code messes up the depiction of the quotes! */
+  /* overflow-x: hidden; */
+}
+
+
+
+/* Home Cards */
+article {
+  display: flex;
+  max-width: 100%;
+}
+
+article mat-card {
+  max-width: 33.3333%;
+}
+
+article img {
+  border-radius: 50%;
+  max-width: 400px;
+}
+
+/* mat-card-header {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+} */
