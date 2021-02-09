@@ -8,12 +8,3 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Libre+Baskerville&family=Lobster+Two&family=Merienda&family=Montserrat&family=Raleway&family=Roboto+Condensed&display=swap'); */
-
-body, html{
-  height: 100%;
-  margin: 0;
-}
-
-.mat-tab-body-wrapper{
-  flex-grow: 1;
-}
