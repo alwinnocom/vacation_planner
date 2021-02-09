@@ -1,0 +1,128 @@
+/* Google Fonts for Original Surfer */
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+
+/* Sticky toolbar */
+mat-toolbar {
+  position: sticky;
+
+  top: 0;
+  left: 0;
+
+  /* Make sure content cannot be seen behind toolbar. */
+  z-index: 96;
+}
+
+
+/* READ THIS - DO NOT CHANGE */
+/* The mat-tab-category-name & Mat-Icon are NOT using default Angular Material positioning.*/
+/* Both the mat-tab-category-name and mat-icon are absolutely positioned because the Mat-Tabs will not allow their default heights to be changed. */
+.mat-tab-category-name {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  /* right: 0; */
+}
+
+mat-icon {
+  position: absolute;
+  bottom: 22px;
+  right: 67px;
+}
+
+
+
+/* Flex Navbar Ul Li: code from my 1st Project - Deluge Delights Restaurant */
+mat-toolbar {
+  /* Format li links. */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+mat-toolbar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+mat-toolbar ul li {
+  padding: 0 15px;
+
+  border-style: solid;
+  border-color: white;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+mat-toolbar ul li:first-of-type {
+  position: absolute;
+  left: 10px;
+}
+
+mat-toolbar ul li:first-of-type, mat-toolbar ul li:last-of-type {
+  border: 0px;
+}
+
+
+/* Centered Tabs */
+.centered-mat-tab {
+  position: relative;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* Format Mat Tabs - https://github.com/angular/components/issues/10141 & https://stackoverflow.com/questions/50722183/angular-material-tab-height */
+
+:host ::ng-deep .mat-tab-body-wrapper {
+  min-height: 600px;
+
+}
+
+:host ::ng-deep .mat-tab-body.mat-tab-body-active {
+  min-height: 600px;
+
+}
+
+ng-template {
+  padding-top: 20px;
+}
+
+ng-template div {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Colors + Fonts for toolbar */
+.original-surfer {
+  font-family: 'Original Surfer', cursive;
+  color: white;
+}
+
+.material-light-blue {
+  background-color: #2196F3;
+}
+
+mat-tab-group {
+  color: blue;
+  display: flex;
+}
+
+mat-icon {
+  color: purple;
+}
+
+.mat-tab-label {
+  color: blue;
+  font-weight: 600;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+}
