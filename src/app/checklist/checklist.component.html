@@ -1,10 +1,7 @@
 <main id="wrapper">
   <!-- Angular Material - Expansion Panel = https://material.angular.io/components/expansion/examples -->
 
-  <div *ngIf="desktopSize === 'tablet'" class="example-action-buttons">
-    <button mat-button (click)="accordion.openAll()">Expand All</button>
-    <button mat-button (click)="accordion.closeAll()">Collapse All</button>
-  </div>
+
 
 
   <!-- 5 Tabs if width > 1000px -->
@@ -42,6 +39,11 @@
   <!-- 1 Accordion if width <= 1000px; -->
   <form *ngIf="desktopSize === 'tablet'" [ngClass]="{'desktop-centered-checklist-form': mobileSize === false}">
 
+    <div *ngIf="desktopSize === 'tablet'" class="accordion-buttons">
+      <button mat-button (click)="accordion.openAll()">Expand All</button>
+      <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+    </div>
+
     <mat-accordion multi>
         <mat-expansion-panel *ngFor="let item of items">
           <mat-expansion-panel-header>
@@ -61,6 +63,7 @@
             </ul>
           </section>
         </mat-expansion-panel>
+
     </mat-accordion>
 
   </form>

@@ -8,6 +8,12 @@ button {
   border: 2px solid white;
 }
 
+/* .accordion-buttons {
+  position: absolute;
+  bottom: 5px;
+} */
+
+
 .desktop-centered-checklist-form {
   display: flex;
   flex-direction: row;
