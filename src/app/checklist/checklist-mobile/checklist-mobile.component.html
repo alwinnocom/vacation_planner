@@ -2,8 +2,8 @@
 <form [ngClass]="{'desktop-centered-checklist-form': mobileSize === false}">
 
   <div class="accordion-buttons">
-    <button mat-button (click)="accordion.openAll()">Expand All</button>
-    <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+    <button (click)="accordion.openAll()">Expand All</button>
+    <button (click)="accordion.closeAll()">Collapse All</button>
   </div>
 
   <mat-accordion multi>
