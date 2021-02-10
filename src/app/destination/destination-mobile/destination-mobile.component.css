@@ -1,38 +1,38 @@
 
-  
-  
+
+
   /* Mobile Component */
   .datepicker-and-select-form {
     background-color: white;
   }
-  
+
   .datepicker {
     padding-bottom: 20px;
   }
-  
-  
+
+
   /* Colors + Fonts + Position + Padding */
   .vacation-heading {
     color: purple;
-    font-family: 'Merienda', cursive;
-  
+    /* font-family: 'Merienda', cursive; */
+
     position: relative;
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
   }
-  
-  
-  
+
+
+
   /* Give Icon some padding-right. */
   .vacation-heading span:first-of-type {
     padding-right: 7px;
   }
-  
-  
+
+
   .choose-your-vacation-location {
     padding: 0 10px;
   }
-  
-  
+
+
   /* Border only under text = https://stackoverflow.com/questions/16399232/restrict-border-width-to-text-width-in-a-block-element */
   /* .vacation-heading span::after {
     content: '';
@@ -43,34 +43,33 @@
     height: 2px;
     text-decoration: underline;
   } */
-  
+
   form {
     padding-left: 20px;
     /* margin-top: 40px; */
     margin: 40px 35px 0 35px;
   }
-  
-  
-  
+
+
+
   /* Angular Material Colors + Fonts */
   mat-form-field {
     color: blue;
   }
-  
+
   mat-form-field mat-label {
     color: blue;
-    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif; */
   }
-  
+
   /* mat-date-range-input input {
     color: greenyellow;
   } */
-  
+
   mat-datepicker-toggle {
     color: purple;
   }
-  
+
   /* mat-date-range-picker {
     color: green;
   } */
-  
