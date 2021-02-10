@@ -9,7 +9,7 @@
 
 
 
-/* Footer CSS */
+/* Footer Grid */
 
 footer {
   display: grid;
@@ -19,7 +19,7 @@ footer {
   grid-template-areas:
     "a a a a a"
     "b c d e f"
-    "g g g g g"
+    "g g g g g";
 }
 
 .footer__first-row {
@@ -48,4 +48,14 @@ footer {
 
 .footer__last-row {
   grid-area: g
+}
+
+
+/* Footer Miscellaneous CSS */
+footer div {
+  padding: 10px 0;
+}
+
+ul {
+  list-style-type: none;
 }
