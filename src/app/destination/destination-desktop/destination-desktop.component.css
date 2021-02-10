@@ -48,10 +48,13 @@
   text-decoration: underline;
 } */
 
+
+/* White Background-Color */
 form {
   padding-left: 20px;
   /* margin-top: 40px; */
   margin: 40px 35px 0 35px;
+  background-color: white;
 }
 
 
