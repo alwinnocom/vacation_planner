@@ -4,16 +4,11 @@
 
   <div *ngFor="let item of items">
 
-    <div>
-
-      <div>
-
-        <div>
-          <span class="material-icons">{{ item.iconName }}</span>
-          <span class="mat-tab-category-name">{{ item.name }}</span>
-        </div>
-
+      <div class="checkbox-header">
+        <span class="material-icons">{{ item.iconName }}</span>
+        <span class="mat-tab-category-name">{{ item.name }}</span>
       </div>
+
 
       <section>
         <ul>
@@ -22,8 +17,6 @@
           </li>
         </ul>
       </section>
-
-    </div>
 
   </div>
 
