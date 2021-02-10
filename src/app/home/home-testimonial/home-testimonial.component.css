@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Libre+Baskerville&family=Lobster+Two&family=Merienda&family=Montserrat&family=Raleway&family=Roboto+Condensed&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -38,15 +40,17 @@ section, mat-grid-list {
 
 .testimonials figcaption {
   display: flex;
+  color: white;
 }
 
 /* Testimonial Quote Styling */
 
 .testimonials blockquote {
-  font-size: 50px;
-  max-height: 100%;
+  font-size: 20px;
+  /* max-height: 100%; */
 }
 
 .large-quotation-mark {
   font-size: 50px;
+  font-family: 'Cookie', 'cursive';
 }
