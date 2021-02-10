@@ -55,7 +55,7 @@ form {
 /* The mat-tab-category-name & Mat-Icon are NOT using Angular Material positioning.*/
 /* The Mat-Icon is positioned 19px absolutely above the name. It is moved from the right 67px to "center" it. */
 .mat-tab-category-name {
-  position: absolute;
+  /* position: absolute; */
   bottom: 3px;
   left: 0;
   right: 0;

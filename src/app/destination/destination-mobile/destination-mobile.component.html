@@ -5,16 +5,16 @@
     <h3 class="vacation-heading"><span class="material-icons">departure_board</span><span>Schedule your Retreat</span></h3>
 
     <!-- https://material.angular.io/components/datepicker/overview -->
-    <mat-form-field appearance="fill">
-      <mat-label *ngIf="!start_date">Example: 1/20-1/25</mat-label>
-      <mat-label *ngIf="start_date">Schedule your days off!</mat-label>
+    <div appearance="fill">
+      <label *ngIf="!start_date">Example: 1/20-1/25</label>
+      <label *ngIf="start_date">Schedule your days off!</label>
       <mat-date-range-input [rangePicker]="picker">
         <input matStartDate placeholder="Start date" [ngModel]="start_date" (ngModelChange)="startDateChanged.next($event)" name="start_date">
         <input matEndDate placeholder="End date" [ngModel]="end_date" (ngModelChange)="endDateChanged.next($event)" name="end_date">
       </mat-date-range-input>
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-date-range-picker #picker></mat-date-range-picker>
-    </mat-form-field>
+    </div>
 
     <!-- Dream Island by Icons 8 at https://icons8.com/ -->
     <!-- <img src="my-app/src/app/images/dream-island.png" alt="Dream island vacation."/> -->
@@ -28,17 +28,17 @@
     <h3 class="vacation-heading" *ngIf="(!departure_point && !destination) || (departure_point && !destination || !departure_point && destination)"><span class="material-icons">local_see</span><span>Start your Vacation!</span></h3>
     <h3 class="vacation-heading" *ngIf="departure_point && destination"><span class="material-icons">local_see</span><span>Start your Vacation from {{ departure_point }} to {{ destination }}!</span></h3>
 
-    <mat-form-field class="choose-your-vacation-location" appearance="standard" >
-      <mat-label *ngIf="!departure_point">Depart from...</mat-label>
-      <mat-label *ngIf="departure_point" for="departure">Depart from {{ departure_point }} </mat-label>
-      <input type="text" required matInput [ngModel]="departure_point" (ngModelChange)="departurePointChanged.next($event)" name="departure_point">
-    </mat-form-field>
+    <div class="choose-your-vacation-location" appearance="standard" >
+      <label *ngIf="!departure_point">Depart from...</label>
+      <label *ngIf="departure_point" for="departure">Depart from {{ departure_point }} </label>
+      <input type="text" required [ngModel]="departure_point" (ngModelChange)="departurePointChanged.next($event)" name="departure_point">
+    </div>
 
-    <mat-form-field class="choose-your-vacation-location">
-      <mat-label *ngIf="!destination">Arrive at...</mat-label>
-      <mat-label *ngIf="destination" for="arrival">Arrive at {{ destination }} </mat-label>
-      <input type="text" required matInput [ngModel]="destination" (ngModelChange)="destinationChanged.next($event)" name="destination">
-    </mat-form-field>
+    <div class="choose-your-vacation-location">
+      <label *ngIf="!destination">Arrive at...</label>
+      <label *ngIf="destination" for="arrival">Arrive at {{ destination }} </label>
+      <input type="text" required [ngModel]="destination" (ngModelChange)="destinationChanged.next($event)" name="destination">
+    </div>
 
   </form>
 
@@ -50,8 +50,8 @@
     <h3 class="vacation-heading"><span class="material-icons">menu_book</span><span>Customize your Retreat</span></h3>
 
     <div class="example-action-buttons">
-      <button mat-button (click)="accordion.openAll()">Expand All</button>
-      <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+      <button (click)="accordion.openAll()">Expand All</button>
+      <button (click)="accordion.closeAll()">Collapse All</button>
     </div>
 
     <mat-accordion class="example-headers-align" multi>

@@ -2,18 +2,18 @@
 
 <form id="desktop-tabs-only" class='desktop-centered-checklist-form'>
 
-  <mat-tab-group *ngFor="let item of items" mat-align-tabs="center">
+  <div *ngFor="let item of items">
 
-    <mat-tab label="First">
+    <div>
 
-      <ng-template mat-tab-label>
+      <div>
 
         <div>
-          <mat-icon aria-hidden="false" aria-label="Example home icon">{{ item.iconName }}</mat-icon>
+          <span class="material-icons">{{ item.iconName }}</span>
           <span class="mat-tab-category-name">{{ item.name }}</span>
         </div>
 
-      </ng-template>
+      </div>
 
       <section>
         <ul>
@@ -23,8 +23,8 @@
         </ul>
       </section>
 
-    </mat-tab>
+    </div>
 
-  </mat-tab-group>
+  </div>
 
 </form>
