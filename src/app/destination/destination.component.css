@@ -1,7 +1,7 @@
 /* Background Image */
 main {
   /* Use ../../assets/images/____ = https://github.com/angular/angular-cli/issues/12797 */
-  background-image: url('../../assets/images/beach.jpg');
+  /* background-image: url('../../assets/images/beach.jpg'); */
   min-height: 100vh;
 }
 
