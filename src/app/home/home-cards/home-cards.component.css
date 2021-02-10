@@ -24,6 +24,12 @@ article img {
   max-width: 400px;
 }
 
+/* Home Cards Text */
+
+ul {
+  list-style-type: none;
+}
+
 /* mat-card-header {
   position: absolute;
 
