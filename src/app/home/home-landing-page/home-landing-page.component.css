@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  /* The overflow-x: hidden; code messes up the depiction of the quotes! */
+  /* The overflow-x: hidden; code messes up the depiction of the figcaption! */
   /* overflow-x: hidden; */
 }
 
@@ -28,8 +28,10 @@
   border-radius: 20px;
   padding: 15px;
 
-  border: 2px solid black;
-  background-color: rgb(105, 128, 0);
+  /* border: 2px solid black; */
+  font-size: 50px;
+  color: white;
+  /* background-color: rgb(105, 128, 0); */
 }
 
 .cabana-hero-image figcaption p, figcaption button {
