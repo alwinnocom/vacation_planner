@@ -2,7 +2,7 @@
 
 <main [ngClass]="{'desktop-centered-costs-form': mobileSize === false}">
   <section [ngClass]="{'mat-card__desktop-size-only' : desktopSize === 'desktop'}">
-    <div>
+    <div class="header">
       <span class="material-icons">home</span>
       <h2>Financial Planner</h2>
       <p>Pay your way.</p>
@@ -27,7 +27,7 @@
 
       <div>
         <section class="info-about-costs-form">
-          <button mat-stroked-button class="costs-form__submit-btn" type="submit">Calculate Total Cost.</button>
+          <button class="costs-form__submit-btn" type="submit">Calculate Total Cost.</button>
 
           <span class="if-costs-failed" *ngIf="failed">Costs have not been updated. Please remove your response and try again.</span>
 
