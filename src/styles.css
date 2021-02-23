@@ -2,7 +2,7 @@
 
 /* Angular Pre-Built Theme DOES Work on Tabs! */
 /* You need this or else the entire app styling breaks. */
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
