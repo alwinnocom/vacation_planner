@@ -24,6 +24,15 @@ article img {
   max-width: 400px;
 }
 
+section {
+  /* Tropical Brown border */
+  border: 1px solid #A95012;
+}
+
+section p {
+  padding: 5px;
+}
+
 /* Home Cards Text */
 
 ul {

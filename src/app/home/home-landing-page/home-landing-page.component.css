@@ -1,3 +1,6 @@
+/* Google Fonts for Original Surfer and Petrona */
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Petrona&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -40,4 +43,45 @@
 
 figcaption button {
   padding: 5px;
+
+  /* Tropical Brown */
+  border: 1px solid #A95012;
+  box-sizing: border-box;
+}
+
+
+figcaption h1 {
+  font-family: 'Original Surfer', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+
+  /* Tropical Dark-Blue */
+  color: #063581;
+}
+
+figcaption p {
+  /* Plan your rendezvous with our help. */
+  font-family: 'Petrona', 'serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+figcaption button span {
+  font-family: Petrona;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  /* identical to box height */
+
+  text-align: justify;
+
+  /* Tropical Brown */
+  color: #A95012;
 }
