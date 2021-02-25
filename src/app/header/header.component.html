@@ -1,7 +1,7 @@
 <mat-toolbar class="original-surfer material-light-blue">
 
     <!-- Logo created with LogoMakr.com, a free logo maker. -->
-    <img src="assets/images/LogoMakr-Rendezvous.png"/>
+    <img src="assets/images/LogoMakr-Rendezvous.png" [ngClass]="mobileSize ? 'img-mobile' : 'img-desktop'"/>
     <ul>
       <!-- <li>Vacation Planner</li> -->
       <li *ngIf="!mobileSize">Destinations</li>

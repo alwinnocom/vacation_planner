@@ -1,5 +1,5 @@
 /* Google Fonts for Original Surfer */
-@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Petrona&display=swap');
 
 
 /* Sticky toolbar */
@@ -11,6 +11,7 @@ mat-toolbar {
 
   /* Make sure content cannot be seen behind toolbar. */
   z-index: 96;
+  height: 127px;
 }
 
 
@@ -39,6 +40,18 @@ mat-toolbar ul li {
   border-left: 0px;
   border-top: 0px;
   border-bottom: 0px;
+  font-family: 'Petrona', serif;
+}
+
+.img-desktop {
+  position: absolute;
+  left: 5px;
+}
+
+.img-mobile {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* mat-toolbar ul li:first-of-type {
