@@ -16,12 +16,12 @@ export class HomeTestimonialComponent implements OnInit {
   imgPath: string = "assets/images"
 
   testimonialTiles: Tile[] = [
-    {text: "Daisy Harley", imgSource: "assets/images/multi-colored-hair-testimonial.jpg", cols: 1, rows:1 },
-    {text: "If I were a real person, I would give a 5-star rating for 5-star planning!", imgSource: '', cols: 2, rows:1 },
-    {text: "I am also not a real person, but this app is really good.", imgSource: '', cols: 2, rows:1 },
-    {text: "Daisy Harley", imgSource: "assets/images/multi-colored-hair-testimonial.jpg", cols: 1, rows:1 },
-    {text: "Daisy Harley", imgSource: "assets/images/multi-colored-hair-testimonial.jpg", cols: 1, rows:1 },
-    {text: "I believe I'm real, and I know this app is fantastic!", imgSource: '', cols: 2, rows:1 }
+    {text: "Beth Harmon", imgSource: "assets/images/beth-harmon-testimonial.jpg", cols: 1, rows:1 },
+    {text: '"I may not be a real person, but I think this app is really awesome! It gives me all the assistance I need for my apocryphal journey."  - Beth Harmon', imgSource: '', cols: 2, rows:1 },
+    {text: "“Rendezvous lets me rest and relax by turning my fantasy into my itenerary.” - Daisy Harley", imgSource: '', cols: 2, rows:1 },
+    {text: "Daisy Harley", imgSource: "assets/images/daisy-harley-testimonial.jpg", cols: 1, rows:1 },
+    {text: "Sam Wilson", imgSource: "assets/images/sergio-paula-testimonial.jpg", cols: 1, rows:1 },
+    {text: "“I’ve been looking for an all-in-one vacation planner all my life. Now, I can finally take a vacation from planning for vacations.” - Sam Wilson", imgSource: '', cols: 2, rows:1 }
   ];
 
 }

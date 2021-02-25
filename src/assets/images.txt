@@ -6,7 +6,7 @@
 <!-- <img src="{{imgPath}}/beth-harmon-testimonial.jpg" alt="Testimonial of an apocryphal customer."/> -->
 
 <!-- Photo by Dan on Unsplash = "https://unsplash.com/@dann?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Dan</a> on <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" -->
-<!-- <img src="{{imgPath}}/multi-colored-hair-testimonial.jpg" alt="Testimonial of an apocryphal customer."/> -->
+<!-- <img src="{{imgPath}}/daisy-harley-testimonial.jpg" alt="Testimonial of an apocryphal customer."/> -->
 
 <!-- Photo by Sergio de Paula on Unsplash = "https://unsplash.com/@sspaula?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sergio de Paula</a> on <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" -->
 <!-- <img src="{{imgPath}}/sergio-paula-testimonial.jpg" alt="Testimonial of an apocryphal customer."/> -->

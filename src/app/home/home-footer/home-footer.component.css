@@ -1,3 +1,6 @@
+/* Google Fonts for Original Surfer and Petrona */
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Petrona&family=Rubik&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -20,10 +23,21 @@ footer {
     "a a a a a"
     "b c d e f"
     "g g g g g";
+
+    /* Tropical White */
+    background: #F2F0DB;
 }
 
 .footer__first-row {
-  grid-area: a
+  grid-area: a;
+
+  height: 167px;
+}
+
+.footer__first-row img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .footer__second-row__first-section {
@@ -47,7 +61,16 @@ footer {
 }
 
 .footer__last-row {
-  grid-area: g
+  grid-area: g;
+
+  font-family: 'Rubik', 'sans-serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
+  /* Text-Gray */
+  color: #808080;
 }
 
 
@@ -58,4 +81,15 @@ footer div {
 
 ul {
   list-style-type: none;
+}
+
+.footer__second-row__first-section, .footer__second-row__second-section, .footer__second-row__third-section, .footer__second-row__fourth-section, .footer__second-row__fifth-section {
+  font-family: Petrona;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+
+  /* Tropical Blue */
+  color: #1155D4;
 }
