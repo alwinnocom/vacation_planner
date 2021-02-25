@@ -1,0 +1,103 @@
+<!-- Stepper component - https://material.angular.io/components/stepper/overview -->
+
+<p> People </p>
+
+<!-- Photo by Christopher Campbell on Unsplash - "https://unsplash.com/@chrisjoelcampbell?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Christopher Campbell</a> on <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"> -->
+<!-- <img src="{{imgPath}}/beth-harmon-testimonial.jpg" alt="Testimonial of an apocryphal customer."/> -->
+
+<!-- Photo by Dan on Unsplash = "https://unsplash.com/@dann?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Dan</a> on <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" -->
+<!-- <img src="{{imgPath}}/multi-colored-hair-testimonial.jpg" alt="Testimonial of an apocryphal customer."/> -->
+
+<!-- Photo by Sergio de Paula on Unsplash = "https://unsplash.com/@sspaula?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sergio de Paula</a> on <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" -->
+<!-- <img src="{{imgPath}}/sergio-paula-testimonial.jpg" alt="Testimonial of an apocryphal customer."/> -->
+
+
+<p>Images</p>
+
+<!-- Photo by Julius Silver from Pexels -->
+<!-- <img src="{{imgPath}}/beach.jpg" alt="Beach picture."/> -->
+
+<!-- Photo by Thorsten technoman from Pexels -->
+<!-- <img src="{{imgPath}}/cabana.jpg" alt="Cabana picture."/> -->
+
+<!-- Photo by Element5 Digital from Pexels -->
+<!-- <img src="{{imgPath}}/vacation-checklist.jpg" alt="Map picture."/> -->
+
+
+<!-- Photo by Element5 Digital from Pexels -->
+<!-- <img src="{{imgPath}}/travel-is-good-for-the-soul.jpg" alt="Travel is good for the soul."/> -->
+
+
+<!-- Photo by Porapak Apichodilok from Pexels -->
+<!-- <img src="{{imgPath}}/hold-the-world.jpg" alt="Holding the globe in your hand."/> -->
+
+
+<!-- Photo by David Bartus from Pexels -->
+<!-- <img src="{{imgPath}}/river-voyage.jpg" alt="1st-person voyage"/> -->
+
+
+<!-- Photo by Samson Katt from Pexels -->
+<!-- <img src="{{imgPath}}/ticket-machine.jpg" alt="Withdrawing vacation funds from a bank."/> -->
+
+<!-- Photo by Thorsten technoman from Pexels -->
+<!-- <img src="{{imgPath}}/paris-france.jpg" alt="Paris, France."/> -->
+
+
+<p>Icons8.com Icons</p>
+<!-- Illustration by icons8.com - https://icons8.com/illustrations/illustration/fogg-874 -->
+<!-- <img src="{{imgPath}}/dream-island.png" alt="Dream Island"/> -->
+
+<!-- Illustration by Marina Fedoseenko from Icons8 = https://icons8.com/illustrations/illustration/fogg-coffee-break -->
+<!-- <img src="{{imgPath}}/coffee-break-vacation.png" alt="Coffee Break Vacation"/> -->
+
+<!-- Illustration by Icons 8 from Icons8 = https://icons8.com/illustrations/illustration/lime-camping-near-the-sea -->
+<!-- <img src="{{imgPath}}/lime-camping-near-the-sea.png" alt="Camping Near the Sea"/> -->
+
+<!-- Illustration by Icons 8 from Icons8 = https://icons8.com/illustrations/illustration/cherry-209 -->
+<!-- <img src="{{imgPath}}/blue-beach.png" alt="Blue Beach."/> -->
+
+<!-- Illustration by Maria Shukshina from Icons8 = https://icons8.com/illustrations/illustration/abstract-1291 -->
+<!-- <img src="{{imgPath}}/abstract-camping.png" alt="Abstract Camping."/> -->
+
+<!-- Illustration by Natasha Remarchuk from Icons8 = https://icons8.com/illustrations/illustration/pale-travel-by-train -->
+<!-- <img src="{{imgPath}}/pale-travel-by-train.png" alt="Travel by Train"/> -->
+
+<p>Welcome to Vacation Planner!</p>
+
+
+<p>Animaticons</p>
+<!-- Compass Animaticon -->
+<!-- <img src="{{imgPath}}/animat-camp/compass/animat-compass-color.gif" alt="Compass Animaticon"/> -->
+
+<!-- Day-Night Animaticon -->
+<!-- <img src="{{imgPath}}/animat-camp/day-night/animat-day-night-color.gif" alt="Day-Night Animaticon"/> -->
+
+<!-- Road-Trip Animaticon -->
+<!-- <img src="{{imgPath}}/animat-camp/road-trip/animat-road-trip-color.gif" alt="Road-Trip Animaticon"/> -->
+
+<!-- Sign-Post Animaticon -->
+<!-- <img src="{{imgPath}}/animat-camp/sign-post/animat-sign-post-color.gif" alt="Sign-Post Animaticon"/> -->
+
+<!-- Tent Animaticon -->
+<!-- <img src="{{imgPath}}/animat-camp/tent/animat-tent-color.gif" alt="Tent Animaticon"/> -->
+
+<!-- Checkmark Animaticon -->
+<!-- <img src="{{imgPath}}/animat-essential/checkmark/animat-checkmark-color.gif" alt="Checkmark Animaticon"/> -->
+
+<!-- Diamond Animaticon -->
+<!-- <img src="{{imgPath}}/animat-essential/diamond/animat-diamond-color.gif" alt="Diamond Animaticon"/> -->
+
+<!-- Image Animaticon -->
+<!-- <img src="{{imgPath}}/animat-essential/image/animat-image-color.gif" alt="Image Animaticon"/> -->
+
+<!-- Lightbulb Animaticon -->
+<!-- <img src="{{imgPath}}/animat-essential/lightbulb/animat-lightbulb-color.gif" alt="Lightbulb Animaticon"/> -->
+
+<!-- Pencil Animaticon -->
+<!-- <img src="{{imgPath}}/animat-essential/pencil/animat-pencil-color.gif" alt="Pencil Animaticon"/> -->
+
+<!-- Rocket Animaticon -->
+<!-- <img src="{{imgPath}}/animat-essential/rocket/animat-rocket-color.gif" alt="Rocket Animaticon"/> -->
+
+<!-- Search Animaticon -->
+<!-- <img src="{{imgPath}}/animat-essential/search/animat-search-color.gif" alt="Search Animaticon"/> -->
