@@ -15,6 +15,8 @@ export class DestinationDesktopComponent implements OnInit, OnDestroy {
 
   @ViewChild(MatAccordion) accordion: MatAccordion;
 
+  flaticonPath: string = 'assets/images/flaticon-destination/svg';
+
   vacationControl = new FormControl();
   vacationGroups = [
 
