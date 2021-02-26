@@ -24,6 +24,7 @@ import { HomeLandingPageComponent } from './home/home-landing-page/home-landing-
 import { HomeCardsComponent } from './home/home-cards/home-cards.component';
 import { HomeTestimonialComponent } from './home/home-testimonial/home-testimonial.component';
 import { HomeFooterComponent } from './home/home-footer/home-footer.component';
+import { CostsModalComponent } from './costs/costs-modal/costs-modal.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { HomeFooterComponent } from './home/home-footer/home-footer.component';
     HomeLandingPageComponent,
     HomeCardsComponent,
     HomeTestimonialComponent,
-    HomeFooterComponent
+    HomeFooterComponent,
+    CostsModalComponent
   ],
   imports: [
     AppRoutingModule,

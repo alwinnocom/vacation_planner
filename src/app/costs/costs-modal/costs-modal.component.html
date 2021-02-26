@@ -1,0 +1,11 @@
+<img src="{{flaticonPath}}/002-budget-1.svg" alt="" [ngClass]="mobileSize ? 'flaticon_mobile' : 'flaticon_desktop'"/>
+
+<h1 [ngClass]="mobileSize ? 'mobile_vacation_cost' : 'desktop_vacation_cost'">Your vacation costs</h1>
+<h1 [ngClass]="mobileSize ? 'mobile_vacation_cost' : 'desktop_vacation_cost'">$564.30</h1>
+
+<h3
+  [ngClass]="mobileSize ? 'mobile_budget_comparison' : 'desktop_budget_comparison'"
+  [ngStyle]="{'color': (mobileSize === true) ? 'red' : 'green'}"
+>
+  $25.60 more than your budget.
+</h3>
