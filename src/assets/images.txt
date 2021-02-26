@@ -101,3 +101,152 @@
 
 <!-- Search Animaticon -->
 <!-- <img src="{{imgPath}}/animat-essential/search/animat-search-color.gif" alt="Search Animaticon"/> -->
+
+
+Flaticons
+
+Destination
+1. Beach free icon
+- <div>Icons made by <a href="https://www.flaticon.com/authors/wanicon" title="wanicon">wanicon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+- <img class="destination-img" src="{{flaticonPath}}/010-beach.svg" alt="">
+
+2. Passport
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+- <img class="destination-img" src="{{flaticonPath}}/019-passport.svg" alt="">
+
+3. Medical Mask
+
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+- <img class="destination-img" src="{{ flaticonPath }}/{{ group.flaticon }}.svg" alt="">
+- <img class="destination-img" src="{{ flaticonPath }}/028-medical-mask.svg" alt="">
+
+4. Purpose
+
+- <div>Icons made by <a href="https://www.flaticon.com/authors/geotatah" title="geotatah">geotatah</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+- <img class="destination-img" src="{{ flaticonPath }}/{{ group.flaticon }}.svg" alt="">
+- <img class="destination-img" src="{{ flaticonPath }}/029-purpose.svg" alt="">
+
+5. Previously Visited
+
+- <div>Icons made by <a href="https://www.flaticon.com/authors/geotatah" title="geotatah">geotatah</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+- <img class="destination-img" src="{{ flaticonPath }}/{{ group.flaticon }}.svg" alt="">
+- <img class="destination-img" src="{{ flaticonPath }}/034-location.svg" alt="">
+
+
+6. Interests
+
+- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+- <img class="destination-img" src="{{ flaticonPath }}/{{ group.flaticon }}.svg" alt="">
+- <img class="destination-img" src="{{ flaticonPath }}/042-mental-health.svg" alt="">
+
+
+7. Seasons
+
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+- <img class="destination-img" src="{{ flaticonPath }}/{{ group.flaticon }}.svg" alt="">
+- <img class="destination-img" src="{{ flaticonPath }}/036-mountain.svg" alt="">
+
+
+8. Seasons
+
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+- <img class="destination-img" src="{{ flaticonPath }}/{{ group.flaticon }}.svg" alt="">
+- <img class="destination-img" src="{{ flaticonPath }}/036-mountain.svg" alt="">
+
+
+Costs
+<img src="{{flaticonPath}}/{{cost.flaticon}}.svg" alt="" [ngClass]="mobileSize ? 'flaticon_mobile' : 'flaticon_desktop'"/>
+
+1. Food free icon
+
+- <div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- <img src="{{flaticonPath}}/009-food.svg" alt=""/>
+
+
+2. Hotel
+
+- <div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- <img src="{{flaticonPath}}/011-hotel.svg" alt=""/>
+
+
+3. Airfare
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- <img src="{{flaticonPath}}/007-airport.svg" alt=""/>
+
+
+4. Transportation
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- <img src="{{flaticonPath}}/036-taxi.svg" alt=""/>
+
+
+5. Souvenir
+
+- <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- <img src="{{flaticonPath}}/037-shop-1.svg" alt=""/>
+
+
+6. Entertainment
+- <div>Icons made by <a href="https://www.flaticon.com/authors/geotatah" title="geotatah">geotatah</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- <img src="{{flaticonPath}}/030-purpose.svg" alt=""/>
+
+
+7. Emergency
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- <img src="{{flaticonPath}}/026-ambulance.svg" alt=""/>
+
+
+8. Other
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- <img src="{{flaticonPath}}/034-bill-2.svg" alt=""/>
+
+
+9. Bill free icon
+
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+- <img src="{{flaticonPath}}/034-bill-2.svg" alt="" [ngClass]="mobileSize ? 'flaticon_mobile' : 'flaticon_desktop'"/>
+
+
+
+Costs Modal
+1. Budget-1
+
+- <div>Icons made by <a href="https://www.flaticon.com/authors/nhor-phai" title="Nhor Phai">Nhor Phai</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+- <img src="{{flaticonPath}}/002-budget-1.svg" alt=""/>
+
+
+Checklist
+<img src="{{flaticonPath}}/{{item.flaticon}}.svg" alt=""/>
+
+1. Essentials
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- <img src="{{flaticonPath}}/001-checklist.svg" alt=""/>
+
+
+2. Airport
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- <img src="{{flaticonPath}}/010-airport-2.svg" alt=""/>
+
+
+3. Clothes
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- <img src="{{flaticonPath}}/012-t-shirt.svg" alt=""/>
+
+
+4. Electronics
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- <img src="{{flaticonPath}}/014-ipad.svg" alt=""/>
+
+
+5. Health
+- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+- <img src="{{flaticonPath}}/018-first-aid-kit.svg" alt=""/>
