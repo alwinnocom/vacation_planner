@@ -1,6 +1,13 @@
 <!-- ngFor keyvalue pipe = https://stackoverflow.com/questions/41396435/how-to-iterate-object-keys-using-ngfor/41396558 -->
 
 <main [ngClass]="{'desktop-centered-costs-form': mobileSize === false}">
+
+  <h1>Edit your credit</h1>
+  <h3>Make sure you have enough to enjoy your rest and relaxation.</h3>
+
+
+  <caption>How much are you plannning to spend?</caption>
+
   <mat-card [ngClass]="{'mat-card__desktop-size-only' : desktopSize === 'desktop'}">
     <mat-card-header>
       <mat-icon mat-card-avatar class="material-icons">home</mat-icon>
@@ -14,6 +21,7 @@
       <mat-card-content>
         <div [ngClass]='desktopSize === "tablet" ? "costs-form__mobile-grid-list" : "costs-form__grid-list"' [ngStyle]="{'max-width': mobileSize ? '100%' : '50%'}">
           <div class="costs-form__grid-list__grid-tile" *ngFor="let cost of costs; let i = index">
+            <img src="{{flaticonPath}}/{{cost.flaticon}}.svg" alt="" [ngClass]="mobileSize ? 'flaticon_mobile' : 'flaticon_desktop'"/>
             <mat-form-field class="costs-form__form-field" appearance="standard" >
               <mat-label for="cost">
                 {{ cost.name }}: <b>{{cost.value | currency: 'USD'}}</b>
@@ -40,6 +48,13 @@
     </form>
   </mat-card>
 
+  <caption>How much are you willing to spend?</caption>
+
+  <img src="{{flaticonPath}}/034-bill-2.svg" alt="" [ngClass]="mobileSize ? 'flaticon_mobile' : 'flaticon_desktop'"/>
+
+  <p class="budget">Budget: $0.00</p>
+  <input type="text"/>
+  <button class="calculate-total-cost">Calculate Total Cost</button>
 
 </main>
 

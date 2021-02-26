@@ -1,6 +1,9 @@
 /* Angular Material Colors */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+/* Google Fonts for Original Surfer and Petrona & Rubik*/
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Petrona&family=Rubik&display=swap');
+
 
 /* Global Styling */
 * {
@@ -12,10 +15,103 @@
 }
 
 
+/* Edit your credit */
+h1 {
+  /* LanDing-Page <h1> */
+
+  font-family: 'Original Surfer', 'cursive';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+h3 {
+  /* Dest & Costs & Checklist Label */
+
+  font-family: Petrona;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  /* identical to box height */
+
+
+  color: #808080;
+}
+
+caption {
+  /* Dest & Costs & Checklist Label */
+
+  font-family: Petrona;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+
+.budget {
+
+  /* Dest & Costs & Checklist Label */
+  font-family: Petrona;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  /* identical to box height */
+
+
+  /* Tropical Dark-Blue */
+
+  color: #063581;
+
+}
+
+.calculate-total-cost {
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* Dest & Costs & Checklist Label */
+
+  font-family: Petrona;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  /* identical to box height */
+
+
+  color: #000000;
+
+}
+
 /* Background-Image */
 main {
   /* Use ../../assets/images/____ = https://github.com/angular/angular-cli/issues/12797 */
   /* background-image: url('../../assets/images/beach.jpg'); */
+}
+
+
+/* Flaticon Sizing */
+.flaticon_desktop {
+  width: 75px;
+  height: 75px;
+}
+
+.flaticon_mobile {
+  width: 45px;
+  height: 45px;
 }
 
 

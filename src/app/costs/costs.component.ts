@@ -18,15 +18,17 @@ export class CostsComponent implements OnInit, OnDestroy {
   // Vacation Expenses pt 1 - https://www.listplanit.com/list-of-expenses-to-include-in-a-travel-budget/
   // Vacation Expenses pt 2 - https://www.lifehack.org/895450/how-to-pay-off-credit-card
 
+  flaticonPath: string = 'assets/images/flaticon-costs/svg';
+
   public costs: CostsModel[] = [
-    {name: "Food", iconName: 'fastfood', value: 0 },
-    {name: "Hotel/Lodging", iconName: 'hotel', value: 0},
-    {name: "Airfare", iconName: 'flight', value: 0 },
-    { name: "Transportation", iconName: 'commute', value: 0 },
-    {name: "Shopping", iconName: 'shopping_cart', value: 0},
-    {name: "Entertainment", iconName: 'surfing', value: 0},
-    {name: "Emergency", iconName: 'warning', value: 0},
-    {name: "Other", iconName: 'add_task', value: 0}
+    {name: "Food", flaticon: '009-food', iconName: 'fastfood', value: 0 },
+    {name: "Hotel/Lodging", flaticon: '011-hotel', iconName: 'hotel', value: 0},
+    {name: "Airfare", flaticon: '007-airport', iconName: 'flight', value: 0 },
+    { name: "Transportation", flaticon: '036-taxi', iconName: 'commute', value: 0 },
+    {name: "Shopping", flaticon: '037-shop-1', iconName: 'shopping_cart', value: 0},
+    {name: "Entertainment", flaticon: '030-purpose-1', iconName: 'surfing', value: 0},
+    {name: "Emergency", flaticon: '026-ambulance', iconName: 'warning', value: 0},
+    {name: "Other", flaticon: '034-bill-2', iconName: 'add_task', value: 0}
   ];
 
   public costsUpdated: string = "";
