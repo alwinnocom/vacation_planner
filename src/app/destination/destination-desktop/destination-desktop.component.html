@@ -6,7 +6,7 @@
 
         <form class="schedule-your-retreat">
 
-          <img src="{{flaticonPath}}/010-beach.svg" alt="">
+          <img class="destination-img" src="{{flaticonPath}}/010-beach.svg" alt="">
 
           <h3 class="vacation-heading"><span class="material-icons">departure_board</span><span>Schedule your Retreat</span></h3>
 
@@ -26,7 +26,7 @@
 
         <form class="start-your-vacation">
 
-          <img src="{{flaticonPath}}/019-passport.svg" alt="">
+          <img class="destination-img" src="{{flaticonPath}}/019-passport.svg" alt="">
 
           <h3 class="vacation-heading" *ngIf="(!departure_point && !destination) || (departure_point && !destination || !departure_point && destination)"><span class="material-icons">local_see</span><span>Start your Vacation!</span></h3>
           <h3 class="vacation-heading" *ngIf="departure_point && destination"><span class="material-icons">local_see</span><span>Start your Vacation from {{ departure_point }} to {{ destination }}!</span></h3>
@@ -58,6 +58,7 @@
         <mat-accordion class="example-headers-align" multi>
           <mat-expansion-panel *ngFor="let group of vacationGroups">
             <mat-expansion-panel-header>
+              <img class="accordion-flaticon" src="{{flaticonPath}}/{{group.flaticon}}.svg" alt="">
               <mat-panel-title>
                 <span class="material-icons">
                   <!-- {{ group.iconName }} -->

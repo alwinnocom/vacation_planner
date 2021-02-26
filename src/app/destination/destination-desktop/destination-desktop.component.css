@@ -15,10 +15,16 @@ h1 {
 
 }
 
-img {
+.destination-img {
   width: 296px;
   height: 272px;
 }
+
+.accordion-flaticon {
+  width: 100px;
+  height: 100px;
+}
+
 
 /* Center the Desktop-Only Horizontal Stepper */
 #desktop-only-destination-component {
