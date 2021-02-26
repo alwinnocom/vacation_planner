@@ -79,8 +79,8 @@ figcaption button span {
 
 /* Image */
 .cabana-hero-image img {
-  max-height: 300px;
-  max-width: 300px;
+  max-height: 540px;
+  max-width: 540px;
 
   position: relative;
 }
