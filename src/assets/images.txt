@@ -1,5 +1,9 @@
 <!-- Stepper component - https://material.angular.io/components/stepper/overview -->
 
+LogoMakr
+<!-- Logo created with LogoMakr.com, a free logo maker. -->
+<img src="assets/images/LogoMakr-Rendezvous.png"/>
+
 <p> People </p>
 
 <!-- Photo by Christopher Campbell on Unsplash - "https://unsplash.com/@chrisjoelcampbell?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Christopher Campbell</a> on <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"> -->
