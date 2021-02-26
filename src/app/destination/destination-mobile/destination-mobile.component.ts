@@ -16,11 +16,14 @@ export class DestinationMobileComponent implements OnInit, OnDestroy {
 
   @ViewChild(MatAccordion) accordion: MatAccordion;
 
+  flaticonPath: string = 'assets/images/flaticon-destination/svg';
+
   vacationControl = new FormControl();
   vacationGroups = [
 
     {
       name: 'Covid-19 Personal Status',
+      flaticon: '028-medical-mask',
       disabled: false,
       vacation: [
         {value: 'vaccinated', viewValue: 'Vaccinated', viewColor: 'green'},
@@ -31,6 +34,7 @@ export class DestinationMobileComponent implements OnInit, OnDestroy {
 
     {
       name: 'Purpose',
+      flaticon: '029-purpose',
       vacation: [
         {value: 'travel_blog', viewValue: 'Travel Blog'},
         {value: 'business', viewValue: 'Business'},
@@ -40,6 +44,7 @@ export class DestinationMobileComponent implements OnInit, OnDestroy {
 
     {
       name: 'Previously Visited...',
+      flaticon: '034-location',
       vacation: [
         {value: 'very-often', viewValue: '5-10+ times'},
         {value: 'often', viewValue: '3-4 times'},
@@ -49,6 +54,7 @@ export class DestinationMobileComponent implements OnInit, OnDestroy {
     },
     {
       name: 'Interests',
+      flaticon: '042-mental-health',
       vacation: [
         {value: 'exploration', viewValue: 'Exploration'},
         {value: 'culture', viewValue: 'Culture'},
@@ -61,6 +67,7 @@ export class DestinationMobileComponent implements OnInit, OnDestroy {
     },
     {
       name: 'Adventure',
+      flaticon: '036-mountain',
       vacation: [
         {value: "Hero's Journey", viewValue: "Hero's Journey"},
         {value: 'adventurous', viewValue: 'Adventurous'},
@@ -70,6 +77,7 @@ export class DestinationMobileComponent implements OnInit, OnDestroy {
     },
     {
       name: 'Seasons',
+      flaticon: '038-season',
       vacation: [
         {value: 'winter', viewValue: 'Winter'},
         {value: 'spring', viewValue: 'Spring'},

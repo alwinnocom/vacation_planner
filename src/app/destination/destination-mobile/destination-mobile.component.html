@@ -1,6 +1,12 @@
+<h1>Schedule your retreat!</h1>
+
+<img class="destination-img" src="{{flaticonPath}}/010-beach.svg" alt="">
+
 <section id="mobile-only-destination-component" class="datepicker-and-select-form">
 
   <form class="schedule-your-retreat">
+
+
 
     <h3 class="vacation-heading"><span class="material-icons">departure_board</span><span>Schedule your Retreat</span></h3>
 
@@ -57,6 +63,7 @@
     <mat-accordion class="example-headers-align" multi>
       <mat-expansion-panel *ngFor="let group of vacationGroups">
         <mat-expansion-panel-header>
+          <img class="accordion-flaticon" src="{{flaticonPath}}/{{group.flaticon}}.svg" alt="">
           <mat-panel-title>
             <span class="material-icons">
               <!-- {{ group.iconName }} -->
