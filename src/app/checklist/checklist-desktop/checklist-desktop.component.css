@@ -1,3 +1,41 @@
+
+/* Google Fonts for Original Surfer and Petrona & Rubik*/
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Petrona&family=Rubik&display=swap');
+
+h1 {
+  /* LanDing-Page <h1> */
+
+  font-family: 'Original Surfer', 'cursive';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+h3 {
+  /* Dest & Costs & Checklist Label */
+
+  font-family: 'Petrona', 'sans-serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  /* identical to box height */
+
+
+  color: #808080;
+}
+
+/* Flaticon styling */
+img {
+  width: 100px;
+  height: 100px;
+}
+
 .desktop-centered-checklist-form {
   display: flex;
   flex-direction: row;
@@ -44,6 +82,18 @@ form {
   left: 0;
   right: 0;
   /* right: 0; */
+
+  /* Dest Checklist Category */
+
+  font-family: 'Petrona', 'sans-serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 47px;
+
+  /* Green 1 */
+
+  color: #219653;
 }
 
 mat-icon {
@@ -119,6 +169,19 @@ li {
 /* Checkboxes to click within each Category */
 .subcategory-checkbox {
   color: purple;
+}
+
+mat-checkbox {
+  /* Dest & Costs & Checklist Label */
+
+  font-family: 'Petrona', 'sans-serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+
+  color: #000000;
+
 }
 
 /* deep-purple.amber.css has the following default font style for mat-checkbox:
