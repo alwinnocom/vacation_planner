@@ -8,7 +8,7 @@
 
           <img class="destination-img" src="{{flaticonPath}}/010-beach.svg" alt="">
 
-          <h3 class="vacation-heading"><span class="material-icons">departure_board</span><span>Schedule your Retreat</span></h3>
+          <h3 class="vacation-heading"><span class="material-icons">departure_board</span><span>Mark Your Calendar!</span></h3>
 
           <!-- https://material.angular.io/components/datepicker/overview -->
           <mat-form-field appearance="fill">
@@ -58,19 +58,23 @@
         <mat-accordion class="example-headers-align" multi>
           <mat-expansion-panel *ngFor="let group of vacationGroups">
             <mat-expansion-panel-header>
-              <img class="accordion-flaticon" src="{{flaticonPath}}/{{group.flaticon}}.svg" alt="">
-              <mat-panel-title>
-                <span class="material-icons">
-                  <!-- {{ group.iconName }} -->
-                  home
-                </span>
-                <p>{{ group.name }}</p>
-              </mat-panel-title>
-              <mat-panel-description>
-                <p *ngIf="vacations.selectedOptions.selected[0]?.value" [ngStyle]="{'color': ((vacations.selectedOptions.selected[0]?.value === 'At-Risk') || (vacations.selectedOptions.selected[0]?.value === 'Sick')) ? 'red' : 'green'}">
-                  {{ vacations.selectedOptions.selected[0]?.value }}
-                </p>
-              </mat-panel-description>
+              <div>
+                <img class="accordion-flaticon" src="{{flaticonPath}}/{{group.flaticon}}.svg" alt="">
+                <mat-panel-title>
+                  <!-- <span class="material-icons">
+                    {{ group.iconName }}
+                    home
+                  </span> -->
+                  <p>{{ group.name }}</p>
+                </mat-panel-title>
+              </div>
+              <div>
+                <mat-panel-description>
+                  <p *ngIf="vacations.selectedOptions.selected[0]?.value" [ngStyle]="{'color': ((vacations.selectedOptions.selected[0]?.value === 'At-Risk') || (vacations.selectedOptions.selected[0]?.value === 'Sick')) ? 'red' : 'green'}">
+                    {{ vacations.selectedOptions.selected[0]?.value }}
+                  </p>
+                </mat-panel-description>
+              </div>
             </mat-expansion-panel-header>
 
             <mat-selection-list #vacations [multiple]="false">

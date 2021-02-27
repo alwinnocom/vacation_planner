@@ -12,17 +12,23 @@ h1 {
   /* identical to box height */
 
   color: #000000;
+  text-align: center;
 
 }
 
+h3 {
+  color: black;
+}
+
 .destination-img {
-  width: 296px;
-  height: 272px;
+  width: 200px;
+  height: 184px;
 }
 
 .accordion-flaticon {
   width: 100px;
   height: 100px;
+  padding-right: 10px;
 }
 
 
@@ -88,11 +94,11 @@ form {
 
 /* Angular Material Colors + Fonts */
 mat-form-field {
-  color: blue;
+  color: black;
 }
 
-mat-form-field mat-label {
-  color: blue;
+mat-label {
+  color: black;
   /* font-family: 'Roboto Condensed', sans-serif; */
 }
 
@@ -101,7 +107,7 @@ mat-form-field mat-label {
 } */
 
 mat-datepicker-toggle {
-  color: purple;
+  color: black;
 }
 
 /* mat-date-range-picker {
@@ -112,18 +118,28 @@ mat-accordion {
   width: 90%;
 }
 
+
+mat-expansion-panel-header {
+  position: relative;
+}
+
 /* Panel's Title */
 mat-panel-title {
   /* Dest Checklist Category */
 
-  font-family: Petrona;
+  font-family: 'Petrona', 'serif';
   font-style: normal;
   font-weight: normal;
-  font-size: 42px;
-  line-height: 47px;
+  font-size: 32px;
+  line-height: 32px;
 
   /* Tropical Brown */
   color: #A95012;
+
+  /* Since panel-header is relative, absolute will use panel-header as the reference point to move down 50% + move up based on 50% of the title's height. */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Chip around Panel's Description */
@@ -136,11 +152,25 @@ mat-panel-description p {
 
 /* Petrona font for Accordion Select Options */
 mat-list-option {
-  font-family: Petrona;
+  font-family: 'Petrona', 'serif';
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
   line-height: 36px;
 
   color: #000000;
+}
+
+/* Mat-List-Single-Selected-Option, courtesy of Chrome Dev Tools */
+.mat-list-single-selected-option {
+  background-color: green;
+}
+
+
+/* Accordion's Height should be Figma Design Height */
+mat-expansion-panel-header {
+  height: 128px;
+
+  display: flex;
+  flex-direction: column;
 }
