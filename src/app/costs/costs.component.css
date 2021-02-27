@@ -15,6 +15,29 @@
 }
 
 
+/* Vertical Spacing */
+
+caption, mat-card, section, app-costs-modal {
+  margin: 20px 0;
+}
+
+
+/* Grid for Mat-Card-Content */
+mat-card-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto;
+}
+
+mat-card-content .costs-form__grid-list__grid-tile {
+  margin: 5px 20px;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 /* Edit your credit */
 h1 {
   /* LanDing-Page <h1> */
@@ -33,7 +56,7 @@ h1 {
 h3 {
   /* Dest & Costs & Checklist Label */
 
-  font-family: Petrona;
+  font-family: 'Petrona', 'serif';
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -47,7 +70,7 @@ h3 {
 caption {
   /* Dest & Costs & Checklist Label */
 
-  font-family: Petrona;
+  font-family: 'Petrona', 'serif';
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -62,7 +85,7 @@ caption {
 .budget {
 
   /* Dest & Costs & Checklist Label */
-  font-family: Petrona;
+  font-family: 'Petrona', 'serif';
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -84,7 +107,7 @@ caption {
 
   /* Dest & Costs & Checklist Label */
 
-  font-family: Petrona;
+  font-family: 'Petrona', 'serif';
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -128,7 +151,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 mat-card {
@@ -138,7 +160,9 @@ mat-card {
 
 .mat-card__desktop-size-only {
   /* Move div up by half its width. */
-  transform: translateY(-20%);
+
+  /* Remove this code because it covers up the h3 & caption. */
+  /* transform: translateY(-20%); */
 }
 
 /* Mat-Card-Content colors */
@@ -166,7 +190,8 @@ mat-card {
 
 /* Form Label */
 .costs-form__form-field mat-label {
-  color: blue;
+  /* Tropical Brown */
+  color: #A95012;
   font-size: 140%;
 }
 
@@ -180,7 +205,8 @@ mat-card {
 
 /* Form Input */
 .costs-form__form-field input {
-  color: purple;
+  /* Tropical Brown */
+  color: #A95012;
   font-size: 110%;
   margin-top: 10px;
 }
@@ -254,3 +280,4 @@ mat-card {
   /* This makes sure the grid does not expand to the full length of the page. */
   /* max-width: 50%; */
 }
+

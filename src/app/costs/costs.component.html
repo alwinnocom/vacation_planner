@@ -9,17 +9,15 @@
   <caption>How much are you plannning to spend?</caption>
 
   <mat-card [ngClass]="{'mat-card__desktop-size-only' : desktopSize === 'desktop'}">
-    <mat-card-header>
+    <!-- <mat-card-header>
       <mat-icon mat-card-avatar class="material-icons">home</mat-icon>
       <mat-card-title>Financial Planner</mat-card-title>
       <mat-card-subtitle>Pay your way.</mat-card-subtitle>
-    </mat-card-header>
+    </mat-card-header> -->
 
 
     <form class="costs-form" (ngSubmit)="onSubmit()" #costsForm="ngForm">
-
-      <mat-card-content>
-        <div [ngClass]='desktopSize === "tablet" ? "costs-form__mobile-grid-list" : "costs-form__grid-list"' [ngStyle]="{'max-width': mobileSize ? '100%' : '50%'}">
+      <mat-card-content [ngClass]='desktopSize === "tablet" ? "costs-form__mobile-grid-list" : "costs-form__grid-list"' [ngStyle]="{'max-width': mobileSize ? '100%' : '50%'}">
           <div class="costs-form__grid-list__grid-tile" *ngFor="let cost of costs; let i = index">
             <img src="{{flaticonPath}}/{{cost.flaticon}}.svg" alt="" [ngClass]="mobileSize ? 'flaticon_mobile' : 'flaticon_desktop'"/>
             <mat-form-field class="costs-form__form-field" appearance="standard" >
@@ -30,12 +28,7 @@
                 <input type="number" required matInput (click)="setCostIndex(i);" [ngModel]="cost.value" (ngModelChange)="costsModelChanged.next($event)" name="cost">
             </mat-form-field>
           </div>
-        </div>
       </mat-card-content>
-
-      <mat-card-actions>
-      </mat-card-actions>
-
     </form>
   </mat-card>
 
