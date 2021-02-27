@@ -31,7 +31,9 @@ footer {
 .footer__first-row {
   grid-area: a;
 
-  height: 167px;
+  height: 110px;
+
+  border-bottom: 2px solid black;
 }
 
 .footer__first-row img {
@@ -66,7 +68,7 @@ footer {
   font-family: 'Rubik', 'sans-serif';
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 28px;
 
   /* Text-Gray */
@@ -76,15 +78,21 @@ footer {
 
 /* Footer Miscellaneous CSS */
 footer div {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
+/* Padding-Left for all Text */
 ul {
   list-style-type: none;
+  padding-left: 15px;
+}
+
+.footer__last-row div {
+  padding-left: 15px;
 }
 
 .footer__second-row__first-section, .footer__second-row__second-section, .footer__second-row__third-section, .footer__second-row__fourth-section, .footer__second-row__fifth-section {
-  font-family: Petrona;
+  font-family: 'Petrona', 'serif';
   font-style: normal;
   font-weight: normal;
   font-size: 24px;

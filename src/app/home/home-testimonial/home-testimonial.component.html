@@ -8,7 +8,7 @@
       [style.background]="tile.color"
     >
       <blockquote *ngIf="!tile.imgSource">
-        <span class="large-quotation-mark">"</span>{{tile.text}}<span class="large-quotation-mark">"</span>
+        {{tile.text}}
       </blockquote>
 
       <figure *ngIf="tile.imgSource">
@@ -17,6 +17,7 @@
       </figure>
 
     </mat-grid-tile>
+
   </mat-grid-list>
 
 </section>
