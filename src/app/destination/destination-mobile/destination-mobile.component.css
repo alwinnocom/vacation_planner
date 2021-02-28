@@ -41,6 +41,49 @@
   height: 40px;
 }
 
+/* Mat-Panel-Title */
+mat-panel-title {
+  /* Dest Checklist Mobile Category Name */
+
+font-family: 'Rubik', 'sans-serif';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+/* Tropical Brown */
+
+color: #A95012;
+}
+
+
+/* Mat-Panel-Description, Selected-Option */
+mat-panel-description, mat-list-option {
+  /* Dest & Costs Mobile Label */
+
+  font-family: 'Petrona', 'serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+mat-panel-description {
+  color: green;
+}
+
+mat-list-option {
+  color: #000000;
+}
+
+
+/* Mat-List-Single-Selected-Option, courtesy of Chrome Dev Tools */
+.mat-list-single-selected-option {
+  background-color: lightskyblue;
+}
+
+
+
   .datepicker-and-select-form {
     background-color: white;
   }
