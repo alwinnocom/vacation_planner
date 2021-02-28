@@ -50,6 +50,8 @@
 
   <mat-divider></mat-divider>
 
+  <h1>Choose your preferred vacation!</h1>
+
   <!-- Mat Selection List = https://material.angular.io/components/list/examples -->
   <form class="datepicker">
 
@@ -63,12 +65,8 @@
     <mat-accordion class="example-headers-align" multi>
       <mat-expansion-panel *ngFor="let group of vacationGroups">
         <mat-expansion-panel-header>
-          <img class="accordion-flaticon" src="{{flaticonPath}}/{{group.flaticon}}.svg" alt="">
           <mat-panel-title>
-            <span class="material-icons">
-              <!-- {{ group.iconName }} -->
-              home
-            </span>
+            <img class="accordion-flaticon" src="{{flaticonPath}}/{{group.flaticon}}.svg" alt="">
             <p>{{ group.name }}</p>
           </mat-panel-title>
           <mat-panel-description>

@@ -5,11 +5,11 @@
 
 <form id="desktop-tabs-only" class='desktop-centered-checklist-form'>
 
-  <div *ngFor="let item of items">
+  <div class="checklist" *ngFor="let item of items">
 
       <div class="checkbox-header">
         <img src="{{flaticonPath}}/{{item.flaticon}}.svg" alt=""/>
-        <span class="material-icons">{{ item.iconName }}</span>
+        <!-- <span class="material-icons">{{ item.iconName }}</span> -->
         <span class="mat-tab-category-name">{{ item.name }}</span>
       </div>
 

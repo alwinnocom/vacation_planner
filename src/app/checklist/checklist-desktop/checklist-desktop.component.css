@@ -1,4 +1,3 @@
-
 /* Google Fonts for Original Surfer and Petrona & Rubik*/
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Petrona&family=Rubik&display=swap');
 
@@ -30,10 +29,18 @@ h3 {
   color: #808080;
 }
 
+h1, h3 {
+  text-align: center;
+}
+
 /* Flaticon styling */
 img {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
+}
+
+.checklist {
+  margin: 0 20px;
 }
 
 .desktop-centered-checklist-form {
@@ -47,7 +54,6 @@ img {
 
 
 form {
-  color: purple;
   padding-top: 20px;
   padding-left: 20px;
 
@@ -88,12 +94,12 @@ form {
   font-family: 'Petrona', 'sans-serif';
   font-style: normal;
   font-weight: normal;
-  font-size: 42px;
+  font-size: 32px;
   line-height: 47px;
 
   /* Green 1 */
 
-  color: #219653;
+  /* color: #219653; */
 }
 
 mat-icon {
@@ -104,13 +110,13 @@ mat-icon {
 
 
 /* Every other mat-tab-group & its checklist sections will be the same color. */
-mat-tab-group:nth-child(odd), mat-tab-group:nth-child(odd) section {
+/* mat-tab-group:nth-child(odd), mat-tab-group:nth-child(odd) section {
   background-color: blue;
 }
 
 mat-tab-group:nth-child(even), mat-tab-group:nth-child(even) section {
   background-color: green;
-}
+} */
 
 
 
@@ -121,7 +127,6 @@ mat-tab-group:nth-child(even), mat-tab-group:nth-child(even) section {
 
 
 section {
-  color: blue;
   padding: 0 10px;
 }
 
@@ -147,7 +152,7 @@ mat-panel-title span {
 }
 
 mat-panel-title {
-  color: purple;
+  color: black;
 }
 
 
@@ -161,14 +166,11 @@ ul {
   list-style-type: none;
 }
 
-li {
-  color: green;
-}
 
 
 /* Checkboxes to click within each Category */
 .subcategory-checkbox {
-  color: purple;
+  color: green;
 }
 
 mat-checkbox {
@@ -177,7 +179,7 @@ mat-checkbox {
   font-family: 'Petrona', 'sans-serif';
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 16px;
   line-height: 36px;
 
   color: #000000;

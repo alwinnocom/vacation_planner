@@ -1,4 +1,46 @@
+  @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Petrona&family=Rubik&display=swap');
+
   /* Mobile Component */
+
+  h1 {
+    /* Landing-Page <h1> Mobile */
+
+  font-family: 'Original Surfer', 'cursive';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #000000;
+
+  }
+
+  h3 {
+    /* Dest & Costs Mobile Label */
+
+  font-family: 'Petrona', 'serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+
+  color: #000000;
+  }
+
+  .destination-img {
+    width: 197px;
+    height: 195px;
+  }
+
+/* Flaticons Sizing */
+
+.accordion-flaticon {
+  width: 45px;
+  height: 40px;
+}
+
   .datepicker-and-select-form {
     background-color: white;
   }
@@ -10,7 +52,6 @@
 
   /* Colors + Fonts + Position + Padding */
   .vacation-heading {
-    color: purple;
     /* font-family: 'Merienda', cursive; */
 
     position: relative;
@@ -51,11 +92,11 @@
 
   /* Angular Material Colors + Fonts */
   mat-form-field {
-    color: blue;
+    color: black;
   }
 
   mat-form-field mat-label {
-    color: blue;
+    color: black;
     /* font-family: 'Roboto Condensed', sans-serif; */
   }
 
@@ -64,7 +105,7 @@
   } */
 
   mat-datepicker-toggle {
-    color: purple;
+    color: black;
   }
 
   /* mat-date-range-picker {

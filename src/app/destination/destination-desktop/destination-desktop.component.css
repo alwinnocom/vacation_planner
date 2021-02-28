@@ -26,8 +26,8 @@ h3 {
 }
 
 .accordion-flaticon {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   padding-right: 10px;
 }
 
@@ -130,16 +130,16 @@ mat-panel-title {
   font-family: 'Petrona', 'serif';
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 24px;
 
   /* Tropical Brown */
   color: #A95012;
 
   /* Since panel-header is relative, absolute will use panel-header as the reference point to move down 50% + move up based on 50% of the title's height. */
-  position: absolute;
+  /* position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
 }
 
 /* Chip around Panel's Description */
@@ -169,8 +169,10 @@ mat-list-option {
 
 /* Accordion's Height should be Figma Design Height */
 mat-expansion-panel-header {
-  height: 128px;
+  height: 60px;
+  /* height: 128px;
+  width: 100%; */
 
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
