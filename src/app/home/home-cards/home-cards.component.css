@@ -13,6 +13,8 @@
 
 
 /* Home Cards */
+
+/* Change this to be a Grid of 3 columns when Mobile Size is detected. */
 article {
   display: flex;
   max-width: 100%;

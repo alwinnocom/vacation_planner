@@ -14,8 +14,8 @@
       <mat-expansion-panel *ngFor="let item of items">
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <img src="{{flaticonPath}}/{{item.flaticon}}.svg" alt=""/>
-            <span class="material-icons"> {{ item.iconName }}</span>
+            <img class="accordion-flaticon" src="{{flaticonPath}}/{{item.flaticon}}.svg" alt=""/>
+            <!-- <span class="material-icons"> {{ item.iconName }}</span> -->
             <p>{{ item.name }}</p>
           </mat-panel-title>
           <mat-panel-description>

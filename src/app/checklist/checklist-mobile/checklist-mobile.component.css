@@ -1,4 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Petrona&family=Rubik&display=swap');
 
+h1 {
+  /* Landing-Page <h1> Mobile */
+
+  font-family: 'Original Surfer', 'cursive';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+h3 {
+  /* Dest & Costs Mobile Label */
+
+  font-family: 'Petrona', 'serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+
+  color: #808080;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+
+  /* Mat-Panel Title */
+  mat-panel-title span {
+    padding-right: 10px;
+  }
+
+mat-panel-title {
+  font-family: 'Rubik', 'sans-serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 14px;
+
+  /* Tropical Brown */
+
+  color: #A95012;
+}
+
+
+.accordion-flaticon {
+  width: 45px;
+  height: 45px;
+}
+
+
+mat-expansion-panel-header {
+  height: 60px;
+}
 
 button {
     color: green;
@@ -24,7 +85,6 @@ button {
 
 
   form {
-    color: purple;
     padding-top: 20px;
     padding-left: 20px;
 
@@ -118,14 +178,7 @@ button {
 
 
 
-  /* Mat-Panel Title */
-  mat-panel-title span {
-    padding-right: 10px;
-  }
 
-  mat-panel-title {
-    color: purple;
-  }
 
 
   /* Category Name (Essentials, Airport, Clothes, Electronic, Health) */
@@ -138,14 +191,17 @@ button {
     list-style-type: none;
   }
 
-  li {
-    color: green;
-  }
 
 
   /* Checkboxes to click within each Category */
   .subcategory-checkbox {
-    color: purple;
+    font-family: 'Rubik', 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 14px;
+
+    color: #008000;
   }
 
   /* deep-purple.amber.css has the following default font style for mat-checkbox:

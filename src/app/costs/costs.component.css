@@ -67,20 +67,18 @@ h3 {
   color: #808080;
 }
 
-caption {
-  /* Dest & Costs & Checklist Label */
-
-  font-family: 'Petrona', 'serif';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 36px;
-  /* identical to box height */
 
 
-  color: #000000;
+/* Center all h1, h3, section with budget, Flaticon*/
+h1, h3, .budget {
+  text-align: center;
 }
 
+.flaticon_mobile, .flaticon_desktop, .calculate-total-cost {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .budget {
 

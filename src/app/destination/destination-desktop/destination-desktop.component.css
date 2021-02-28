@@ -31,6 +31,10 @@ h3 {
   padding-right: 10px;
 }
 
+mat-expansion-panel {
+  width: 700px;
+}
+
 
 /* Center the Desktop-Only Horizontal Stepper */
 #desktop-only-destination-component {
