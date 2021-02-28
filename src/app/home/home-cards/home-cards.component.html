@@ -1,4 +1,4 @@
-<article id="home-cards">
+<article id="home-cards" [ngClass]="mobileSize ? 'home-cards_mobile' : 'home-cards_desktop'">
   <mat-card>
     <div>
       <mat-card-title>Destinations</mat-card-title>

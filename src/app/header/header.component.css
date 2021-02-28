@@ -23,7 +23,7 @@ mat-toolbar {
   justify-content: flex-end;
   align-items: center;
 
-
+  border-bottom: 1px solid 1155D4;
 }
 
 mat-toolbar ul {
@@ -43,10 +43,12 @@ mat-toolbar ul li {
   border-top: 0px;
   border-bottom: 0px;
 
-  font-family: 'Petrona', serif;
+  font-family: 'Original Surfer', 'cursive';
+  font-size: 24px;
 
+  color: white;
   /* Tropical Blue */
-  color: #1155D4;
+  /* color: #1155D4; */
 }
 
 .img-desktop {
@@ -74,9 +76,8 @@ mat-toolbar ul li:first-of-type, mat-toolbar ul li:last-of-type {
 /* Colors + Fonts for toolbar */
 .original-surfer {
   font-family: 'Original Surfer', cursive;
-  color: white;
 }
 
-/* .material-light-blue {
+.material-light-blue {
   background-color: #2196F3;
-} */
+}

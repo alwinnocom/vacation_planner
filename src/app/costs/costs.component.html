@@ -6,7 +6,7 @@
   <h3>Make sure you have enough to enjoy your rest and relaxation.</h3>
 
 
-  <h3>How much are you plannning to spend?</h3>
+  <!-- <h3>How much are you plannning to spend?</h3> -->
 
   <mat-card [ngClass]="{'mat-card__desktop-size-only' : desktopSize === 'desktop'}">
     <!-- <mat-card-header>
@@ -29,29 +29,32 @@
             </mat-form-field>
           </div>
       </mat-card-content>
+      <mat-card-actions>
+        <section class="info-about-costs-form">
+          <button mat-stroked-button class="calculate-total-cost" type="submit">Calculate Total Cost.</button>
+
+          <span class="if-costs-failed" *ngIf="failed">Costs have not been updated. Please remove your response and try again.</span>
+
+          <div class="total-cost" *ngIf="updated">
+              Total Cost = {{ totalCost | currency: 'USD' }}
+          </div>
+        </section>
+      </mat-card-actions>
     </form>
   </mat-card>
 
-  <h3>How much are you willing to spend?</h3>
+  <!-- <h3>How much are you willing to spend?</h3> -->
 
-  <section>
+  <!-- <section>
     <img src="{{flaticonPath}}/034-bill-2.svg" alt="" [ngClass]="mobileSize ? 'flaticon_mobile' : 'flaticon_desktop'"/>
 
     <p class="budget">Budget: $0.00</p>
     <input type="number" required matInput  [ngModel]=""  name="">
-  </section>
+  </section> -->
 
-  <section class="info-about-costs-form">
-    <button mat-stroked-button class="calculate-total-cost" type="submit">Calculate Total Cost.</button>
 
-    <span class="if-costs-failed" *ngIf="failed">Costs have not been updated. Please remove your response and try again.</span>
-
-    <div class="total-cost" *ngIf="updated">
-        Total Cost = {{ totalCost | currency: 'USD' }}
-    </div>
-  </section>
 </main>
 
-<app-costs-modal></app-costs-modal>
+<!-- <app-costs-modal></app-costs-modal> -->
 
 <app-home-footer></app-home-footer>

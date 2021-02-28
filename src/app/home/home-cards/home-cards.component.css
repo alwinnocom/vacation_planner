@@ -15,14 +15,24 @@
 /* Home Cards */
 
 /* Change this to be a Grid of 3 columns when Mobile Size is detected. */
-article {
+.home-cards_desktop {
   display: flex;
   max-width: 100%;
 }
 
-article mat-card {
+.home-cards_desktop mat-card {
   width: 33.3333%;
 }
+
+.home-cards_mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .home-cards_mobile mat-card {
+  width: 33.3333%;
+} */
+
 
 article img {
   /* border-radius: 50%; */
