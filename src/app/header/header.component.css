@@ -76,8 +76,9 @@ mat-toolbar ul li:first-of-type, mat-toolbar ul li:last-of-type {
 /* Colors + Fonts for toolbar */
 .original-surfer {
   font-family: 'Original Surfer', cursive;
+  background-color: lightskyblue;
 }
 
-.material-light-blue {
+/* .material-light-blue {
   background-color: #2196F3;
-}
+} */
