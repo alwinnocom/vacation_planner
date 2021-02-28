@@ -236,6 +236,7 @@ mat-card {
 
 .if-costs-failed {
   color: red;
+  font-size: 2vw;
 }
 
 .total-cost {

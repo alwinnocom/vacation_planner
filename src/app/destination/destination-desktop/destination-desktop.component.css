@@ -103,7 +103,7 @@ mat-form-field {
 
 mat-label {
   color: black;
-  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* mat-date-range-input input {
@@ -148,9 +148,12 @@ mat-panel-title {
 
 /* Chip around Panel's Description */
 mat-panel-description p {
-  border: 1px solid #0000FF;
+  /* border: 1px solid #0000FF; */
   box-sizing: border-box;
   border-radius: 50px;
+
+  position: relative;
+  top: 4px;
 }
 
 

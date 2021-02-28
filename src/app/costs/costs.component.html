@@ -17,6 +17,9 @@
 
 
     <form class="costs-form" (ngSubmit)="onSubmit()" #costsForm="ngForm">
+
+      <span class="if-costs-failed" *ngIf="failed">Costs have not been updated. Please remove your response and try again.</span>
+
       <mat-card-content [ngClass]='desktopSize === "tablet" ? "costs-form__mobile-grid-list" : "costs-form__grid-list"' [ngStyle]="{'max-width': mobileSize ? '100%' : '50%'}">
           <div class="costs-form__grid-list__grid-tile" *ngFor="let cost of costs; let i = index">
             <img src="{{flaticonPath}}/{{cost.flaticon}}.svg" alt="" [ngClass]="mobileSize ? 'flaticon_mobile' : 'flaticon_desktop'"/>
@@ -32,8 +35,6 @@
       <mat-card-actions>
         <section class="info-about-costs-form">
           <button mat-stroked-button class="calculate-total-cost" type="submit">Calculate Total Cost.</button>
-
-          <span class="if-costs-failed" *ngIf="failed">Costs have not been updated. Please remove your response and try again.</span>
 
           <div class="total-cost" *ngIf="updated">
               Total Cost = {{ totalCost | currency: 'USD' }}
